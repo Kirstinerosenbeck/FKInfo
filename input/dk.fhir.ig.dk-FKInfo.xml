@@ -68,27 +68,27 @@
 			<code value="logging" />
 		</parameter>
 		<grouping>
-			<name value="DK:MedCom:Core" />
+			<name value="DK:KL:FKInfo" />
 		</grouping>
 	</definition>
-	<title value="DK MedCom Core (R4)" />
-	<packageId value="dk.fhir.ig.dk-medcom-core" />
-	<id value="dk.fhir.ig.dk-medcom-core" />
-	<url value="http://hl7.dk/fhir/medcom-core/ImplementationGuide/dk.fhir.ig.dk-medcom-core" />
-	<version value="0.8.0" />
-	<name value="DK_MedCom_Core" />
+	<title value="DK KL FKInfo (R4)" />
+	<packageId value="dk.fhir.ig.dk-FKInfo" />
+	<id value="dk.fhir.ig.dk-FKInfo" />
+	<url value="http://hl7.dk/fhir/FKInfo/ImplementationGuide/dk.fhir.ig.dk-FKInfo" />
+	<version value="0.1.0" />
+	<name value="Fælleskommunal Informationsmodel" />
 	<status value="active" />
-	<experimental value="false" />
-	<date value="2020-03-24" />
-	<publisher value="MedCom" />
+	<experimental value="true" />
+	<date value="2020-05-06" />
+	<publisher value="KL" />
 	<contact>
-		<name value="MedCom" />
+		<name value="KL" />
 		<telecom>
 			<system value="url" />
-			<value value="https://www.medcom.dk/" />
+			<value value="//https://www.kl.dk/" />
 		</telecom>
 	</contact>
-	<description value="Implementationguide MedCom-Core" />
+	<description value="Implementationguide FKInfo" />
 	<jurisdiction>
 		<coding>
 			<system value="urn:iso:std:iso:3166" />
