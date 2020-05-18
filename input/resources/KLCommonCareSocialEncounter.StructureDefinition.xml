@@ -3,7 +3,7 @@
     <meta>
         <lastUpdated value="2020-05-18T15:10:24.428+00:00" />
     </meta>
-    <url value="http://kl.dk/fhir/flis/caresocial/StructureDefinition/flis-care-encounter" />
+    <url value="http://kl.dk/fhir/common/caresocial/StructureDefinition/common-caresocial-encounter" />
     <version value="0.9" />
     <name value="CommonCareSocialEncounter" />
     <status value="draft" />

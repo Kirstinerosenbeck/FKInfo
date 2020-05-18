@@ -7,7 +7,7 @@
     <version value="0.9" />
     <name value="CommonCareSocialCondition" />
     <status value="draft" />
-    <date value="2020-05-18T15:10:01.231+00:00 />
+    <date value="2020-05-18T15:10:01.231+00:00" />
     <description value="The KL Common Social Care Codition is a general information model pattern for danish municipality conditions" />
     <fhirVersion value="4.0.0" />
     <mapping>
@@ -83,7 +83,7 @@
             <max value="1" />
             <type>
                 <code value="Extension" />
-                <profile value="http://kl.dk/fhir/flis/caresocial/StructureDefinition/flis-care-encounter" />
+                <profile value="http://kl.dk/fhir/common/caresocial/StructureDefinition/common-caresocial-encounter" />
             </type>
         </element>
         <element id="Condition.clinicalStatus">
@@ -97,6 +97,7 @@
             <min value="0" />
             <max value="1" />
             <mustSupport value="true" />
+            <comment value="status, der angiver om tilstanden er til stede eller ej."/> 
         </element>
         <element id="Condition.severity">
             <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
