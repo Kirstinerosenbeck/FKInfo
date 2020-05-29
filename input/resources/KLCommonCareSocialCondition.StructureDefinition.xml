@@ -1,6 +1,5 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="common-careSocial-condition" />
-
+    <id value="common-caresocial-condition" />
     <meta>
         <lastUpdated value="2020-05-18T15:10:01.231+00:00" />
     </meta>
