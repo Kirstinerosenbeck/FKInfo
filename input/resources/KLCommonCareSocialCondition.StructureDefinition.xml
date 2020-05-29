@@ -82,7 +82,7 @@
     </binding>
  </element>
 <element id="Condition.code.coding:KLConditionCode.system">
-    <path value="Codition.code.coding.system"/>
+    <path value="Condition.code.coding.system"/>
     <min value="1"/>
     <max value="1"/>
     <type>
@@ -101,5 +101,14 @@
         <valueset value="http://hl7.org/fhir/ValueSet/condition-code"/>
     </binding>
  </element>
+ <element id="Condition.code.coding:SNOMEDCTConditionCode.system">
+    <path value="Condition.code.coding.system"/>
+    <min value="1"/>
+    <max value="1"/>
+    <type>
+        <code value="uri"/>
+    </type>
+    <fixedUri value="http://snomed.info/sct"/>
+</element>
     </differential>
 </StructureDefinition>
