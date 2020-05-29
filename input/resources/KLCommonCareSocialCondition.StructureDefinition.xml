@@ -58,7 +58,8 @@
                 <expression value="(severity.empty().not() and (code.coding.system = 'http://kl.healthterm.dk/functional-condition'))" />
                 <source value="Condition" />
             </constraint>
-        <element id="Condition.code.coding:">
+        </element>
+        <element id="Condition.code.coding">
         <path value="Condition.code.coding"/>
         <slicing>
                 <discriminator>
@@ -68,7 +69,6 @@
                 <ordered value="false"/>
                 <rules value="open" />
             </slicing>
-            
         </element>
 <element id="Condition.code.coding:KLConditionCode">
     <path value="Condition.code.coding"/>
