@@ -1,5 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="common-careSocial-condition" />
+
     <meta>
         <lastUpdated value="2020-05-18T15:10:01.231+00:00" />
     </meta>
@@ -48,298 +49,56 @@
     <differential>
         <element id="Condition">
             <path value="Condition" />
-            <short value="Detailed information about conditions" />
-            <definition value="A condition that has risen to a level of concern." />
+            <short value="Detailed information about conditions in Danish municiplities health, social and elderly care" />
+            <definition value="A condition of a citizen that has risen to a level of concern." />
             <constraint>
                 <key value="severity-conditionally-permitted" />
                 <requirements value="Severity is not permitted for health conditions" />
                 <severity value="error" />
-                <human value="Severity is required for functional conditions and not permitted for health conditions" />
-                <expression value="(severity.empty().not() and (code.coding.system = 'http://kl.healthterm.dk/functional-condition')) or (severity.empty() and (code.coding.system = 'http://kl.healthterm.dk/health-condition'))" />
+                <human value="Severity is required for functional conditions and optional for other conditions" />
+                <expression value="(severity.empty().not() and (code.coding.system = 'http://kl.healthterm.dk/functional-condition'))" />
                 <source value="Condition" />
             </constraint>
-        </element>
-        <element id="Condition.extension">
-            <path value="Condition.extension" />
-            <slicing>
+        <element id="Condition.code.coding:">
+        <path value="Condition.code.coding"/>
+        <slicing>
                 <discriminator>
                     <type value="value" />
-                    <path value="url" />
+                    <path value="system" />
                 </discriminator>
+                <ordered value="false"/>
                 <rules value="open" />
             </slicing>
+            
         </element>
-        <element id="Condition.extension:followUpEncounter">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.extension" />
-            <sliceName value="followUpEncounter" />
-            <definition value="Reference to encounter for following up on the condition." />
-            <min value="1" />
-            <max value="1" />
-            <type>
-                <code value="Extension" />
-                <profile value="http://kl.dk/fhir/common/caresocial/StructureDefinition/common-caresocial-encounter" />
-            </type>
-        </element>
-        <element id="Condition.clinicalStatus">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.clinicalStatus" />
-            <min value="0" />
-            <max value="1" />
-            <mustSupport value="true" />
-            <comment value="status, der angiver om tilstanden er til stede eller ej."/> 
-        </element>
-        <element id="Condition.severity">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.severity" />
-            <short value="The severity of a care or social condition" />
-            <definition value="The magnitude of a problem in functioning or functional ability. The severity is used for conditions i home care (hjemmepleje) and FFB activity and participation conditions (FFB aktivitet og deltagelses tilstande)." />
-        </element>
-        <element id="Condition.severity.coding">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.severity.coding" />
-            <min value="1" />
-            <max value="1" />
-        </element>
-        <element id="Condition.severity.coding.system">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.severity.coding.system" />
-            <min value="1" />
-            <fixedUri value="http://kl.healthterm.dk/functional-level" />
-        </element>
-        <element id="Condition.severity.coding.code">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.severity.coding.code" />
-            <min value="1" />
-        </element>
-        <element id="Condition.severity.coding.display">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-                <valueBoolean value="true" />
-            </extension>
-            <path value="Condition.severity.coding.display" />
-            <comment value="Den tekst der er knyttet til tilstandssværhedsgrad, i sværhedsgradens terminologi eller klassifikation" />
-        </element>
-        <element id="Condition.severity.coding.userSelected">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.severity.coding.userSelected" />
-            <max value="0" />
-        </element>
-        <element id="Condition.severity.text">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-                <valueBoolean value="true" />
-            </extension>
-            <path value="Condition.severity.text" />
-            <max value="0" />
-        </element>
-        <element id="Condition.bodySite">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.bodySite" />
-            <max value="0" />
-        </element>
-        <element id="Condition.subject">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.subject" />
-            <definition value="Indicates the citizen who the condition record is associated with." />
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://kl.dk/fhir/flis/care/StructureDefinition/flis-care-citizen" />
-                <aggregation value="bundled" />
-            </type>
-        </element>
-        <element id="Condition.subject.reference">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.subject.reference" />
-            <min value="1" />
-        </element>
-        <element id="Condition.subject.type">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.subject.type" />
-            <max value="0" />
-        </element>
-        <element id="Condition.subject.identifier">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.subject.identifier" />
-            <max value="0" />
-        </element>
-        <element id="Condition.subject.display">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-                <valueBoolean value="true" />
-            </extension>
-            <path value="Condition.subject.display" />
-            <max value="0" />
-        </element>
-        <element id="Condition.encounter">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.encounter" />
-            <max value="0" />
-        </element>
-        <element id="Condition.onset[x]">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.onset[x]" />
-            <max value="0" />
-        </element>
-        <element id="Condition.abatement[x]">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.abatement[x]" />
-            <type>
-                <code value="dateTime" />
-            </type>
-            <mustSupport value="true" />
-        </element>
-        <element id="Condition.recordedDate">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.recordedDate" />
-            <short value="Date record was recorded" />
-            <definition value="The recordedDate represents when this particular Condition record was created in the system." />
-            <min value="1" />
-        </element>
-        <element id="Condition.recorder">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.recorder" />
-            <max value="0" />
-        </element>
-        <element id="Condition.asserter">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.asserter" />
-            <max value="0" />
-        </element>
-        <element id="Condition.stage">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.stage" />
-            <max value="0" />
-        </element>
-        <element id="Condition.evidence">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.evidence" />
-            <max value="0" />
-        </element>
-        <element id="Condition.note">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-                <valueCode value="normative" />
-            </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-                <valueCode value="4.0.0" />
-            </extension>
-            <path value="Condition.note" />
-            <max value="0" />
-        </element>
+<element id="Condition.code.coding:KLConditionCode">
+    <path value="Condition.code.coding"
+    <sliceName value="KLConditionCode"/>
+    <min value="1"/>
+    <max value="1"/>
+    <binding>
+        <strength value="required">
+        <description value="KL conditions. Can either be conditions for nursing, home care, rehabilitation/training, health promotion and prevention and social care"/>
+        <valueset value="http://klterminology/ValueSet/condition-code"
+ </element>
+<element id="Condition.code.coding:KLConditionCode.system">
+    <path value="Codition.code.coding.system"/>
+    <min value="1"/>
+    <max value="1"/>
+    <type>
+        <code value="uri"/>
+    </type>
+    <fixedUri value="http://klterminology"/>
+</element>
+<element id="Condition.code.coding:SNOMEDCTConditionCode">
+    <path value="Condition.code.coding"
+    <sliceName value="SNOMEDCTConditionCode"/>
+    <min value="0"/>
+    <max value="1"/>
+    <binding>
+    <strength value="required"/>
+    <description value="SNOMED CT code for Conditions, especially used when needing to express more granualar concepts than the KLConditionCode, or when the KLConditionCode mapping to SNOMED Ct is not available"/>
+    <valueset value="http://hl7.org/fhir/ValueSet/condition-code"
+ </element>
     </differential>
 </StructureDefinition>
