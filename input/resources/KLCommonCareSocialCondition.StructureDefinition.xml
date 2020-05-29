@@ -79,6 +79,7 @@
         <strength value="required"/>
         <description value="KL conditions. Can either be conditions for nursing, home care, rehabilitation/training, health promotion and prevention and social care"/>
         <valueset value="http://klterminology/ValueSet/condition-code"/>
+    </binding>
  </element>
 <element id="Condition.code.coding:KLConditionCode.system">
     <path value="Codition.code.coding.system"/>
@@ -95,9 +96,10 @@
     <min value="0"/>
     <max value="1"/>
     <binding>
-    <strength value="required"/>
-    <description value="SNOMED CT code for Conditions, especially used when needing to express more granualar concepts than the KLConditionCode, or when the KLConditionCode mapping to SNOMED Ct is not available"/>
-    <valueset value="http://hl7.org/fhir/ValueSet/condition-code"/>
+        <strength value="required"/>
+        <description value="SNOMED CT code for Conditions, especially used when needing to express more granualar concepts than the KLConditionCode, or when the KLConditionCode mapping to SNOMED Ct is not available"/>
+        <valueset value="http://hl7.org/fhir/ValueSet/condition-code"/>
+    </binding>
  </element>
     </differential>
 </StructureDefinition>
