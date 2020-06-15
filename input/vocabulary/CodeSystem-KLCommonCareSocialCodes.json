@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "KLCommonCareSocialCodes",
+  "id": "KLCommonCareSocialCodes",
+  "title": "Codes associated with KLCommonCareSocial",
+  "description": "Administrative/technical codes, not defined elsewhere, associated with KLCommonCareSocial",
+  "version": "0.1.0",
+  "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+  "concept": [
+    {
+      "code": "829ac647-c7fc-4964-836b-f708d886e0e3",
+      "display": "oplysning",
+      "definition": "oplysning er foretaget ved kontakt"
+    },
+    {
+      "code": "9269c9a2-8220-447b-a127-811275b41062",
+      "display": "vurdering/bevilling",
+      "definition": "vurdering og/eller bevilling er foretaget ved kontakt"
+    },
+    {
+      "code": "9f03dfbb-7a97-45a5-94db-d4c3501714a9",
+      "display": "opfølgning",
+      "definition": "opfølgning foretaget ved kontakt"
+    },
+    {
+      "code": "784275f1-6822-4a88-b361-d958007d5253",
+      "display": "udførelse af planlagt indsats",
+      "definition": "Planlagt indsats udført ved kontakt"
+    },
+    {
+      "code": "15775b0a-7ec6-469e-9d3c-a81fbc9a1b45",
+      "display": "udførelse af akutindsats",
+      "definition": "Akutindsats, bevilget af læge eller akutteam, udført ved kontakt"
+    },
+    {
+      "code": "c03b426a-4348-407f-b343-f4baa9759c72",
+      "display": "udførelse af ikke-bevilget indsats",
+      "definition": "Indsats, der ikke i forvejen var bevilget, udført ved kontakt"
+    },
+    {
+      "code": "bb6fc544-7f4f-4b50-8868-1431e0df2381",
+      "display": "observation",
+      "definition": "observation foretaget ved kontakt"
+    }
+  ]
+}

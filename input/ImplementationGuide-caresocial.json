@@ -1,0 +1,257 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "caresocial",
+  "url": "http://kl.dk/fhir/common/caresocial/ImplementationGuide/caresocial",
+  "version": "0.1.0",
+  "name": "FKIImplementationGuide",
+  "title": "FKI Implementation Guide",
+  "status": "active",
+  "publisher": "Kommunernes Landsforening",
+  "contact": [
+    {
+      "name": "Kommunernes landsforening",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kl@kl.dk"
+        }
+      ]
+    }
+  ],
+  "description": "Danish municipalities implementation guide for common informationmodel",
+  "packageId": "caresocial",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "packageId": "hl7.fhir.us.core",
+      "id": "hl7_fhir_us_core",
+      "version": "3.1.0"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialCondition"
+        },
+        "name": "CommonCareSocialCondition",
+        "description": "Detailed information about conditions in Danish municiplities health, social and elderly care.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialEncounter"
+        },
+        "name": "CommonCareSocalEncounter",
+        "description": "Encounters used for care and social services in Danish municipalities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialFollowUpResult"
+        },
+        "name": "CommonCareSocialFollowUpResult",
+        "description": "Follow-up results used in Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialInformation"
+        },
+        "name": "CommonCareSocialInformation",
+        "description": "Information used in Danish municipalities (Oplysning/Område/Tema)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCitizen"
+        },
+        "name": "CommonCitizen",
+        "description": "Citizen demographics, as expressed by Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCrossSectorCondition"
+        },
+        "name": "CommonCrossSectorCondition",
+        "description": "Conditions which may be used for cross sector exchange in Denmark, as expressed by Danish municipalities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonPractitioner"
+        },
+        "name": "CommonPractioner",
+        "description": "Practitioners as expressed by Danish municipalities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/FollowUpEncounter"
+        },
+        "name": "FollowupEncounter",
+        "description": "Extension for pointing to previous and planned follow up encounters for a condition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FFBConditionsAndTargetGroup"
+        },
+        "name": "FFB Conditions and target groups",
+        "description": "Conditions and target groups as defined by FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FFBSeverities"
+        },
+        "name": "FFB Severities",
+        "description": "Severities related to conditions in FFB (funktionsevneniveau)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FSIIIConditionCodes"
+        },
+        "name": "FSIII Condition codes",
+        "description": "Danish municipality FSIII condition codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FSIIISeverites"
+        },
+        "name": "FSIII Severities",
+        "description": "Severities related to conditions in FSIII home care (funktionsniveau)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/GenerelleOplysninger"
+        },
+        "name": "FSIII generelle oplysninger",
+        "description": "Generelle oplysninger som defineret af FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ICD10SKS"
+        },
+        "name": "ICD10 codes from SKS",
+        "description": "ICD10 codes as defined by SKS in Denmark excluding the main hierachy code D",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ICPC2ValueSet"
+        },
+        "name": "ICPC-2-DK codes",
+        "description": "the Danish edition of ICPC2 codes as defined by KiAP",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/InformationCodes"
+        },
+        "name": "FSIII/FFB Information codes",
+        "description": "Information codes from FSIII and FFB (Område, Tema, Generelle oplysninger)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLCommonCareSocialEncounterTypes"
+        },
+        "name": "Encounter Types",
+        "description": "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLConditionCodesFFB"
+        },
+        "name": "FFB Condition codes",
+        "description": "Danish municipality FFB condition codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLConditionCodesHomeCare"
+        },
+        "name": "Home Care Condition codes",
+        "description": "Danish municipality home care condition codes (funktionsevnetilstande)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLConditionCodesNursing"
+        },
+        "name": "Nursing Condition codes",
+        "description": "Danish municipality nursing condition codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLConditionCodesPrevention"
+        },
+        "name": "Prevention Condition codes",
+        "description": "Danish municipality Prevention condition codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLConditionCodesTheraphy"
+        },
+        "name": "Theraphy Condition codes",
+        "description": "Danish municipality theraphy condition codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLSeverities"
+        },
+        "name": "KL Severities",
+        "description": "Severities related to conditions",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KLCommonCareSocialCodes"
+        },
+        "name": "Codes associated with KLCommonCareSocial",
+        "description": "Administrative/technical codes, not defined elsewhere, associated with KLCommonCareSocial",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

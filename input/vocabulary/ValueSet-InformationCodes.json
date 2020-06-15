@@ -1,0 +1,19 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "InformationCodes",
+  "id": "InformationCodes",
+  "title": "FSIII/FFB Information codes",
+  "description": "Information codes from FSIII and FFB (Område, Tema, Generelle oplysninger)",
+  "version": "0.1.0",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/InformationCodes",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/GenerelleOplysninger"
+        ]
+      }
+    ]
+  }
+}

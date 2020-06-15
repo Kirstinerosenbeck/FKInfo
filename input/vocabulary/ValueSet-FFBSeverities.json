@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FFBSeverities",
+  "id": "FFBSeverities",
+  "title": "FFB Severities",
+  "description": "Severities related to conditions in FFB (funktionsevneniveau)",
+  "version": "0.1.0",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FFBSeverities",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.22",
+        "concept": [
+          {
+            "code": "2254dac8-8aa3-4334-8502-9720194f49ad",
+            "display": "ikke vurderet"
+          },
+          {
+            "code": "b508ff66-6326-4862-a6d7-7bbf184c9823",
+            "display": "Ingen nedsat funktionsevne"
+          },
+          {
+            "code": "8328ce4a-6238-4f73-bf1a-74aadb68eff8",
+            "display": "Let nedsat funktionsevne"
+          },
+          {
+            "code": "5bdde847-2837-416b-ab63-bbff8b7aa531",
+            "display": "Moderat nedsat funktionsevne"
+          },
+          {
+            "code": "cae545f5-2813-4d79-98fc-0a7d770af3c",
+            "display": "Svært nedsat funktionsevne"
+          },
+          {
+            "code": "832ae90b-23b5-4063-80aa-0b81bdce680e",
+            "display": "Fuldstændig nedsat funktionsevne"
+          }
+        ]
+      }
+    ]
+  }
+}

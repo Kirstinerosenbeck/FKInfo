@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLConditionCodes",
+  "id": "KLConditionCodes",
+  "title": "Condition codes",
+  "description": "Danish municipality condition codes",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/klfki/ValueSet/KLConditionCodes",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://example.org/fhir/klfki/ValueSet/KLConditionCodesHomeCare"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://example.org/fhir/klfki/ValueSet/KLConditionCodesNursing"
+        ]
+      }
+    ]
+  }
+}

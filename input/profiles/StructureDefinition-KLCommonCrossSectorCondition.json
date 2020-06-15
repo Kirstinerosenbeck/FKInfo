@@ -1,0 +1,227 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "KLCommonCrossSectorCondition",
+  "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCrossSectorCondition",
+  "version": "0.1.0",
+  "name": "KLCommonCrossSectorCondition",
+  "title": "CommonCrossSectorCondition",
+  "status": "active",
+  "description": "Conditions which may be used for cross sector exchange in Denmark, as expressed by Danish municipalities.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition"
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code"
+      },
+      {
+        "id": "Condition.code.coding",
+        "path": "Condition.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the code.system value which allow both a FSIII/FFB condition code and a SNOMED CT code to represent a condition"
+        }
+      },
+      {
+        "id": "Condition.code.coding:FSIIIConditionCode",
+        "path": "Condition.code.coding",
+        "sliceName": "FSIIIConditionCode",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIConditionCodes"
+        }
+      },
+      {
+        "id": "Condition.code.coding:FSIIIConditionCode.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "patternUri": "urn:oid:1.2.208.176.2.21"
+      },
+      {
+        "id": "Condition.code.coding:SCTConditionCode",
+        "path": "Condition.code.coding",
+        "sliceName": "SCTConditionCode",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/condition-code"
+        }
+      },
+      {
+        "id": "Condition.code.coding:SCTConditionCode.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "patternUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Condition.code.coding:FFBCodesCT",
+        "path": "Condition.code.coding",
+        "sliceName": "FFBCodesCT",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/FFBConditionsAndTargetGroup"
+        }
+      },
+      {
+        "id": "Condition.code.coding:FFBCodesCT.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "patternUri": "urn:oid:1.2.208.176.2.22"
+      },
+      {
+        "id": "Condition.code.coding:ICD10codes",
+        "path": "Condition.code.coding",
+        "sliceName": "ICD10codes",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/ICD10SKS"
+        }
+      },
+      {
+        "id": "Condition.code.coding:ICD10codes.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "patternUri": "urn:oid:1.2.208.176.2.4.12"
+      },
+      {
+        "id": "Condition.code.coding:ICPC2codes",
+        "path": "Condition.code.coding",
+        "sliceName": "ICPC2codes",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/ICPC2ValueSet"
+        }
+      },
+      {
+        "id": "Condition.code.coding:ICPC2codes.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "patternUri": "https://kiap.dk/kiap/koder/icpckoder"
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.asserter",
+        "path": "Condition.asserter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.note",
+        "path": "Condition.note"
+      },
+      {
+        "id": "Condition.note.author[x]",
+        "path": "Condition.note.author[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.note.authorReference",
+        "path": "Condition.note.authorReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

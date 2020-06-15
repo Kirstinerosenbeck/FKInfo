@@ -1,0 +1,99 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLConditionCodesPrevention",
+  "id": "KLConditionCodesPrevention",
+  "title": "Prevention Condition codes",
+  "description": "Danish municipality Prevention condition codes",
+  "version": "0.1.0",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesPrevention",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "57b8979f-cf46-4312-aafa-3a0dd93aa921",
+            "display": "Alkohol"
+          },
+          {
+            "code": "cb55874a-93d9-45c7-a25a-8ff677c24385",
+            "display": "Søvn og hvile"
+          },
+          {
+            "code": "525b5dd8-d62b-4efa-bf66-262ac47eca5b",
+            "display": "Emotionel funktion"
+          },
+          {
+            "code": "0520a107-2bb0-47b8-8856-c53e27607e51",
+            "display": "Kognitiv funktion"
+          },
+          {
+            "code": "febbd20d-f5ff-41e7-bf12-dfa0700678e0",
+            "display": "Vægt"
+          },
+          {
+            "code": "bb7e9e71-73f6-4ec6-a0bf-eaec1e5982b4",
+            "display": "Sundhedskompetencer"
+          },
+          {
+            "code": "08042057-72f4-4798-a727-75ce6205dc86",
+            "display": "Sociale relationer"
+          },
+          {
+            "code": "e3ff3fea-a4ff-4c7b-ad04-f4aad2e67fd3",
+            "display": "Cirkulation "
+          },
+          {
+            "code": "43ad3091-f684-4d6f-8885-20ecd1cf2255",
+            "display": "Kropsopfattelse"
+          },
+          {
+            "code": "f715168e-125b-4d00-8e93-2ca4147ed13f",
+            "display": "Spisemønster"
+          },
+          {
+            "code": "f0b62265-6c83-4239-af97-4d6e9ba9dea7",
+            "display": "Medicin og stoffer"
+          },
+          {
+            "code": "880cdd75-c63a-44a0-a4e4-8209644c8628",
+            "display": "Kontinens"
+          },
+          {
+            "code": "f1f1eee3-a3ea-4ca1-bfa9-ebb381af1a1f",
+            "display": "Fysisk aktivitet"
+          },
+          {
+            "code": "e33396bb-019a-4fda-b901-1dbfdea1fc10",
+            "display": "Respiration"
+          },
+          {
+            "code": "e7531532-7b7f-4ac0-863a-0b6a4cbe6ce2",
+            "display": "Smerte"
+          },
+          {
+            "code": "c0ee1cf6-47a9-4523-8fda-a80a13e28e30",
+            "display": "Ernæring"
+          },
+          {
+            "code": "1a34ed6c-083b-451f-b8c8-137f99126b0c",
+            "display": "Tobak"
+          },
+          {
+            "code": "abc0b770-d080-4cc8-851a-aa62556730e6",
+            "display": "Mobilitet og bevægelse"
+          },
+          {
+            "code": "fab34c19-4805-45af-b961-56099c849744",
+            "display": "Daglige aktiviteter"
+          },
+          {
+            "code": "43f0b6da-11da-4eed-b00b-19b2177690b5",
+            "display": "Håndtere genstande"
+          }
+        ]
+      }
+    ]
+  }
+}

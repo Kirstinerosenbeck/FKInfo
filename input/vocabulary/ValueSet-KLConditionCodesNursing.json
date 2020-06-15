@@ -1,0 +1,191 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLConditionCodesNursing",
+  "id": "KLConditionCodesNursing",
+  "title": "Nursing Condition codes",
+  "description": "Danish municipality nursing condition codes",
+  "version": "0.1.0",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesNursing",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "I9.1",
+            "display": "Akutte smerter"
+          },
+          {
+            "code": "I4.9",
+            "display": "Andre problemer med hud og slimhinder"
+          },
+          {
+            "code": "I7.2",
+            "display": "Cirkulationsproblemer"
+          },
+          {
+            "code": "I10.1",
+            "display": "Døgnrytmeproblemer"
+          },
+          {
+            "code": "I6.2",
+            "display": "Emotionelle problemer"
+          },
+          {
+            "code": "I11.4",
+            "display": "Kognitive problemer"
+          },
+          {
+            "code": "I9.3",
+            "display": "Kroniske smerter"
+          },
+          {
+            "code": "I6.4",
+            "display": "Mentale problemer"
+          },
+          {
+            "code": "I9.2",
+            "display": "Periodevise smerter"
+          },
+          {
+            "code": "I12.1",
+            "display": "Problemer med afføringsinkontinens"
+          },
+          {
+            "code": "I4.5",
+            "display": "Problemer med arterielt sår"
+          },
+          {
+            "code": "I4.7",
+            "display": "Problemer med blandingssår"
+          },
+          {
+            "code": "I4.3",
+            "display": "Problemer med cancersår"
+          },
+          {
+            "code": "I1.2",
+            "display": "Problemer med daglige aktiviteter"
+          },
+          {
+            "code": "I4.2",
+            "display": "Problemer med diabetisk sår"
+          },
+          {
+            "code": "I3.2",
+            "display": "Problemer med fødeindtag"
+          },
+          {
+            "code": "I9.5",
+            "display": "Problemer med følesans"
+          },
+          {
+            "code": "I11.1",
+            "display": "Problemer med hukommelse"
+          },
+          {
+            "code": "I9.7",
+            "display": "Problemer med hørelse"
+          },
+          {
+            "code": "I11.2",
+            "display": "Problemer med indsigt i behandlingsformål"
+          },
+          {
+            "code": "I4.1",
+            "display": "Problemer med kirurgisk sår"
+          },
+          {
+            "code": "I5.1",
+            "display": "Problemer med kommunikation"
+          },
+          {
+            "code": "I9.4",
+            "display": "Problemer med lugtesans"
+          },
+          {
+            "code": "I12.4",
+            "display": "Problemer med mave og tarm"
+          },
+          {
+            "code": "I6.3",
+            "display": "Problemer med misbrug"
+          },
+          {
+            "code": "I2.1",
+            "display": "Problemer med mobilitet og bevægelse"
+          },
+          {
+            "code": "I3.4",
+            "display": "Problemer med overvægt"
+          },
+          {
+            "code": "I1.1",
+            "display": "Problemer med personlig pleje"
+          },
+          {
+            "code": "I8.1",
+            "display": "Problemer med seksualitet"
+          },
+          {
+            "code": "I9.8",
+            "display": "Problemer med smagssans"
+          },
+          {
+            "code": "I6.1",
+            "display": "Problemer med socialt samvær"
+          },
+          {
+            "code": "I11.3",
+            "display": "Problemer med sygdomsindsigt"
+          },
+          {
+            "code": "I9.6",
+            "display": "Problemer med synssans"
+          },
+          {
+            "code": "I4.8",
+            "display": "Problemer med traumesår"
+          },
+          {
+            "code": "I4.4",
+            "display": "Problemer med tryksår"
+          },
+          {
+            "code": "I3.5",
+            "display": "Problemer med undervægt"
+          },
+          {
+            "code": "I12.3",
+            "display": "Problemer med urininkontinens"
+          },
+          {
+            "code": "I12.2",
+            "display": "Problemer med vandladning"
+          },
+          {
+            "code": "I4.6",
+            "display": "Problemer med venøst sår"
+          },
+          {
+            "code": "I3.1",
+            "display": "Problemer med væskeindtag"
+          },
+          {
+            "code": "I7.1",
+            "display": "Respirationsproblemer"
+          },
+          {
+            "code": "I10.2",
+            "display": "Søvnproblemer"
+          },
+          {
+            "code": "I3.3",
+            "display": "Uhensigtsmæssig vægtændring"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ICPC2ValueSet",
+  "id": "ICPC2ValueSet",
+  "title": "ICPC-2-DK codes",
+  "description": "the Danish edition of ICPC2 codes as defined by KiAP",
+  "version": "0.1.0",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/ICPC2ValueSet",
+  "compose": {
+    "include": [
+      {
+        "system": "https://kiap.dk/kiap/koder/icpckoder"
+      }
+    ]
+  }
+}

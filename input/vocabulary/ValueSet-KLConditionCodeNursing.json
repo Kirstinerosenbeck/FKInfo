@@ -1,0 +1,10 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLConditionCodeNursing",
+  "id": "KLConditionCodeNursing",
+  "title": "Nursing Condition codes",
+  "description": "Danish municipality valid nursing condition codes",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/klfki/ValueSet/KLConditionCodeNursing"
+}

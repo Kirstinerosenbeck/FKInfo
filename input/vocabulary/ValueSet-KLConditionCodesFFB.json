@@ -1,0 +1,275 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLConditionCodesFFB",
+  "id": "KLConditionCodesFFB",
+  "title": "FFB Condition codes",
+  "description": "Danish municipality FFB condition codes",
+  "version": "0.1.0",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesFFB",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.22",
+        "concept": [
+          {
+            "code": "a80e8f96-18ba-4ee4-9496-d3ce882c2f85",
+            "display": "Anvende kommunikationsudstyr- og teknikker"
+          },
+          {
+            "code": "4934e45a-0f93-4c23-a767-2b681378700b",
+            "display": "Bevidsthedstilstand"
+          },
+          {
+            "code": "3b4bcb40-f761-46a5-bc5f-b30ac37c88ed",
+            "display": "Bevægelse"
+          },
+          {
+            "code": "83342ff3-5f2e-4914-b045-e98357685866",
+            "display": "Boligområde"
+          },
+          {
+            "code": "35c56275-0093-4901-9fd8-d06fdb5cb8f3",
+            "display": "Boligsituation"
+          },
+          {
+            "code": "320c9aa6-630e-4695-bba2-29ea808fad24",
+            "display": "Bære, flytte og håndtere genstande"
+          },
+          {
+            "code": "dcc6bb77-45af-4625-9c4d-7d7878307220",
+            "display": "Deltage i sociale fællesskaber og fritidsaktiviteter"
+          },
+          {
+            "code": "14615a09-bd94-4602-b43a-f6d3d3f9801d",
+            "display": "Drikke"
+          },
+          {
+            "code": "3a748135-98a8-416a-808d-bff88a8e40ee",
+            "display": "Dyrke interesse"
+          },
+          {
+            "code": "e6f82424-da5a-41d1-bd1a-5796aa79d5f2",
+            "display": "Døgnrytme"
+          },
+          {
+            "code": "7a8f247b-baf8-4552-95bb-acf8ef004b74",
+            "display": "Familiesituation"
+          },
+          {
+            "code": "9bbbffef-c404-4ea3-a927-cd22d8027e6d",
+            "display": "Forstå meddelelser"
+          },
+          {
+            "code": "2ba29098-a527-43d5-b858-4c5353669f42",
+            "display": "Fremstille meddelelser"
+          },
+          {
+            "code": "eff3385d-01fa-4c9c-9850-52e179243f21",
+            "display": "Færdes med transportmidler"
+          },
+          {
+            "code": "dccaa419-0bcd-4056-a11a-2e385e23edc6",
+            "display": "Følelser og adfærd"
+          },
+          {
+            "code": "8f32c948-41c4-49d7-8913-cdeede2e7fe1",
+            "display": "Gøre rent"
+          },
+          {
+            "code": "4977ce08-df4d-4c09-8e03-c2a563862e68",
+            "display": "Gå og bevæge sig"
+          },
+          {
+            "code": "94fb3ea0-92cf-43b1-929b-c95e6fb739a1",
+            "display": "Gå på toilettet"
+          },
+          {
+            "code": "61452fe5-cea2-4d92-b2f1-406e9a5d31cb",
+            "display": "Hukommelse"
+          },
+          {
+            "code": "eb3599bc-c0bb-4281-8a1c-bf6eab8ffde3",
+            "display": "Hørelse"
+          },
+          {
+            "code": "8bef71de-55b5-47fe-b438-18ac769106b3",
+            "display": "Håndtere post"
+          },
+          {
+            "code": "8028b034-cad2-42df-b51c-aaba9c0bba61",
+            "display": "Igangsætning og motivation"
+          },
+          {
+            "code": "3f9da5ac-9686-4eeb-b517-b46e17fcb1d7",
+            "display": "Indgå i samspil og kontakt"
+          },
+          {
+            "code": "6279a3dc-7085-4157-809c-f96922242b1b",
+            "display": "Indsigt i egen situation"
+          },
+          {
+            "code": "ef4271c4-f942-4194-a2b0-e9a7045eab22",
+            "display": "Intellektuelle funktioner"
+          },
+          {
+            "code": "52efa2e9-e0dc-41eb-8c01-9865e2fdebae",
+            "display": "Interesser"
+          },
+          {
+            "code": "347aa085-4fe2-411f-ac56-5693d164adc3",
+            "display": "Klæde sig af og på"
+          },
+          {
+            "code": "c67aed23-d4f3-4ae6-8886-156c99048e5b",
+            "display": "Kost"
+          },
+          {
+            "code": "83cf43f1-6d71-477c-8583-2e28755b41d3",
+            "display": "Kriminalitet"
+          },
+          {
+            "code": "01770afa-cd17-41fe-a966-b8895e4d55d8",
+            "display": "Købe ind"
+          },
+          {
+            "code": "b947f321-7cdb-4b33-9653-f3ff800572b0",
+            "display": "Lave mad"
+          },
+          {
+            "code": "0b650369-258a-4d01-a811-42b306c2f89d",
+            "display": "Motion"
+          },
+          {
+            "code": "17c35058-eb88-4a7a-8727-74cd12be42c7",
+            "display": "Opmærksomhed og koncentrationsevne"
+          },
+          {
+            "code": "9c2173e6-6465-44d3-af16-7c44059193b2",
+            "display": "Organisering og planlægning"
+          },
+          {
+            "code": "f7c0ef6c-18ba-4d38-9df5-4c891f154a08",
+            "display": "Orienteringsevne"
+          },
+          {
+            "code": "4a51d7a7-61e7-48fa-a1d5-9d26337c6c38",
+            "display": "Passe ejendele"
+          },
+          {
+            "code": "df194a84-6e4b-4f14-a194-d8d9d9a1fcad",
+            "display": "Personer i netværk"
+          },
+          {
+            "code": "b3939f0b-43d9-4e8c-bb2e-50ff8bb7ed03",
+            "display": "Pleje sin krop"
+          },
+          {
+            "code": "b93216fa-3843-4a7e-85bc-e3ef35a1967f",
+            "display": "Problemløsning"
+          },
+          {
+            "code": "e993d8c3-b7d7-4d72-9be2-937e5ba38b5a",
+            "display": "Prostitution"
+          },
+          {
+            "code": "52e0b8dd-f5fa-4e1a-b66e-f5e4a41bd313",
+            "display": "Psykosociale funktioner"
+          },
+          {
+            "code": "c8f4475a-8de3-4920-ad0c-eea78c49a68d",
+            "display": "Rusmidler"
+          },
+          {
+            "code": "986898d0-e2e5-4afa-9cb3-ee7aecaa0143",
+            "display": "Samtale"
+          },
+          {
+            "code": "b37419b3-c5f2-43e9-9e9d-4037b06b3fa5",
+            "display": "Smerte og sansefunktioner"
+          },
+          {
+            "code": "464a2ab6-a7df-4b3a-b74d-7873f4cfe668",
+            "display": "Spise"
+          },
+          {
+            "code": "1a6585e7-25a6-4518-9384-8f6290f879cc",
+            "display": "Stemme og tale"
+          },
+          {
+            "code": "9959e779-e8ee-47e8-989b-bbff4aae2883",
+            "display": "Syn"
+          },
+          {
+            "code": "83376fdb-f55d-4dd9-944e-b49631a9836f",
+            "display": "Søvn"
+          },
+          {
+            "code": "f5b8e809-7689-4952-838c-a069c99408b3",
+            "display": "Tobak"
+          },
+          {
+            "code": "d493a97d-6036-423d-87ff-c2a086e9d664",
+            "display": "Traumatiske oplevelser"
+          },
+          {
+            "code": "f695cec7-2b39-4c7e-8731-da8558a4fb3f",
+            "display": "Uddannelse og job"
+          },
+          {
+            "code": "58ef570c-1c1e-47be-8bfd-26ed99825762",
+            "display": "Udvise hjælp og omsorg for andre"
+          },
+          {
+            "code": "685e8517-2f5c-4ef8-a7c4-fa2d008fdd9d",
+            "display": "Varetage beskæftigelse"
+          },
+          {
+            "code": "fd4b8dd3-5c4b-4257-8c13-ea045617d2f6",
+            "display": "Varetage bolig"
+          },
+          {
+            "code": "4a58417e-9a75-43f2-9763-66505050159f",
+            "display": "Varetage egen sundhed"
+          },
+          {
+            "code": "4c082610-b122-4019-96f2-1061e287445e",
+            "display": "Varetage relationer til netværk"
+          },
+          {
+            "code": "28fbf17e-bca3-45e1-be35-553e3d91f1b7",
+            "display": "Varetage sin seksualitet"
+          },
+          {
+            "code": "8888edfa-642b-4329-9fe3-a9b180e6d3f4",
+            "display": "Varetage uddannelse"
+          },
+          {
+            "code": "70443014-3faf-402d-abcf-396bfad32eb9",
+            "display": "Varetage økonomi"
+          },
+          {
+            "code": "885400cc-dd71-479e-8993-3fc48fdd6710",
+            "display": "Vaske sig"
+          },
+          {
+            "code": "bd67597b-e80f-427f-8cf9-79d01eff91fc",
+            "display": "Vaske tøj"
+          },
+          {
+            "code": "3591c972-5b15-4bbd-86c7-91622cda56e8",
+            "display": "Virkelighedsopfattelse"
+          },
+          {
+            "code": "759ddc8e-57c0-4aa6-8d32-14d8eb51c5dd",
+            "display": "Ændre og opretholde kropsstilling"
+          },
+          {
+            "code": "08aa68ce-acd6-4e03-b6b5-091811324345",
+            "display": "Økonomisk situation"
+          }
+        ]
+      }
+    ]
+  }
+}

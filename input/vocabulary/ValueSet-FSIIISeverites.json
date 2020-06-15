@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FSIIISeverites",
+  "id": "FSIIISeverites",
+  "title": "FSIII Severities",
+  "description": "Severities related to conditions in FSIII home care (funktionsniveau)",
+  "version": "0.1.0",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIISeverites",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "B1",
+            "display": "Ingen/ubetydelige begrænsninger"
+          },
+          {
+            "code": "B2",
+            "display": "Lette begrænsninger"
+          },
+          {
+            "code": "B3",
+            "display": "Moderate begrænsninger"
+          },
+          {
+            "code": "B4",
+            "display": "Svære begrænsninger"
+          },
+          {
+            "code": "B5",
+            "display": "Totale brgrænsninger"
+          },
+          {
+            "code": "B6",
+            "display": "Ikke relevant"
+          }
+        ]
+      }
+    ]
+  }
+}

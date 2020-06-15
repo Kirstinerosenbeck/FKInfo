@@ -1,0 +1,338 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "KLCommonCareSocialCondition",
+  "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition",
+  "version": "0.1.0",
+  "name": "KLCommonCareSocialCondition",
+  "title": "CommonCareSocialCondition",
+  "status": "active",
+  "description": "Detailed information about conditions in Danish municiplities health, social and elderly care.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition"
+      },
+      {
+        "id": "Condition.extension",
+        "path": "Condition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Condition.extension:eventHistory",
+        "path": "Condition.extension",
+        "sliceName": "eventHistory",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/event-eventHistory"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.extension:dueTo",
+        "path": "Condition.extension",
+        "sliceName": "dueTo",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/condition-dueTo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.extension:dueTo.value[x]",
+        "path": "Condition.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Condition",
+              "http://hl7.org/fhir/StructureDefinition/Procedure",
+              "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+              "http://hl7.org/fhir/StructureDefinition/Immunization",
+              "http://hl7.org/fhir/StructureDefinition/MedicationStatement"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.extension:dueTo.valueReference",
+        "path": "Condition.extension.valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition",
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCrossSectorCondition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.extension:followUpEncounter",
+        "path": "Condition.extension",
+        "sliceName": "followUpEncounter",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/FollowUpEncounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "min": 1
+      },
+      {
+        "id": "Condition.severity",
+        "path": "Condition.severity",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLSeverities"
+        }
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "min": 1
+      },
+      {
+        "id": "Condition.code.coding",
+        "path": "Condition.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the code.system value which allow both a FSIII/FFB condition code and a SNOMED CT code to represent a condition"
+        }
+      },
+      {
+        "id": "Condition.code.coding:FSIIIConditionCode",
+        "path": "Condition.code.coding",
+        "sliceName": "FSIIIConditionCode",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIConditionCodes"
+        }
+      },
+      {
+        "id": "Condition.code.coding:FSIIIConditionCode.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "patternUri": "urn:oid:1.2.208.176.2.21"
+      },
+      {
+        "id": "Condition.code.coding:FFBConditionCode",
+        "path": "Condition.code.coding",
+        "sliceName": "FFBConditionCode",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesFFB"
+        }
+      },
+      {
+        "id": "Condition.code.coding:FFBConditionCode.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "patternUri": "urn:oid:1.2.208.176.2.22"
+      },
+      {
+        "id": "Condition.code.coding:SCTConditionCode",
+        "path": "Condition.code.coding",
+        "sliceName": "SCTConditionCode",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/condition-code"
+        }
+      },
+      {
+        "id": "Condition.code.coding:SCTConditionCode.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "patternUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.abatement[x]",
+        "path": "Condition.abatement[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Condition.recordedDate",
+        "path": "Condition.recordedDate",
+        "min": 1
+      },
+      {
+        "id": "Condition.asserter",
+        "path": "Condition.asserter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonPractitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.evidence",
+        "path": "Condition.evidence"
+      },
+      {
+        "id": "Condition.evidence.detail",
+        "path": "Condition.evidence.detail",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialInformation",
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialFollowUpResult"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.note",
+        "path": "Condition.note"
+      },
+      {
+        "id": "Condition.note.author[x]",
+        "path": "Condition.note.author[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.note.authorReference",
+        "path": "Condition.note.authorReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonPractitioner"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
