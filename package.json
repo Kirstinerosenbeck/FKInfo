@@ -1,0 +1,25 @@
+{
+  "name": "caresocial",
+  "version": "0.1.0",
+  "canonical": "http://kl.dk/fhir/common/caresocial",
+  "url": "http://kl.dk/fhir/common/caresocial",
+  "title": "FKI Implementation Guide",
+  "description": "Danish municipalities implementation guide for common informationmodel",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.us.core": "3.1.0"
+  },
+  "keywords": [
+    "Kommunernes landsforening",
+    "Fælleskommunal informationsmodel"
+  ],
+  "language": "en",
+  "author": "Kommunernes Landsforening",
+  "maintainers": [
+    {
+      "name": "Kommunernes landsforening",
+      "email": "kl@kl.dk"
+    }
+  ],
+  "license": "CC0-1.0"
+}
