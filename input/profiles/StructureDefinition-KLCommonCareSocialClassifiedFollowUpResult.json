@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "KLCommonCareSocialFollowUpResult",
-  "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialFollowUpResult",
-  "version": "0.1.1",
-  "name": "KLCommonCareSocialFollowUpResult",
-  "title": "CommonCareSocialFollowUpResult",
+  "id": "KLCommonCareSocialClassifiedFollowUpResult",
+  "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialClassifiedFollowUpResult",
+  "version": "0.1.0",
+  "name": "KLCommonCareSocialClassifiedFollowUpResult",
+  "title": "CommonCareSocialClassifiedFollowUp",
   "status": "active",
-  "description": "Follow-up results used in Danish municipalities",
+  "description": "Classified follow-up results used in Danish municipalities",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

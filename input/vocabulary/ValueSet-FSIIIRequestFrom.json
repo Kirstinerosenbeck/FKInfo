@@ -1,0 +1,79 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FSIIIRequestFrom",
+  "id": "FSIIIRequestFrom",
+  "title": "FSIIIRequestFrom",
+  "description": "Type of service requesters as defined by FSIII",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIRequestFrom",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "A15",
+            "display": "Andre"
+          },
+          {
+            "code": "A3",
+            "display": "Sagsbehandler, anden forvaltning"
+          },
+          {
+            "code": "A1",
+            "display": "Borger"
+          },
+          {
+            "code": "A13",
+            "display": "Sygehus - psykiatrisk"
+          },
+          {
+            "code": "A12",
+            "display": "Sygehus - medicinsk"
+          },
+          {
+            "code": "A10",
+            "display": "Speciallæge"
+          },
+          {
+            "code": "A9",
+            "display": "Egen læge/vagtlæge"
+          },
+          {
+            "code": "A8",
+            "display": "Anden kommune"
+          },
+          {
+            "code": "A4",
+            "display": "Hjemmeplejen"
+          },
+          {
+            "code": "A11",
+            "display": "Sygehus - kirurgisk"
+          },
+          {
+            "code": "A6",
+            "display": "Træning"
+          },
+          {
+            "code": "A5",
+            "display": "Hjemmesygeplejen"
+          },
+          {
+            "code": "A7",
+            "display": "Sundhedsfremme og forebyggelse"
+          },
+          {
+            "code": "A14",
+            "display": "Sygehus - akutmodtagelse"
+          },
+          {
+            "code": "A2",
+            "display": "Pårørende"
+          }
+        ]
+      }
+    ]
+  }
+}

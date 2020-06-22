@@ -1,0 +1,59 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FSIIITrainingInterventions",
+  "id": "FSIIITrainingInterventions",
+  "title": "Training interventions",
+  "description": "Training interventions as defined by FSIII",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIITrainingInterventions",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "58293f63-00d7-4730-8dbc-c784d40f9e23",
+            "display": "Funktionstræning"
+          },
+          {
+            "code": "2abe20c7-c0b4-41c1-b397-52acf36499ef",
+            "display": "Fysisk træning"
+          },
+          {
+            "code": "7f825e3e-1a5c-4249-bf41-9f7171fb6b8a",
+            "display": "ADL-træning"
+          },
+          {
+            "code": "571fa7da-a155-4a84-b780-ef19170d48a0",
+            "display": "Opfølgning"
+          },
+          {
+            "code": "ba3e17bd-d4aa-4848-acad-25adc8285c19",
+            "display": "Koordinering og kommunikation"
+          },
+          {
+            "code": "8d714c98-f23a-4722-8a2f-85c162fe4840",
+            "display": "Psykomotorisk træning"
+          },
+          {
+            "code": "66fb32c9-ecc3-484b-be49-f20094be237c",
+            "display": "Vejledning og undervisning"
+          },
+          {
+            "code": "1130ad70-6553-490d-87f8-5e8941687a0c",
+            "display": "Terapeutfaglig udredning"
+          },
+          {
+            "code": "2c661159-1bb3-4af2-bdf1-f3a9927a99e2",
+            "display": "Kognitiv træning"
+          },
+          {
+            "code": "f8ac963c-6ec5-4ec5-bd90-a22fea4e2d16",
+            "display": "Manuel behandling"
+          }
+        ]
+      }
+    ]
+  }
+}

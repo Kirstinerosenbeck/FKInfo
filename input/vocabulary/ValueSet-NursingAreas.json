@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NursingAreas",
+  "id": "NursingAreas",
+  "title": "Nursing areas",
+  "description": "Observation codes for the 12 nursing areas as defined by FSIII",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/NursingAreas",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "I9",
+            "display": "Smerter og sanseindtryk"
+          },
+          {
+            "code": "I2",
+            "display": "Bevægeapparat"
+          },
+          {
+            "code": "I11",
+            "display": "Viden og udvikling"
+          },
+          {
+            "code": "I1",
+            "display": "Funktionsniveau"
+          },
+          {
+            "code": "I5",
+            "display": "Kommunikation"
+          },
+          {
+            "code": "I7",
+            "display": "Respiration og cirkulation"
+          },
+          {
+            "code": "I4",
+            "display": "Hud og slimhinder"
+          },
+          {
+            "code": "I8",
+            "display": "Seksualitet"
+          },
+          {
+            "code": "I3",
+            "display": "Ernæring"
+          },
+          {
+            "code": "I12",
+            "display": "Udskillelse af affaldsstoffer"
+          },
+          {
+            "code": "I10",
+            "display": "Søvn og hvile"
+          },
+          {
+            "code": "I6",
+            "display": "Psykosociale forhold"
+          }
+        ]
+      }
+    ]
+  }
+}

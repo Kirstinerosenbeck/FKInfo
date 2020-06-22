@@ -5,7 +5,7 @@
   "id": "KLConditionCodesHomeCare",
   "title": "Home Care Condition codes",
   "description": "Danish municipality home care condition codes (funktionsevnetilstande)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesHomeCare",
   "compose": {
     "include": [

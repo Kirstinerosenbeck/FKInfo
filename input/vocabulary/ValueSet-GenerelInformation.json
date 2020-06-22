@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "GenerelInformation",
+  "id": "GenerelInformation",
+  "title": "FSIII general information",
+  "description": "Generel information codes (observations) as defined by FSIII",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/GenerelInformation",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "F12",
+            "display": "Boligens indretning"
+          },
+          {
+            "code": "F2",
+            "display": "Motivation"
+          },
+          {
+            "code": "F6",
+            "display": "Uddannelse og job"
+          },
+          {
+            "code": "F8",
+            "display": "Netværk"
+          },
+          {
+            "code": "F7",
+            "display": "Livshistorie"
+          },
+          {
+            "code": "F5",
+            "display": "Vaner"
+          },
+          {
+            "code": "F4",
+            "display": "Roller"
+          },
+          {
+            "code": "F3",
+            "display": "Ressourcer"
+          },
+          {
+            "code": "F9",
+            "display": "Helbredsoplysninger"
+          },
+          {
+            "code": "F1",
+            "display": "Mestring"
+          },
+          {
+            "code": "F10",
+            "display": "Hjælpemidler"
+          }
+        ]
+      }
+    ]
+  }
+}

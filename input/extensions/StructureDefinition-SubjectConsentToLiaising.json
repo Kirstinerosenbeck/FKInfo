@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "FollowUpEncounter",
-  "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/FollowUpEncounter",
+  "id": "SubjectConsentToLiaising",
+  "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/SubjectConsentToLiaising",
   "version": "0.1.1",
-  "name": "FollowUpEncounter",
-  "title": "FollowupEncounter",
+  "name": "SubjectConsentToLiaising",
+  "title": "SubjectConsentToLiaising",
   "status": "active",
-  "description": "Extension for pointing to previous and planned follow up encounters for a condition",
+  "description": "Extension for describing whether the citizen knows about the request/referal",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -40,7 +40,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://kl.dk/fhir/common/caresocial/StructureDefinition/FollowUpEncounter"
+        "fixedUri": "http://kl.dk/fhir/common/caresocial/StructureDefinition/SubjectConsentToLiaising"
       },
       {
         "id": "Extension.value[x]",
@@ -48,12 +48,13 @@
         "min": 1,
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEncounter"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonConsentToLiasing"
+        }
       }
     ]
   }

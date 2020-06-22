@@ -6,7 +6,7 @@
   "id": "KLCommonCareSocialCodes",
   "title": "Codes associated with KLCommonCareSocial",
   "description": "Administrative/technical codes, not defined elsewhere, associated with KLCommonCareSocial",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
   "concept": [
     {
@@ -43,6 +43,51 @@
       "code": "bb6fc544-7f4f-4b50-8868-1431e0df2381",
       "display": "observation",
       "definition": "observation foretaget ved kontakt"
+    },
+    {
+      "code": "69dbfad7-859a-4596-8737-8054f6b4948f",
+      "display": "FFB_Fysisk helbred",
+      "definition": "Undertemaet Fysisk helbred i FFB"
+    },
+    {
+      "code": "081ab1be-7dc1-41fa-803c-12a146eb0b74",
+      "display": "FFB_Sundhedsfaglig behandling og træning",
+      "definition": "Undertemaet Sundhedsfaglig behandling og træning i FFB"
+    },
+    {
+      "code": "490ab7be-ddb1-4a54-baf1-009fe6e8a83b",
+      "display": "Sygepleje",
+      "definition": "Der anmodes om sygepleje"
+    },
+    {
+      "code": "ad865929-7363-4b2d-a271-01993181fbaf",
+      "display": "Hjemmepleje",
+      "definition": "Der anmodes om hjemmepleje"
+    },
+    {
+      "code": "7fc66c15-0cb3-4c89-9e18-f3a01e6a6592",
+      "display": "Træning",
+      "definition": "Der anmodes om træning"
+    },
+    {
+      "code": "a71921ea-fe83-441d-933b-cc21d0b3c8c3",
+      "display": "Sundhedsfremme og forebyggelse",
+      "definition": "Der anmodes om sundhedsfremme og forebyggelse"
+    },
+    {
+      "code": "4a297733-4d66-4726-a933-590d55cf91e0",
+      "display": "Social indsats",
+      "definition": "Der anmodes om en social indsats"
+    },
+    {
+      "code": "e67035da-9179-466b-99ad-ea86835d38c9",
+      "display": "indforstået",
+      "definition": "Borger indforstået med henvendelse"
+    },
+    {
+      "code": "54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb",
+      "display": "ikke indforstået",
+      "definition": "Borger ikke indforstået med henvendelse"
     }
   ]
 }

@@ -9,23 +9,26 @@ files.
 NOTE: This file does not currently list the FHIR resources and examples generated from .fsh files. It only
 lists those files generated from project configs or the contents in the ig-data folder.
 
-| SUSHI-GENERATED FILE                                                        | ACTION    | INPUT FILE(S)                                                                          |
-| --------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------- |
-| _gencontinuous.bat                                                          | generated |                                                                                        |
-| _gencontinuous.sh                                                           | generated |                                                                                        |
-| _genonce.bat                                                                | generated |                                                                                        |
-| _genonce.sh                                                                 | generated |                                                                                        |
-| _updatePublisher.bat                                                        | generated |                                                                                        |
-| _updatePublisher.sh                                                         | generated |                                                                                        |
-| ig.ini                                                                      | generated | ..\ig-data\ig.ini, ..\package.json                                                     |
-| input\ImplementationGuide-caresocial.json                                   | generated | ..\ig-data\ig.ini, ..\package.json, {all input resources and pages}                    |
-| input\ignoreWarnings.txt                                                    | generated |                                                                                        |
-| package-list.json                                                           | generated | ..\package.json                                                                        |
-| input\images\Shorty.png                                                     | copied    | ..\ig-data\input\images\Shorty.png                                                     |
-| input\images\im.docx                                                        | copied    | ..\ig-data\input\images\im.docx                                                        |
-| input\includes\menu.xml                                                     | copied    | ..\ig-data\input\includes\menu.xml                                                     |
-| input\pagecontent\StructureDefinition-KLCommonCareSocialCondition-intro.md  | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialCondition-intro.md  |
-| input\pagecontent\StructureDefinition-KLCommonCareSocialEncounter-intro.md  | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialEncounter-intro.md  |
-| input\pagecontent\StructureDefinition-KLCommonCrossSectorCondition-intro.md | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCrossSectorCondition-intro.md |
-| input\pagecontent\index.md                                                  | copied    | ..\ig-data\input\pagecontent\index.md                                                  |
-| package.json                                                                | copied    | ..\package.json                                                                        |
+| SUSHI-GENERATED FILE                                                                 | ACTION    | INPUT FILE(S)                                                                                   |
+| ------------------------------------------------------------------------------------ | --------- | ----------------------------------------------------------------------------------------------- |
+| _gencontinuous.bat                                                                   | generated |                                                                                                 |
+| _gencontinuous.sh                                                                    | generated |                                                                                                 |
+| _genonce.bat                                                                         | generated |                                                                                                 |
+| _genonce.sh                                                                          | generated |                                                                                                 |
+| _updatePublisher.bat                                                                 | generated |                                                                                                 |
+| _updatePublisher.sh                                                                  | generated |                                                                                                 |
+| ig.ini                                                                               | generated | ..\ig-data\ig.ini, ..\package.json                                                              |
+| input\ImplementationGuide-caresocial.json                                            | generated | ..\ig-data\ig.ini, ..\package.json, {all input resources and pages}                             |
+| input\ignoreWarnings.txt                                                             | generated |                                                                                                 |
+| package-list.json                                                                    | generated | ..\package.json                                                                                 |
+| input\images\Shorty.png                                                              | copied    | ..\ig-data\input\images\Shorty.png                                                              |
+| input\images\im.docx                                                                 | copied    | ..\ig-data\input\images\im.docx                                                                 |
+| input\includes\menu.xml                                                              | copied    | ..\ig-data\input\includes\menu.xml                                                              |
+| input\pagecontent\StructureDefinition-KLCommonCareSocialCondition-intro.md           | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialCondition-intro.md           |
+| input\pagecontent\StructureDefinition-KLCommonCareSocialEncounter-intro.md           | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialEncounter-intro.md           |
+| input\pagecontent\StructureDefinition-KLCommonCareSocialInformation-intro.md         | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialInformation-intro.md         |
+| input\pagecontent\StructureDefinition-KLCommonCareSocialInformationSeverity-intro.md | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialInformationSeverity-intro.md |
+| input\pagecontent\StructureDefinition-KLCommonCareSocialServiceRequest-intro.md      | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialServiceRequest-intro.md      |
+| input\pagecontent\StructureDefinition-KLCommonCrossSectorCondition-intro.md          | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCrossSectorCondition-intro.md          |
+| input\pagecontent\index.md                                                           | copied    | ..\ig-data\input\pagecontent\index.md                                                           |
+| package.json                                                                         | copied    | ..\package.json                                                                                 |

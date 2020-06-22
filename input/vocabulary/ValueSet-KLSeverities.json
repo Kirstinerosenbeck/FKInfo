@@ -5,7 +5,7 @@
   "id": "KLSeverities",
   "title": "KL Severities",
   "description": "Severities related to conditions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLSeverities",
   "compose": {
     "include": [

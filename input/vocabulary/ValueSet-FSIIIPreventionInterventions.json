@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FSIIIPreventionInterventions",
+  "id": "FSIIIPreventionInterventions",
+  "title": "Prevention interventions",
+  "description": "Prevention and health promotion interventions as defined by FSIII",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIPreventionInterventions",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "f30cab6d-2a42-4358-99d7-811127fb6e05",
+            "display": "Mental håndtering"
+          },
+          {
+            "code": "e71b7d85-5c78-49c2-8624-8499d162317b",
+            "display": "Sygdomshåndtering"
+          },
+          {
+            "code": "6eddbaf7-2a73-49d4-91e7-6138d419f58c",
+            "display": "Afklarende samtale"
+          },
+          {
+            "code": "ee5606ac-1bed-487e-aa3c-72dcc30ec037",
+            "display": "Behovssamtale"
+          },
+          {
+            "code": "924e9828-84cf-4689-9551-0ebb6dc71b98",
+            "display": "Samtale om alkohol"
+          },
+          {
+            "code": "01a500f6-c221-4fd0-b518-cd361218b60d",
+            "display": "Madlavning i praksis"
+          },
+          {
+            "code": "c203c6b5-3be0-40a8-8204-e93751deabf5",
+            "display": "Tobaksafvænning"
+          },
+          {
+            "code": "cf7a55c2-7061-47ed-b7c5-e29620fe93bf",
+            "display": "Diætbehandling"
+          },
+          {
+            "code": "c9a99304-1788-43b7-b7be-e187b092ae9c",
+            "display": "Kostvejledning"
+          },
+          {
+            "code": "ab87c0b5-40be-4e0a-b749-d9f833bfed2d",
+            "display": "Fysisk træning"
+          },
+          {
+            "code": "61692d91-69b8-4830-9453-3d58454e49d3",
+            "display": "Færdighedstræning"
+          },
+          {
+            "code": "abe847e0-1ce0-44dc-a675-ce05b66f47e6",
+            "display": "Vejledning og introduktion til fysiske aktiviteter"
+          },
+          {
+            "code": "03a3ebdb-9e2d-4be1-b32b-42f0bd2a3362",
+            "display": "Afsluttende samtale"
+          },
+          {
+            "code": "d1e016b5-150a-4ac4-97ba-d3e19e28471e",
+            "display": "Opfølgning"
+          }
+        ]
+      }
+    ]
+  }
+}

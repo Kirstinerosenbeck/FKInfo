@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLCommonConsentToLiasing",
+  "id": "KLCommonConsentToLiasing",
+  "title": "KLCommonConsentToLiasing",
+  "description": "Codes for citizens knowledge of referal/request as defined by FFB",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonConsentToLiasing",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "concept": [
+          {
+            "code": "e67035da-9179-466b-99ad-ea86835d38c9",
+            "display": "indforstået"
+          },
+          {
+            "code": "54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb",
+            "display": "ikke indforstået"
+          }
+        ]
+      }
+    ]
+  }
+}

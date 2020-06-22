@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HomeCareAreas",
+  "id": "HomeCareAreas",
+  "title": "Home care areas",
+  "description": "Observation codes for the five home care areas as defined by FSIII",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/HomeCareAreas",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "J1",
+            "display": "Egenomsorg"
+          },
+          {
+            "code": "J5",
+            "display": "Samfundsliv"
+          },
+          {
+            "code": "J2",
+            "display": "Praktiske opgaver"
+          },
+          {
+            "code": "J3",
+            "display": "Mobilitet"
+          },
+          {
+            "code": "J4",
+            "display": "Mentale funktioner"
+          }
+        ]
+      }
+    ]
+  }
+}

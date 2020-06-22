@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FSIIIFFBCareSocialInterventions",
+  "id": "FSIIIFFBCareSocialInterventions",
+  "title": "FSIII and FFB Internentions",
+  "description": "Interventions as described by FSIII and FFB",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIFFBCareSocialInterventions",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIINursingInterventions"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIHomeCareInterventions"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIITrainingInterventions"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIPreventionInterventions"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/FFBInterventions"
+        ]
+      }
+    ]
+  }
+}

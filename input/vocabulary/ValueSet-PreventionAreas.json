@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PreventionAreas",
+  "id": "PreventionAreas",
+  "title": "Prevention areas",
+  "description": "Prevention areas (observation codes), used for documentation within prevention and health promotion",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/PreventionAreas",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "d03da587-94dc-46e6-ba71-eb1e43ec7df6",
+            "display": "Kroppen"
+          },
+          {
+            "code": "7b3b3587-4ddd-4b93-a81b-455bfc601492",
+            "display": "Hverdagsliv"
+          },
+          {
+            "code": "b349c7ec-86c5-4c52-aaf2-9034d98b0e3b",
+            "display": "Sundhedsadfærd"
+          },
+          {
+            "code": "3547a306-8623-4713-a8ce-db1e82839c50",
+            "display": "Mental sundhed"
+          }
+        ]
+      }
+    ]
+  }
+}

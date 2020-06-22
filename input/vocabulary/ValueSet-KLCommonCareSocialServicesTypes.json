@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLCommonCareSocialServicesTypes",
+  "id": "KLCommonCareSocialServicesTypes",
+  "title": "Service Types",
+  "description": "Types of services that the Danish municipalities provide which is covered by FSIII and FFB",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonCareSocialServicesTypes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "concept": [
+          {
+            "code": "490ab7be-ddb1-4a54-baf1-009fe6e8a83b",
+            "display": "Sygepleje"
+          },
+          {
+            "code": "ad865929-7363-4b2d-a271-01993181fbaf",
+            "display": "Hjemmepleje"
+          },
+          {
+            "code": "7fc66c15-0cb3-4c89-9e18-f3a01e6a6592",
+            "display": "Træning"
+          },
+          {
+            "code": "a71921ea-fe83-441d-933b-cc21d0b3c8c3",
+            "display": "Sundhedsfremme og forebyggelse"
+          },
+          {
+            "code": "4a297733-4d66-4726-a933-590d55cf91e0",
+            "display": "Social indsats"
+          }
+        ]
+      }
+    ]
+  }
+}

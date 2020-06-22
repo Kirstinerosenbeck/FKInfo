@@ -5,7 +5,7 @@
   "id": "ICPC2ValueSet",
   "title": "ICPC-2-DK codes",
   "description": "the Danish edition of ICPC2 codes as defined by KiAP",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/ICPC2ValueSet",
   "compose": {
     "include": [

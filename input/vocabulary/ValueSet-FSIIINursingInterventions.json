@@ -1,0 +1,191 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FSIIINursingInterventions",
+  "id": "FSIIINursingInterventions",
+  "title": "NursingInterventions",
+  "description": "Nursing interventions as described by FSIII",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIINursingInterventions",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "G1.34",
+            "display": "Sondeernæring"
+          },
+          {
+            "code": "G1.20",
+            "display": "Medicinadministration"
+          },
+          {
+            "code": "G1.11",
+            "display": "Drænpleje"
+          },
+          {
+            "code": "G1.31",
+            "display": "Samarbejde med netværk"
+          },
+          {
+            "code": "G1.15",
+            "display": "Iltbehandling"
+          },
+          {
+            "code": "G1.32",
+            "display": "Sekretsugning"
+          },
+          {
+            "code": "G1.7",
+            "display": "Behandling og pleje af hudproblem"
+          },
+          {
+            "code": "G1.38",
+            "display": "Særlig kommunikationsform"
+          },
+          {
+            "code": "G1.22",
+            "display": "Nonfarmakologisk smertelindring"
+          },
+          {
+            "code": "G1.44",
+            "display": "Væske per os"
+          },
+          {
+            "code": "G1.29",
+            "display": "Respirationsbehandling"
+          },
+          {
+            "code": "G1.8",
+            "display": "Behandling og pleje af mave-tarmproblem"
+          },
+          {
+            "code": "G1.47",
+            "display": "Supplerende udredning"
+          },
+          {
+            "code": "G1.37",
+            "display": "Subkutan væskebehandling"
+          },
+          {
+            "code": "G1.16",
+            "display": "Inkontinensbehandling"
+          },
+          {
+            "code": "G1.25",
+            "display": "Pleje ved anvendelse af personlige hjælpemidler"
+          },
+          {
+            "code": "G1.5",
+            "display": "Anlæggelse og pleje af kateter"
+          },
+          {
+            "code": "G1.26",
+            "display": "Psykiatrisk pleje"
+          },
+          {
+            "code": "G1.39",
+            "display": "Sårbehandling"
+          },
+          {
+            "code": "G1.14",
+            "display": "Forflytning og mobilisering"
+          },
+          {
+            "code": "G1.19",
+            "display": "Kompressionsbehandling"
+          },
+          {
+            "code": "G1.30",
+            "display": "Respiratorbehandling"
+          },
+          {
+            "code": "G1.12",
+            "display": "Ernæringsindsats"
+          },
+          {
+            "code": "G1.17",
+            "display": "Intravenøs medicinsk behandling"
+          },
+          {
+            "code": "G1.36",
+            "display": "Støtte til ADL-aktivitet"
+          },
+          {
+            "code": "G1.21",
+            "display": "Medicindispensering"
+          },
+          {
+            "code": "G1.42",
+            "display": "Vejledning"
+          },
+          {
+            "code": "G1.46",
+            "display": "Personlig pleje"
+          },
+          {
+            "code": "G1.35",
+            "display": "Stomipleje"
+          },
+          {
+            "code": "G1.10",
+            "display": "Dialyse"
+          },
+          {
+            "code": "G1.40",
+            "display": "Trakeostomipleje"
+          },
+          {
+            "code": "G1.18",
+            "display": "Intravenøs væskebehandling"
+          },
+          {
+            "code": "G1.28",
+            "display": "Rehabilitering"
+          },
+          {
+            "code": "G1.27",
+            "display": "Psykisk støtte"
+          },
+          {
+            "code": "G1.6",
+            "display": "Behandling med ortopædiske hjælpemidler"
+          },
+          {
+            "code": "G1.9",
+            "display": "Cirkulationsbehandling"
+          },
+          {
+            "code": "G1.41",
+            "display": "Undersøgelser og måling af værdier"
+          },
+          {
+            "code": "G1.24",
+            "display": "Parenteral ernæring"
+          },
+          {
+            "code": "G1.23",
+            "display": "Oplæring"
+          },
+          {
+            "code": "G2.4",
+            "display": "Generel 0-ydelse"
+          },
+          {
+            "code": "G2.3",
+            "display": "Koordinering"
+          },
+          {
+            "code": "G2.1",
+            "display": "Sygeplejefaglig udredning"
+          },
+          {
+            "code": "G2.2",
+            "display": "Opfølgning"
+          }
+        ]
+      }
+    ]
+  }
+}

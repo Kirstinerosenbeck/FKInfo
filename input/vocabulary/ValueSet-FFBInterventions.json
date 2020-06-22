@@ -1,0 +1,123 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FFBInterventions",
+  "id": "FFBInterventions",
+  "title": "FFB interventions",
+  "description": "social interventions (ydelser) as defined by FFB",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FFBInterventions",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.22",
+        "concept": [
+          {
+            "code": "35b593cf-724f-4058-9f31-fe1b3e8df124",
+            "display": "Pædagogisk udredning"
+          },
+          {
+            "code": "f25674bf-3162-45c3-bde4-6d542bf9629b",
+            "display": "Kompetenceudviklende aktivitet"
+          },
+          {
+            "code": "299af83f-586c-4c17-8af6-c8c47a847d6d",
+            "display": "Sansestimulerende aktivitet"
+          },
+          {
+            "code": "be5d5058-ef06-42a9-b894-51e44513e717",
+            "display": "Kreativ aktivitet"
+          },
+          {
+            "code": "66e23d66-1c5f-4070-bed1-8827cc863dcd",
+            "display": "Fysisk aktivitet"
+          },
+          {
+            "code": "7e419926-bb04-4829-99c9-95ea20403c2c",
+            "display": "Social aktivitet"
+          },
+          {
+            "code": "2c1944be-fe87-4c42-b08e-9cc075c9ef18",
+            "display": "Oplevelsesaktivitet"
+          },
+          {
+            "code": "5af56051-8413-4115-aaa2-83a0767e1137",
+            "display": "Længerevarende ophold"
+          },
+          {
+            "code": "80aa8ea7-4ad8-405f-876a-4c0f89fde06a",
+            "display": "Midlertidigt ophold"
+          },
+          {
+            "code": "55b77d7c-afce-4269-9232-7731ab1ef4fc",
+            "display": "Service"
+          },
+          {
+            "code": "fb3d8722-90e0-4a80-ba65-490617ffeb0f",
+            "display": "Produktion og værksted"
+          },
+          {
+            "code": "c429b7a9-5085-472b-b118-a21ca90f769f",
+            "display": "Praktikforløb"
+          },
+          {
+            "code": "c56634ca-6847-4c50-b5c1-c528c1ffc1d8",
+            "display": "Støtte til etablering i bolig"
+          },
+          {
+            "code": "638f44df-6bf2-47f8-9935-b8fdc83e5bf5",
+            "display": "Støtte til daglige opgaver i hjemmet"
+          },
+          {
+            "code": "d473dea2-4f6d-4f36-a8f0-260f0213f50a",
+            "display": "Støtte til administration"
+          },
+          {
+            "code": "1a2daf63-0510-4bf3-8578-662d4300c965",
+            "display": "Støtte til uddannelse"
+          },
+          {
+            "code": "cb1169ee-8969-46d3-813d-f0dd555bd838",
+            "display": "Støtte til beskæftigelse"
+          },
+          {
+            "code": "e2631dec-fd8b-420e-94db-53fd80e82766",
+            "display": "Støtte til kontakt til offentlige og private instanser"
+          },
+          {
+            "code": "0886a1b6-4a3a-47e5-9c97-066270529e4f",
+            "display": "Støtte til transport"
+          },
+          {
+            "code": "05cd5e81-1a3a-4bdd-901b-7ec96c12d990",
+            "display": "Støtte til sociale relationer"
+          },
+          {
+            "code": "ea47a198-7e24-472d-ba5d-132b8b744710",
+            "display": "Støtte til varetagelse af forældrerollen"
+          },
+          {
+            "code": "ad7755d2-11bf-468d-958b-2f0c8d9c3742",
+            "display": "Støtte til psykisk trivsel"
+          },
+          {
+            "code": "72272d03-1774-4a14-b598-5f19b5eac83f",
+            "display": "Støtte til personlig hygiejne"
+          },
+          {
+            "code": "e7c8b42e-b882-4629-8e03-65e44b1aa3e3",
+            "display": "Støtte til behandling"
+          },
+          {
+            "code": "3c1639d0-e486-43c6-8add-448b8aff4b8f",
+            "display": "Støtte til sund levevis"
+          },
+          {
+            "code": "bd5fea9a-16ed-4e63-b6a1-8e83caaf9b0b",
+            "display": "Støtte til seksualitet"
+          }
+        ]
+      }
+    ]
+  }
+}

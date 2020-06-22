@@ -5,13 +5,38 @@
   "id": "InformationCodes",
   "title": "FSIII/FFB Information codes",
   "description": "Information codes from FSIII and FFB (Område, Tema, Generelle oplysninger)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/InformationCodes",
   "compose": {
     "include": [
       {
         "valueSet": [
-          "http://kl.dk/fhir/common/caresocial/ValueSet/GenerelleOplysninger"
+          "http://kl.dk/fhir/common/caresocial/ValueSet/GenerelInformation"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/NursingAreas"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/HomeCareAreas"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/TheraphyAreas"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/PreventionAreas"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/FFBThemes"
         ]
       }
     ]

@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "caresocial",
   "url": "http://kl.dk/fhir/common/caresocial/ImplementationGuide/caresocial",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "FKIImplementationGuide",
   "title": "FKI Implementation Guide",
   "status": "active",
@@ -34,6 +34,14 @@
   ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialClassificedFollowUp"
+        },
+        "name": "CommonCareSocialClassifiedFollowUp",
+        "description": "Classified follow-up results used in Danish municipalities",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/KLCommonCareSocialCondition"
@@ -68,6 +76,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialServiceRequest"
+        },
+        "name": "CommonCareSocialServiceRequest",
+        "description": "Referals/requests used in Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/KLCommonCitizen"
         },
         "name": "CommonCitizen",
@@ -80,6 +96,14 @@
         },
         "name": "CommonCrossSectorCondition",
         "description": "Conditions which may be used for cross sector exchange in Denmark, as expressed by Danish municipalities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonInformationSeverity"
+        },
+        "name": "CommonCareSocialInformationSeverity",
+        "description": "Information severities in Danish municipalities",
         "exampleBoolean": false
       },
       {
@@ -100,10 +124,34 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/RequesterType"
+        },
+        "name": "RequesterType",
+        "description": "Extension for pointing to type of organisation/person that requests a service from the municipality",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SubjectConsentToLiaising"
+        },
+        "name": "SubjectConsentToLiaising",
+        "description": "Extension for describing whether the citizen knows about the request/referal",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/FFBConditionsAndTargetGroup"
         },
         "name": "FFB Conditions and target groups",
         "description": "Conditions and target groups as defined by FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FFBInterventions"
+        },
+        "name": "FFB interventions",
+        "description": "social interventions (ydelser) as defined by FFB",
         "exampleBoolean": false
       },
       {
@@ -116,10 +164,58 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/FFBThemes"
+        },
+        "name": "FFB Themes",
+        "description": "FFB Themes (and subthemes associated with information - which are not conditions in the strict sense)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/FSIIIConditionCodes"
         },
         "name": "FSIII Condition codes",
         "description": "Danish municipality FSIII condition codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FSIIIFFBCareSocialInterventions"
+        },
+        "name": "FSIII and FFB Internentions",
+        "description": "Interventions as described by FSIII and FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FSIIIHomeCareInterventions"
+        },
+        "name": "Home Care Interventions",
+        "description": "Home Care Interventions as described by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FSIIINursingInterventions"
+        },
+        "name": "NursingInterventions",
+        "description": "Nursing interventions as described by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FSIIIPreventionInterventions"
+        },
+        "name": "Prevention interventions",
+        "description": "Prevention and health promotion interventions as defined by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FSIIIRequestFrom"
+        },
+        "name": "FSIIIRequestFrom",
+        "description": "Type of service requesters as defined by FSIII",
         "exampleBoolean": false
       },
       {
@@ -132,10 +228,26 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/GenerelleOplysninger"
+          "reference": "ValueSet/FSIIITrainingInterventions"
         },
-        "name": "FSIII generelle oplysninger",
-        "description": "Generelle oplysninger som defineret af FSIII",
+        "name": "Training interventions",
+        "description": "Training interventions as defined by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/GenerelInformation"
+        },
+        "name": "FSIII general information",
+        "description": "Generel information codes (observations) as defined by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/HomeCareAreas"
+        },
+        "name": "Home care areas",
+        "description": "Observation codes for the five home care areas as defined by FSIII",
         "exampleBoolean": false
       },
       {
@@ -168,6 +280,22 @@
         },
         "name": "Encounter Types",
         "description": "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLCommonCareSocialServicesTypes"
+        },
+        "name": "Service Types",
+        "description": "Types of services that the Danish municipalities provide which is covered by FSIII and FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLCommonConsentToLiasing"
+        },
+        "name": "KLCommonConsentToLiasing",
+        "description": "Codes for citizens knowledge of referal/request as defined by FFB",
         "exampleBoolean": false
       },
       {
@@ -216,6 +344,30 @@
         },
         "name": "KL Severities",
         "description": "Severities related to conditions",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/NursingAreas"
+        },
+        "name": "Nursing areas",
+        "description": "Observation codes for the 12 nursing areas as defined by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/PreventionAreas"
+        },
+        "name": "Prevention areas",
+        "description": "Prevention areas (observation codes), used for documentation within prevention and health promotion",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/TheraphyAreas"
+        },
+        "name": "Theraphy areas",
+        "description": "Theraphy areas (observation codes), used for documentation within physical training, physiotheraphy and occupational theraphy in Danish Municipalities as defined by FSIII",
         "exampleBoolean": false
       },
       {
