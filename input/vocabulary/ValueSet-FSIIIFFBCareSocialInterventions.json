@@ -5,7 +5,7 @@
   "id": "FSIIIFFBCareSocialInterventions",
   "title": "FSIII and FFB Internentions",
   "description": "Interventions as described by FSIII and FFB",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIFFBCareSocialInterventions",
   "compose": {
     "include": [

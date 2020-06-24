@@ -6,7 +6,7 @@
   "id": "KLCommonCareSocialCodes",
   "title": "Codes associated with KLCommonCareSocial",
   "description": "Administrative/technical codes, not defined elsewhere, associated with KLCommonCareSocial",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
   "concept": [
     {

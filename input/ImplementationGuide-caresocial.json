@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "caresocial",
   "url": "http://kl.dk/fhir/common/caresocial/ImplementationGuide/caresocial",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "FKIImplementationGuide",
   "title": "FKI Implementation Guide",
   "status": "active",

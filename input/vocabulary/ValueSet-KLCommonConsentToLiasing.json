@@ -5,7 +5,7 @@
   "id": "KLCommonConsentToLiasing",
   "title": "KLCommonConsentToLiasing",
   "description": "Codes for citizens knowledge of referal/request as defined by FFB",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonConsentToLiasing",
   "compose": {
     "include": [

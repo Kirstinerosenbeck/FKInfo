@@ -5,7 +5,7 @@
   "id": "InformationCodes",
   "title": "FSIII/FFB Information codes",
   "description": "Information codes from FSIII and FFB (Område, Tema, Generelle oplysninger)",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/InformationCodes",
   "compose": {
     "include": [

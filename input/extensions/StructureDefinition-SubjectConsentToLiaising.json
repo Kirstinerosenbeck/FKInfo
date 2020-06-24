@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "SubjectConsentToLiaising",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/SubjectConsentToLiaising",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "SubjectConsentToLiaising",
   "title": "SubjectConsentToLiaising",
   "status": "active",

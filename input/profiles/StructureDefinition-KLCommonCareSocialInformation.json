@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialInformation",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialInformation",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "KLCommonCareSocialInformation",
   "title": "CommonCareSocialInformation",
   "status": "active",

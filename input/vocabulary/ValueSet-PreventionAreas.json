@@ -5,7 +5,7 @@
   "id": "PreventionAreas",
   "title": "Prevention areas",
   "description": "Prevention areas (observation codes), used for documentation within prevention and health promotion",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/PreventionAreas",
   "compose": {
     "include": [

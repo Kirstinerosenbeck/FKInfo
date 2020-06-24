@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialClassificedFollowUp",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialClassificedFollowUp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "KLCommonCareSocialClassificedFollowUp",
   "title": "CommonCareSocialClassifiedFollowUp",
   "status": "active",

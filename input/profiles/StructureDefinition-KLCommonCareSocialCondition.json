@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialCondition",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "KLCommonCareSocialCondition",
   "title": "CommonCareSocialCondition",
   "status": "active",

@@ -5,7 +5,7 @@
   "id": "FSIIITrainingInterventions",
   "title": "Training interventions",
   "description": "Training interventions as defined by FSIII",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIITrainingInterventions",
   "compose": {
     "include": [
