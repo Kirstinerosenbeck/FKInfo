@@ -1,0 +1,18 @@
+{
+  "resourceType": "Patient",
+  "id": "Mark",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen"
+    ]
+  },
+  "name": [
+    {
+      "given": [
+        "Mark"
+      ],
+      "family": "Jensen"
+    }
+  ],
+  "birthDate": "1982-02-02"
+}

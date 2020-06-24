@@ -1,0 +1,57 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "HenvisningFraLageVedrAkutSygepleje",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/RequesterType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "A9",
+            "system": "urn:oid:1.2.208.176.2.21",
+            "display": "Egen læge/vagtlæge"
+          }
+        ]
+      }
+    }
+  ],
+  "requester": {
+    "reference": "Organization/LaegerneHasserisBymidte"
+  },
+  "reasonCode": [
+    {
+      "text": "Mark har efter et ildebefindende brug for at akutsygeplejen undersøger situationen og måler vitale værdier."
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "490ab7be-ddb1-4a54-baf1-009fe6e8a83b",
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "display": "Sygepleje"
+      }
+    ]
+  },
+  "orderDetail": [
+    {
+      "coding": [
+        {
+          "code": "G1.41",
+          "system": "urn:oid:1.2.208.176.2.21",
+          "display": "Undersøgelser og måling af værdier"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Mark"
+  },
+  "authoredOn": "2020-06-21",
+  "status": "active",
+  "intent": "order"
+}

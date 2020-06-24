@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "MarkHjemmeplejeRevisitation",
+  "subject": {
+    "reference": "Patient/Mark"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "E4",
+        "system": "urn:oid:1.2.208.176.2.21",
+        "display": "revisitation"
+      }
+    ]
+  },
+  "effectiveDateTime": "2020-04-11",
+  "performer": [
+    {
+      "reference": "Practitioner/HanneFraVisitationenAalborg"
+    }
+  ],
+  "status": "final"
+}

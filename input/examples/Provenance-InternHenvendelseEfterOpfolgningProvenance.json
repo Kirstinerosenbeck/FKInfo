@@ -1,0 +1,36 @@
+{
+  "resourceType": "Provenance",
+  "id": "InternHenvendelseEfterOpfolgningProvenance",
+  "target": [
+    {
+      "reference": "ServiceRequest/InternHenvendelseEfterOpfolgning"
+    }
+  ],
+  "recorded": "2020-04-11T09:06:15+02:00",
+  "agent": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "author"
+          }
+        ]
+      },
+      "who": {
+        "reference": "Practitioner/HanneFraVisitationenAalborg"
+      },
+      "onBehalfOf": {
+        "reference": "Organization/SundhedsforvaltningAalborg"
+      }
+    }
+  ],
+  "reason": [
+    {
+      "coding": [
+        {
+          "code": "TREAT"
+        }
+      ]
+    }
+  ]
+}

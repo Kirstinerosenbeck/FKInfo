@@ -1,0 +1,66 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "InternHenvendelseEfterOpfolgning",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/RequesterType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "A4",
+            "system": "urn:oid:1.2.208.176.2.21",
+            "display": "Hjemmeplejen"
+          }
+        ]
+      }
+    }
+  ],
+  "requester": {
+    "reference": "Practitioner/HanneFraVisitationenAalborg"
+  },
+  "reasonCode": [
+    {
+      "text": "Sidste opfølgning på Marks hjemmepleje viste behov for revisitation pga. forringet funktionsevne især relateret til mobilitet og daglige opgaver"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "ad865929-7363-4b2d-a271-01993181fbaf",
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "display": "Hjemmepleje"
+      }
+    ]
+  },
+  "orderDetail": [
+    {
+      "coding": [
+        {
+          "code": "H1.4",
+          "system": "urn:oid:1.2.208.176.2.21",
+          "display": "Mobilitet"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "H2.2",
+          "system": "urn:oid:1.2.208.176.2.21",
+          "display": "RH Hverdagens aktiviteter"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Mark"
+  },
+  "authoredOn": "2020-04-11",
+  "status": "active",
+  "intent": "proposal"
+}

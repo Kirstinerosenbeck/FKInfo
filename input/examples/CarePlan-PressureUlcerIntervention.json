@@ -1,0 +1,43 @@
+{
+  "resourceType": "CarePlan",
+  "id": "PressureUlcerIntervention",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention"
+    ]
+  },
+  "activity": [
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "code": "G1.39",
+              "system": "urn:oid:1.2.208.176.2.21",
+              "display": "Sårbehandling"
+            }
+          ]
+        },
+        "description": "Tryksår på venstre ben skal tilses og behandles dagligt. Vigtigt at tjekke for infektion",
+        "status": "in-progress",
+        "performer": [
+          {
+            "reference": "Organization/HjemmesygeplejeSonderborg"
+          }
+        ]
+      }
+    }
+  ],
+  "created": "2020-05-29",
+  "intent": "order",
+  "status": "active",
+  "period": {
+    "start": "2020-05-30"
+  },
+  "author": {
+    "reference": "Organization/HjemmesygeplejeSonderborg"
+  },
+  "subject": {
+    "reference": "Patient/Mark"
+  }
+}

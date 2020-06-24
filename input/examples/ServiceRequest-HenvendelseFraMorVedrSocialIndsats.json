@@ -1,0 +1,78 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "HenvendelseFraMorVedrSocialIndsats",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/RequesterType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "A2",
+            "system": "urn:oid:1.2.208.176.2.21",
+            "display": "Pårørende"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/SubjectConsentToLiaising",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "e67035da-9179-466b-99ad-ea86835d38c9",
+            "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+            "display": "indforstået"
+          }
+        ]
+      }
+    }
+  ],
+  "requester": {
+    "reference": "Organization/SocialOgSundhedMorsoe"
+  },
+  "reasonCode": [
+    {
+      "text": "Andreas er udviklingshæmmet og bor pt. hjemme hos sin mor. Moderen har fået svær gigt og har derfor ikke mulighed for at have ham boende længere, og Andreas ønsker derfor at komme i et botilbud."
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "4a297733-4d66-4726-a933-590d55cf91e0",
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "display": "Social indsats"
+      }
+    ]
+  },
+  "orderDetail": [
+    {
+      "coding": [
+        {
+          "code": "80aa8ea7-4ad8-405f-876a-4c0f89fde06a",
+          "system": "urn:oid:1.2.208.176.2.22",
+          "display": "Midlertidigt ophold"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "638f44df-6bf2-47f8-9935-b8fdc83e5bf5",
+          "system": "urn:oid:1.2.208.176.2.22",
+          "display": "Støtte til daglige opgaver i hjemmet"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Andreas"
+  },
+  "authoredOn": "2020-06-23",
+  "status": "active",
+  "intent": "proposal"
+}

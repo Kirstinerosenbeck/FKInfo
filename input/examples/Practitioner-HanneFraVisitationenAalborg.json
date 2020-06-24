@@ -1,0 +1,17 @@
+{
+  "resourceType": "Practitioner",
+  "id": "HanneFraVisitationenAalborg",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonPractitioner"
+    ]
+  },
+  "name": [
+    {
+      "given": [
+        "Hanne"
+      ],
+      "family": "Simonsen"
+    }
+  ]
+}

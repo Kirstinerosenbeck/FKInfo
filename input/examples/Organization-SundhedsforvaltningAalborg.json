@@ -1,0 +1,22 @@
+{
+  "resourceType": "Organization",
+  "id": "SundhedsforvaltningAalborg",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "922661000016005",
+      "system": "urn:oid:1.2.208.176.1"
+    }
+  ],
+  "name": "Sundheds- og kulturforvaltningen, Aalborg Kommune",
+  "telecom": [
+    {
+      "value": "99313131",
+      "system": "phone"
+    }
+  ]
+}

@@ -61,9 +61,9 @@
         }
       },
       {
-        "id": "ServiceRequest.extension:requersterType",
+        "id": "ServiceRequest.extension:requesterType",
         "path": "ServiceRequest.extension",
-        "sliceName": "requersterType",
+        "sliceName": "requesterType",
         "min": 0,
         "max": "1",
         "type": [
@@ -135,6 +135,15 @@
             ]
           }
         ]
+      },
+      {
+        "id": "ServiceRequest.reasonCode",
+        "path": "ServiceRequest.reasonCode"
+      },
+      {
+        "id": "ServiceRequest.reasonCode.text",
+        "path": "ServiceRequest.reasonCode.text",
+        "mustSupport": true
       },
       {
         "id": "ServiceRequest.reasonReference",

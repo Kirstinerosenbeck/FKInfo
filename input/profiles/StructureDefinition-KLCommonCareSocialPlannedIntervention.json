@@ -1,0 +1,209 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "KLCommonCareSocialPlannedIntervention",
+  "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention",
+  "version": "0.1.1",
+  "name": "KLCommonCareSocialPlannedIntervention",
+  "title": "CommonCareSocialPlannedIntervention",
+  "status": "active",
+  "description": "Planned interventions (indsats/ydelse) in Danish Municipalities",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "CarePlan",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CarePlan",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CarePlan",
+        "path": "CarePlan"
+      },
+      {
+        "id": "CarePlan.extension",
+        "path": "CarePlan.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "CarePlan.extension:followUpEncounter",
+        "path": "CarePlan.extension",
+        "sliceName": "followUpEncounter",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/FollowUpEncounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.extension:relevantHistory",
+        "path": "CarePlan.extension",
+        "sliceName": "relevantHistory",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/request-relevantHistory"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.basedOn",
+        "path": "CarePlan.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCarePlan"
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.subject",
+        "path": "CarePlan.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.created",
+        "path": "CarePlan.created",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.author",
+        "path": "CarePlan.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.activity",
+        "path": "CarePlan.activity",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "CarePlan.activity.outcomeReference",
+        "path": "CarePlan.activity.outcomeReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEncounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.activity.detail",
+        "path": "CarePlan.activity.detail"
+      },
+      {
+        "id": "CarePlan.activity.detail.code",
+        "path": "CarePlan.activity.detail.code",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIFFBCareSocialInterventions"
+        }
+      },
+      {
+        "id": "CarePlan.activity.detail.reasonReference",
+        "path": "CarePlan.activity.detail.reasonReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.activity.detail.goal",
+        "path": "CarePlan.activity.detail.goal",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialGoal"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.activity.detail.performer",
+        "path": "CarePlan.activity.detail.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.activity.detail.description",
+        "path": "CarePlan.activity.detail.description",
+        "mustSupport": true
+      }
+    ]
+  }
+}

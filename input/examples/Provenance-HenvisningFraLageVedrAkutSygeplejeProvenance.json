@@ -1,0 +1,48 @@
+{
+  "resourceType": "Provenance",
+  "id": "HenvisningFraLageVedrAkutSygeplejeProvenance",
+  "target": [
+    {
+      "reference": "ServiceRequest/HenvisningFraLageVedrAkutSygepleje"
+    }
+  ],
+  "recorded": "2020-06-21T15:56:24+02:00",
+  "agent": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "enterer"
+          }
+        ]
+      },
+      "who": {
+        "reference": "Practitioner/HanneFraVisitationenAalborg"
+      },
+      "onBehalfOf": {
+        "reference": "Organization/SundhedsforvaltningAalborg"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "legal"
+          }
+        ]
+      },
+      "who": {
+        "reference": "Organization/LaegerneHasserisBymidte"
+      }
+    }
+  ],
+  "reason": [
+    {
+      "coding": [
+        {
+          "code": "TREAT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "resourceType": "Organization",
+  "id": "HjemmesygeplejeSonderborg",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "330411000016001",
+      "system": "urn:oid:1.2.208.176.1"
+    }
+  ],
+  "name": "Hjemmesygepleje – visitation –hjemmehjælp, Sønderborg Kommune",
+  "telecom": [
+    {
+      "value": "88725537",
+      "system": "phone"
+    }
+  ]
+}

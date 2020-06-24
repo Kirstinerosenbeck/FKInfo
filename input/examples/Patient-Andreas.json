@@ -1,0 +1,18 @@
+{
+  "resourceType": "Patient",
+  "id": "Andreas",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen"
+    ]
+  },
+  "name": [
+    {
+      "given": [
+        "Andreas"
+      ],
+      "family": "Hansen"
+    }
+  ],
+  "birthDate": "1993-01-05"
+}

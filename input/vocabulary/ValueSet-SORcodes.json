@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SORcodes",
+  "id": "SORcodes",
+  "title": "SOR codes",
+  "description": "SOR codes",
+  "version": "0.1.1",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/SORcodes",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.1",
+        "concept": [
+          {
+            "code": "330411000016001"
+          }
+        ]
+      }
+    ]
+  }
+}

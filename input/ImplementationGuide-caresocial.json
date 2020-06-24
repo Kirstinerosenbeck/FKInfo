@@ -36,6 +36,13 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialCarePlan"
+        },
+        "name": "CommonCareSocialCarePlan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/KLCommonCareSocialClassificedFollowUp"
         },
         "name": "CommonCareSocialClassifiedFollowUp",
@@ -68,10 +75,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialGoal"
+        },
+        "name": "CommonCareSocialGoal",
+        "description": "Goal as defined in Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/KLCommonCareSocialInformation"
         },
         "name": "CommonCareSocialInformation",
         "description": "Information used in Danish municipalities (Oplysning/Område/Tema)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialPlannedIntervention"
+        },
+        "name": "CommonCareSocialPlannedIntervention",
+        "description": "Planned interventions (indsats/ydelse) in Danish Municipalities",
         "exampleBoolean": false
       },
       {
@@ -104,6 +127,14 @@
         },
         "name": "CommonCareSocialInformationSeverity",
         "description": "Information severities in Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonOrganization"
+        },
+        "name": "CommonOrganization",
+        "description": "Organisation as expressed by Danish municipalities.",
         "exampleBoolean": false
       },
       {
@@ -377,6 +408,149 @@
         "name": "Codes associated with KLCommonCareSocial",
         "description": "Administrative/technical codes, not defined elsewhere, associated with KLCommonCareSocial",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/Andreas"
+        },
+        "name": "Andreas",
+        "description": "KL-Citizen Andreas",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/BirteFraVisitationenMorsoe"
+        },
+        "name": "BirteFraVisitationenMorsø",
+        "description": "Eksempel på medarbejderen Birte fra visitationen i Morsø",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "Condition/ConditionPressureUlcer"
+        },
+        "name": "ConditionPressureUlcer",
+        "description": "Example of the citizen, Mark, who has a pressure ulcer",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/HanneFraVisitationenAalborg"
+        },
+        "name": "HanneFraVisitationenAalborg",
+        "description": "Eksempel på medarbejderen Hanne fra visitationen i Aalborg",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/HenvendelseFraMorVedrSocialIndsats"
+        },
+        "name": "HenvendelseFraMorVedrSocialIndsats",
+        "description": "Henvendelse fra mor vedr. social indsats",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/HenvendelseFraMorVedrSocialIndsatsProvenance"
+        },
+        "name": "Provenance til HenvendelseFraMorVedrSocialIndsats",
+        "description": "Ekstraoplysninger vedr. dokumentationsarbejdsgang og ansvar for henvendelse fra mor vedr. social indsats",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/HenvisningFraLageVedrAkutSygepleje"
+        },
+        "name": "HenvisningFraLægeVedrAkutSygepleje",
+        "description": "Henvisning fra læge vedr. akut sygepleje",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/HenvisningFraLageVedrAkutSygeplejeProvenance"
+        },
+        "name": "Provenance til HenvisningFraLægeVedrAkutSygepleje",
+        "description": "Ekstraoplysninger vedr. dokumentationsarbejdsgang og ansvar for henvisning fra læge vedr. akut sygepleje",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Organization/HjemmesygeplejeSonderborg"
+        },
+        "name": "HjemmesygeplejeSønderborg",
+        "description": "Hjemmesygepleje – visitation –hjemmehjælp i Sønderborg kommune som defineret af SOR",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization"
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/InternHenvendelseEfterOpfolgning"
+        },
+        "name": "InternHenvendelseEfterOpfølgning",
+        "description": "Intern henvisning i hjemmeplejen, efter en opfølgning der viste behov for revisitation",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/InternHenvendelseEfterOpfolgningProvenance"
+        },
+        "name": "Provenance til InternHenvendelseEfterOpfølgning",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Organization/LaegerneHasserisBymidte"
+        },
+        "name": "LaegerneHasserisBymidte",
+        "description": "Praktisernede læge i Hasseris, som defineret af SOR",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Mark"
+        },
+        "name": "Mark",
+        "description": "KL-Citizen Mark",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/MarkFollowUpPlanned"
+        },
+        "name": "Mark FolowUp planned",
+        "description": "Mark's planlagte opfølgning, med periode.start fremtidigt",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEncounter"
+      },
+      {
+        "reference": {
+          "reference": "Observation/MarkHjemmeplejeRevisitation"
+        },
+        "name": "MarksHjemmeplejeRevisitation",
+        "description": "Eksempel på opfølgningsresultatet revisitation",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/PressureUlcerIntervention"
+        },
+        "name": "PlannedUlcerIntervention",
+        "description": "Mark's planned pressure ulcer intervention",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention"
+      },
+      {
+        "reference": {
+          "reference": "Organization/SocialOgSundhedMorsoe"
+        },
+        "name": "SocialOgSundhedMorsø",
+        "description": "Social og Sundhed, Morsø Kommune, som defineret af SOR",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/SundhedsforvaltningAalborg"
+        },
+        "name": "SundhedsforvaltningAalborg",
+        "description": "Sundheds- og kulturforvaltningen, Aalborg Kommune, som defineret af SOR",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization"
       }
     ],
     "page": {
