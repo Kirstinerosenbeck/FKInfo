@@ -5,7 +5,7 @@
   "id": "FFBSeverities",
   "title": "FFB Severities",
   "description": "Severities related to conditions in FFB (funktionsevneniveau)",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FFBSeverities",
   "compose": {
     "include": [

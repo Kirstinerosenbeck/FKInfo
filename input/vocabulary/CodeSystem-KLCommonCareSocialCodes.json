@@ -6,7 +6,7 @@
   "id": "KLCommonCareSocialCodes",
   "title": "Codes associated with KLCommonCareSocial",
   "description": "Administrative/technical codes, not defined elsewhere, associated with KLCommonCareSocial",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
   "concept": [
     {
@@ -88,6 +88,51 @@
       "code": "54aeeba6-6aa2-4165-a5a8-bbd6f2f3b1eb",
       "display": "ikke indforstået",
       "definition": "Borger ikke indforstået med henvendelse"
+    },
+    {
+      "code": "ddd2f670-5ec7-4f9c-9a2c-aee25cb133bf",
+      "display": "Rehabilitering efter §140",
+      "definition": "Det planlagte indsatsforløb er rehabilitering efter sundhedslovens §140"
+    },
+    {
+      "code": "4fd6c23a-6ff3-4251-ac37-3ca095027b5b",
+      "display": "Sundhedsfremme og forebyggelse §119",
+      "definition": "Det planlagte indsatsforløb vedrører sundhedsfremme og forebyggelse efter §119"
+    },
+    {
+      "code": "e459386d-1474-4c31-89c5-c8bc7a25e3d4",
+      "display": "Social indsats",
+      "definition": "Det planlagte indsatsforløb er en social indsats, som defineret af FFB, med tilhørende ydelser, målgruppe og tilbud"
+    },
+    {
+      "code": "ca552020-6ed1-4cdc-b0d4-32697f1f27ad",
+      "display": "FSIII tilstandsmål",
+      "definition": "Tilstandsmål som defineret af FSIII - ofte i form af en forventet tilstand "
+    },
+    {
+      "code": "e6f35a88-6665-4471-9dce-9a98854532b4",
+      "display": "FSIII indsatsmål",
+      "definition": "Mål for indsatsen i FSIII, som ofte er defineret af udfører. Hvis der specificeres en FSIII målemetode, er det et mål af denne type"
+    },
+    {
+      "code": "416fe27d-3ccf-4390-8742-8b52a9d8dc78",
+      "display": "FFB livsmål",
+      "definition": "Livsmål  som specificeret af FFB. Det er et overordnet og er som udtrykt af borger"
+    },
+    {
+      "code": "424827b1-23aa-4848-962b-56ee47def560",
+      "display": "Indsatsformål",
+      "definition": "Er det overordnede formål med hele indsatsen (Defineret af FFB men bruges også for FSIII)"
+    },
+    {
+      "code": "0bb3daef-538d-45dc-b444-abdbcb63f6bc",
+      "display": "FFB indsatsmål",
+      "definition": "Indsatsmål i FFB - er de konkrete faglige mål der arbejdes med, og som er knyttet til tilstande og opfølgninger"
+    },
+    {
+      "code": "6746d4af-145a-4bfd-a672-05c0cf11b53b",
+      "display": "FFB delmål",
+      "definition": "Delmål i FFB, ligger under indsatsmål, og er som udtrykt af udfører"
     }
   ]
 }

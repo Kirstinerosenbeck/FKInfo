@@ -28,6 +28,7 @@ lists those files generated from project configs or the contents in the ig-data 
 | input\pagecontent\StructureDefinition-KLCommonCareSocialEncounter-intro.md           | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialEncounter-intro.md           |
 | input\pagecontent\StructureDefinition-KLCommonCareSocialInformation-intro.md         | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialInformation-intro.md         |
 | input\pagecontent\StructureDefinition-KLCommonCareSocialInformationSeverity-intro.md | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialInformationSeverity-intro.md |
+| input\pagecontent\StructureDefinition-KLCommonCareSocialPlannedIntervention-intro.md | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialPlannedIntervention-intro.md |
 | input\pagecontent\StructureDefinition-KLCommonCareSocialServiceRequest-intro.md      | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialServiceRequest-intro.md      |
 | input\pagecontent\StructureDefinition-KLCommonCrossSectorCondition-intro.md          | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCrossSectorCondition-intro.md          |
 | input\pagecontent\index.md                                                           | copied    | ..\ig-data\input\pagecontent\index.md                                                           |

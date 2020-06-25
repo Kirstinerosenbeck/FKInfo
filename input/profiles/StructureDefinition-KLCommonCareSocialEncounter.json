@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialEncounter",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEncounter",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "name": "KLCommonCareSocialEncounter",
   "title": "CommonCareSocalEncounter",
   "status": "active",

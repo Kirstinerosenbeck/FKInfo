@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "KLCommonCrossSectorCondition",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCrossSectorCondition",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "name": "KLCommonCrossSectorCondition",
   "title": "CommonCrossSectorCondition",
   "status": "active",

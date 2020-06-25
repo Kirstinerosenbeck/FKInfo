@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "caresocial",
   "url": "http://kl.dk/fhir/common/caresocial/ImplementationGuide/caresocial",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "name": "FKIImplementationGuide",
   "title": "FKI Implementation Guide",
   "status": "active",
@@ -67,6 +67,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialFFBGoal"
+        },
+        "name": "CommonCareSocialPurpose",
+        "description": "FFB goal as defined by FFB in Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/KLCommonCareSocialFollowUpResult"
         },
         "name": "CommonCareSocialFollowUpResult",
@@ -95,6 +103,14 @@
         },
         "name": "CommonCareSocialPlannedIntervention",
         "description": "Planned interventions (indsats/ydelse) in Danish Municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialPurpose"
+        },
+        "name": "CommonCareSocialPurpose",
+        "description": "Purpose as defined by FFB in Danish municipalities",
         "exampleBoolean": false
       },
       {
@@ -187,6 +203,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/FFBServiceCodes"
+        },
+        "name": "FFB tilbud",
+        "description": "Social service (tilbud) as defined by FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/FFBSeverities"
         },
         "name": "FFB Severities",
@@ -213,7 +237,7 @@
         "reference": {
           "reference": "ValueSet/FSIIIFFBCareSocialInterventions"
         },
-        "name": "FSIII and FFB Internentions",
+        "name": "FSIII and FFB Interventions",
         "description": "Interventions as described by FSIII and FFB",
         "exampleBoolean": false
       },
@@ -307,6 +331,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/KLCommonCarePlanCategoryCodes"
+        },
+        "name": "KLCommonCarePlanCategoryCodes",
+        "description": "Codes for constraining the CarePlan category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/KLCommonCareSocialEncounterTypes"
         },
         "name": "Encounter Types",
@@ -327,6 +359,14 @@
         },
         "name": "KLCommonConsentToLiasing",
         "description": "Codes for citizens knowledge of referal/request as defined by FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLCommonGoalTypeCodes"
+        },
+        "name": "KLCommonGoalTypeCodes",
+        "description": "Codes used to distinguish different kinds of goals",
         "exampleBoolean": false
       },
       {

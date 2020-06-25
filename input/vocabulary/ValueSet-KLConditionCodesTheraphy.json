@@ -5,7 +5,7 @@
   "id": "KLConditionCodesTheraphy",
   "title": "Theraphy Condition codes",
   "description": "Danish municipality theraphy condition codes",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesTheraphy",
   "compose": {
     "include": [

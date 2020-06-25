@@ -5,7 +5,7 @@
   "id": "KLConditionCodesFFB",
   "title": "FFB Condition codes",
   "description": "Danish municipality FFB condition codes",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesFFB",
   "compose": {
     "include": [

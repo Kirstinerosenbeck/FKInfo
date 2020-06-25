@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialCarePlan",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCarePlan",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "name": "KLCommonCareSocialCarePlan",
   "title": "CommonCareSocialCarePlan",
   "status": "active",
@@ -39,6 +39,106 @@
       {
         "id": "CarePlan",
         "path": "CarePlan"
+      },
+      {
+        "id": "CarePlan.category",
+        "path": "CarePlan.category",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/FFBServiceCodes"
+        }
+      },
+      {
+        "id": "CarePlan.description",
+        "path": "CarePlan.description",
+        "mustSupport": true
+      },
+      {
+        "id": "CarePlan.subject",
+        "path": "CarePlan.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.created",
+        "path": "CarePlan.created",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.author",
+        "path": "CarePlan.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.addresses",
+        "path": "CarePlan.addresses",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCrossSectorCondition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.goal",
+        "path": "CarePlan.goal",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "resolve().category"
+            }
+          ],
+          "rules": "open",
+          "ordered": false,
+          "description": "Slice based on the category value which specify different goal-types as defined by FSIII og FFB respectively"
+        },
+        "min": 1
+      },
+      {
+        "id": "CarePlan.goal:fpurpose",
+        "path": "CarePlan.goal",
+        "sliceName": "fpurpose",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPurpose"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.goal:ffbgoal",
+        "path": "CarePlan.goal",
+        "sliceName": "ffbgoal",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialFFBGoal"
+            ]
+          }
+        ]
       }
     ]
   }
