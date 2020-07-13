@@ -1,0 +1,114 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "KLCommonCareSocialObservation",
+  "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialObservation",
+  "version": "0.1.4",
+  "name": "KLCommonCareSocialObservation",
+  "title": "KLCommonCareSocialObservation",
+  "status": "active",
+  "description": "Observations and measurements performed in Danish municipalities",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation"
+      },
+      {
+        "id": "Observation.basedOn",
+        "path": "Observation.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention",
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest",
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCarePlan"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/ObservationSCTcodes"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEncounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonPractitioner"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

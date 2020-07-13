@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FSIIIImportanceLevelCodes",
+  "id": "FSIIIImportanceLevelCodes",
+  "title": "FSIIIImportanceLevelCodes",
+  "description": "Importance level codes (Betydning), as evaluated by the citizen",
+  "version": "0.1.4",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIImportanceLevelCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "D1",
+            "display": "Oplever ikke begrænsninger"
+          },
+          {
+            "code": "D2",
+            "display": "Oplever begrænsninger"
+          }
+        ]
+      }
+    ]
+  }
+}

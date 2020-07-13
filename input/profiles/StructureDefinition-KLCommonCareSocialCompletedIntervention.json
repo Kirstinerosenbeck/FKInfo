@@ -1,0 +1,117 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "KLCommonCareSocialCompletedIntervention",
+  "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCompletedIntervention",
+  "version": "0.1.4",
+  "name": "KLCommonCareSocialCompletedIntervention",
+  "title": "CommonCareSocialCompletedIntervention",
+  "status": "active",
+  "description": "Documentation for completed inteventions (activities related to one and only one encounter) in Danish municipalities",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure",
+        "path": "Procedure"
+      },
+      {
+        "id": "Procedure.basedOn",
+        "path": "Procedure.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention",
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIFFBCareSocialInterventions"
+        }
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.encounter",
+        "path": "Procedure.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEncounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.recorder",
+        "path": "Procedure.recorder",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonPractitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.complication",
+        "path": "Procedure.complication",
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/ComplicationsSCTcodes"
+        }
+      },
+      {
+        "id": "Procedure.note",
+        "path": "Procedure.note",
+        "max": "1"
+      }
+    ]
+  }
+}

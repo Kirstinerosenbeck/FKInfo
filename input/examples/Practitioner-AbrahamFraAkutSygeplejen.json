@@ -1,0 +1,17 @@
+{
+  "resourceType": "Practitioner",
+  "id": "AbrahamFraAkutSygeplejen",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonPractitioner"
+    ]
+  },
+  "name": [
+    {
+      "given": [
+        "Abraham"
+      ],
+      "family": "Murakami"
+    }
+  ]
+}

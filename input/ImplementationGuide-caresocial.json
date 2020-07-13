@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "caresocial",
   "url": "http://kl.dk/fhir/common/caresocial/ImplementationGuide/caresocial",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "name": "FKIImplementationGuide",
   "title": "FKI Implementation Guide",
   "status": "active",
@@ -36,17 +36,34 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/KLCommonCareSocialCarePlan"
+          "reference": "StructureDefinition/CitizensOwnObservation"
         },
-        "name": "CommonCareSocialCarePlan",
+        "name": "CitizensOwnObservation",
+        "description": "Citizens own observation of performance level (udførelse) or importance level (betydning) as defined by FSIII",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/KLCommonCareSocialClassificedFollowUp"
+          "reference": "StructureDefinition/KLCommonCareSocialCarePlan"
+        },
+        "name": "CommonCareSocialCarePlan",
+        "description": "Overall CarePlan for Danish municipalities, for individual plans regarding social care, and health act §140 and §119",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialClassifiedFollowUp"
         },
         "name": "CommonCareSocialClassifiedFollowUp",
-        "description": "Classified follow-up results used in Danish municipalities",
+        "description": "Classified follow-up result used in Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialCompletedIntervention"
+        },
+        "name": "CommonCareSocialCompletedIntervention",
+        "description": "Documentation for completed inteventions (activities related to one and only one encounter) in Danish municipalities",
         "exampleBoolean": false
       },
       {
@@ -67,17 +84,25 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialEvaluation"
+        },
+        "name": "CommonCareSocialEvaluation",
+        "description": "Professional evaluation on citizen status based on gathered information, conditions, observations and citizen preferences used in Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/KLCommonCareSocialFFBGoal"
         },
-        "name": "CommonCareSocialPurpose",
+        "name": "KLCommonCareSocialFFBGoal",
         "description": "FFB goal as defined by FFB in Danish municipalities",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/KLCommonCareSocialFollowUpResult"
+          "reference": "StructureDefinition/KLCommonCareSocialFollowUp"
         },
-        "name": "CommonCareSocialFollowUpResult",
+        "name": "CommonCareSocialFollowUp",
         "description": "Follow-up results used in Danish municipalities",
         "exampleBoolean": false
       },
@@ -95,6 +120,30 @@
         },
         "name": "CommonCareSocialInformation",
         "description": "Information used in Danish municipalities (Oplysning/Område/Tema)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialInformationGarthering"
+        },
+        "name": "KLCommonCareSocialInformationGarthering",
+        "description": "Information gathering resource used to group all the information collected in a clinical process such af a nursing status, a functional ability evaluation or a social paedagogical review",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialInformationSeverity"
+        },
+        "name": "CommonCareSocialInformationSeverity",
+        "description": "Information severities in Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialObservation"
+        },
+        "name": "KLCommonCareSocialObservation",
+        "description": "Observations and measurements performed in Danish municipalities",
         "exampleBoolean": false
       },
       {
@@ -123,6 +172,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialStructuredEvaluation"
+        },
+        "name": "CommonCareSocialStructuredEvaluation",
+        "description": "Structured assesment of needs as performed in Danish Municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/KLCommonCitizen"
         },
         "name": "CommonCitizen",
@@ -139,14 +196,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/KLCommonInformationSeverity"
-        },
-        "name": "CommonCareSocialInformationSeverity",
-        "description": "Information severities in Danish municipalities",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/KLCommonOrganization"
         },
         "name": "CommonOrganization",
@@ -159,6 +208,30 @@
         },
         "name": "CommonPractioner",
         "description": "Practitioners as expressed by Danish municipalities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonServicePerformer"
+        },
+        "name": "CommonServicePerformer",
+        "description": "Service performing CareTeam as expressed by Danish municipalities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/BasedOnServiceRequest"
+        },
+        "name": "BasedOnServiceRequest",
+        "description": "A reference to a ServiceRequest. Used to connect an event resource with the order that warranted it",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ConditionRank"
+        },
+        "name": "ConditionRank",
+        "description": "The rank of a condition. Used for event-resources that refer to conditions that are ranked.",
         "exampleBoolean": false
       },
       {
@@ -187,10 +260,33 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ComplicationsSCTcodes"
+        },
+        "name": "Codes that indicate whether an intervention had complications or not",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FFBChangeValueCodes"
+        },
+        "name": "FFBChangeValueCodes",
+        "description": "Change values for goals in FFB (FFB måltype). Express the target value for change of an activity or participation condition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/FFBConditionsAndTargetGroup"
         },
         "name": "FFB Conditions and target groups",
         "description": "Conditions and target groups as defined by FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FFBFollowUpCodes"
+        },
+        "name": "FFBFollowUpCodes",
+        "description": "Follow-up codes used in FFB",
         "exampleBoolean": false
       },
       {
@@ -227,6 +323,30 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/FSIIIChangeValueCodes"
+        },
+        "name": "FSIIIChangeValueCodes",
+        "description": "Change values for goals in FSIII (FSIII måltype). Express the target value for change of a health condition or funtional condition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FSIIICitizenObservationCodes"
+        },
+        "name": "FSIIICitizenObservationCodes",
+        "description": "Observation codes for citizens own observations as defined by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FSIIICitizenObservationResultCodes"
+        },
+        "name": "FSIIICitizenObservationResultCodes",
+        "description": "Performance and Importance level codes, as evaluated by the citizen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/FSIIIConditionCodes"
         },
         "name": "FSIII Condition codes",
@@ -243,6 +363,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/FSIIIFollowUpCodes"
+        },
+        "name": "FSIIIFollowUpCodes",
+        "description": "Follow-up codes used in FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/FSIIIHomeCareInterventions"
         },
         "name": "Home Care Interventions",
@@ -251,10 +379,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/FSIIIImportanceLevelCodes"
+        },
+        "name": "FSIIIImportanceLevelCodes",
+        "description": "Importance level codes (Betydning), as evaluated by the citizen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/FSIIINursingInterventions"
         },
         "name": "NursingInterventions",
         "description": "Nursing interventions as described by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FSIIIPerformanceLevelCodes"
+        },
+        "name": "FSIIIPerformanceLevelCodes",
+        "description": "Performance level codes (Udførelse), as evaluated by the citizen",
         "exampleBoolean": false
       },
       {
@@ -287,6 +431,14 @@
         },
         "name": "Training interventions",
         "description": "Training interventions as defined by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FollowUpCodes"
+        },
+        "name": "FollowUpCodes",
+        "description": "Follow-up codes used in Danish municipalities",
         "exampleBoolean": false
       },
       {
@@ -331,6 +483,29 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/InformationGatheringInvestigationCodes"
+        },
+        "name": "Codes that identify valid items in an investigation in Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/InformationGatheringTypeCodes"
+        },
+        "name": "InformationGatheringTypeCodes",
+        "description": "Codes used to specify which kind of information gathering is conducted",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLChangeValueCodes"
+        },
+        "name": "KLChangeValueCodes",
+        "description": "Change values for goals (måltype). Express the target value for change of a condition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/KLCommonCarePlanCategoryCodes"
         },
         "name": "KLCommonCarePlanCategoryCodes",
@@ -363,10 +538,34 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/KLCommonEvaluationTypeCodes"
+        },
+        "name": "KLCommonEvaluationTypeCodes",
+        "description": "Codes used to distinguish different kinds of evaluations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLCommonEvaluationTypeSCTCodes"
+        },
+        "name": "KLCommonEvaluationTypeSCTCodes",
+        "description": "SNOMED CT codes used to distinguish different kinds of evaluations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/KLCommonGoalTypeCodes"
         },
         "name": "KLCommonGoalTypeCodes",
         "description": "Codes used to distinguish different kinds of goals",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLCommonNeedsAssessmentCodes"
+        },
+        "name": "KLCommonNeedsAssessmentCodes",
+        "description": "Needs assesment codes as defined in FFB",
         "exampleBoolean": false
       },
       {
@@ -419,10 +618,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/KLTargetMeasureCodes"
+        },
+        "name": "KLTargetMeasureCodes",
+        "description": "Target measure code, that determines whether the target is expressed as a severity or a change value",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/NursingAreas"
         },
         "name": "Nursing areas",
         "description": "Observation codes for the 12 nursing areas as defined by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ObservationSCTcodes"
+        },
+        "name": "ObservationSCTcodes",
+        "description": "SNOMED CT observation codes used in Dansih municipalities",
         "exampleBoolean": false
       },
       {
@@ -451,11 +666,49 @@
       },
       {
         "reference": {
+          "reference": "Practitioner/AbrahamFraAkutSygeplejen"
+        },
+        "name": "AbrahamFraAkutSygeplejen",
+        "description": "Eksempel på medarbejderen Abraham fra akutsygeplejen",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonPractitioner"
+      },
+      {
+        "reference": {
           "reference": "Patient/Andreas"
         },
         "name": "Andreas",
         "description": "KL-Citizen Andreas",
         "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen"
+      },
+      {
+        "reference": {
+          "reference": "Condition/AndreasDiabetes"
+        },
+        "name": "AndreasDiabetes",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCrossSectorCondition"
+      },
+      {
+        "reference": {
+          "reference": "Goal/AndreasIndsatsformaal"
+        },
+        "name": "AndreasIndsatsformål",
+        "description": "Indsatsmål for Andreas",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPurpose"
+      },
+      {
+        "reference": {
+          "reference": "Goal/AndreasLivsmaal"
+        },
+        "name": "AndreasLivsmaal",
+        "description": "Livsmål for Andreas",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialGoal"
+      },
+      {
+        "reference": {
+          "reference": "Condition/AndreasMaalgruppeUdviklingshamning"
+        },
+        "name": "AndreasMålgruppeUdviklingshæmning",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCrossSectorCondition"
       },
       {
         "reference": {
@@ -467,11 +720,27 @@
       },
       {
         "reference": {
+          "reference": "Organization/BotilbudetHvidbjerghus"
+        },
+        "name": "BotilbudetHvidbjerghus",
+        "description": "Botilbudet Hvidbjerghus som defineret af https://findsocialetilbud.dk/sociale-tilbud/botilbuddet-hvidbjerghus, og SOR",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization"
+      },
+      {
+        "reference": {
           "reference": "Condition/ConditionPressureUlcer"
         },
         "name": "ConditionPressureUlcer",
         "description": "Example of the citizen, Mark, who has a pressure ulcer",
         "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/FFBIndsats"
+        },
+        "name": "FFBIndsats",
+        "description": "Eksempel på social indsats",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCarePlan"
       },
       {
         "reference": {
@@ -567,6 +836,22 @@
         "name": "MarksHjemmeplejeRevisitation",
         "description": "Eksempel på opfølgningsresultatet revisitation",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/MarksPuls"
+        },
+        "name": "MarksPuls",
+        "description": "Observation af Marks puls",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialObservation"
+      },
+      {
+        "reference": {
+          "reference": "CareTeam/MidlertidigtOpholdBotilbuddetHvidbjerghus"
+        },
+        "name": "MidlertidigtOpholdBotilbuddetHvidbjerghus",
+        "description": "Midlertidigt ophold efter servicelovens §107 på Hvidhjerghus",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonServicePerformer"
       },
       {
         "reference": {

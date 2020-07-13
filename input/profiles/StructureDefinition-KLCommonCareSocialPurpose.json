@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialPurpose",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPurpose",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "name": "KLCommonCareSocialPurpose",
   "title": "CommonCareSocialPurpose",
   "status": "active",
@@ -43,8 +43,7 @@
           "coding": [
             {
               "code": "424827b1-23aa-4848-962b-56ee47def560",
-              "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
-              "display": "Indsatsformål"
+              "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"
             }
           ]
         }

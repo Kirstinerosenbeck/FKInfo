@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialCondition",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "name": "KLCommonCareSocialCondition",
   "title": "CommonCareSocialCondition",
   "status": "active",
@@ -285,7 +285,7 @@
             "code": "Reference",
             "targetProfile": [
               "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialInformation",
-              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialFollowUpResult"
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialFollowUp"
             ]
           }
         ]

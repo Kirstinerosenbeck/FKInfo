@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ComplicationsSCTcodes",
+  "id": "ComplicationsSCTcodes",
+  "title": "Codes that indicate whether an intervention had complications or not",
+  "version": "0.1.4",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/ComplicationsSCTcodes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "160245001",
+            "display": "ingen aktuelle problemer eller funktionsnedsættelse"
+          },
+          {
+            "code": "116223007",
+            "display": "Komplikation"
+          }
+        ]
+      }
+    ]
+  }
+}

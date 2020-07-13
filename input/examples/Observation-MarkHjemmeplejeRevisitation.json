@@ -7,6 +7,14 @@
   "code": {
     "coding": [
       {
+        "code": "712744002",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
         "code": "E4",
         "system": "urn:oid:1.2.208.176.2.21",
         "display": "revisitation"

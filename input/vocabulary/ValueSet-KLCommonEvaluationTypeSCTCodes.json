@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLCommonEvaluationTypeSCTCodes",
+  "id": "KLCommonEvaluationTypeSCTCodes",
+  "title": "KLCommonEvaluationTypeSCTCodes",
+  "description": "SNOMED CT codes used to distinguish different kinds of evaluations",
+  "version": "0.1.4",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonEvaluationTypeSCTCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "225400002"
+          }
+        ]
+      }
+    ]
+  }
+}

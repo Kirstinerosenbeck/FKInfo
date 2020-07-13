@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FSIIIFollowUpCodes",
+  "id": "FSIIIFollowUpCodes",
+  "title": "FSIIIFollowUpCodes",
+  "description": "Follow-up codes used in FSIII",
+  "version": "0.1.4",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIFollowUpCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "E3",
+            "display": "Afsluttes"
+          },
+          {
+            "code": "E1",
+            "display": "Fortsættes"
+          },
+          {
+            "code": "E2",
+            "display": "Ændres inden for rammen"
+          },
+          {
+            "code": "E4",
+            "display": "Revisitation"
+          }
+        ]
+      }
+    ]
+  }
+}

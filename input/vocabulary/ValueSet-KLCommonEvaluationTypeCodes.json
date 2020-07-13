@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLCommonEvaluationTypeCodes",
+  "id": "KLCommonEvaluationTypeCodes",
+  "title": "KLCommonEvaluationTypeCodes",
+  "description": "Codes used to distinguish different kinds of evaluations",
+  "version": "0.1.4",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonEvaluationTypeCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "concept": [
+          {
+            "code": "54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c",
+            "display": "FSIII helhedsvurdering"
+          },
+          {
+            "code": "053a301d-1bb8-4cc4-b781-87825ecf0ef8",
+            "display": "FFB samlet situation"
+          },
+          {
+            "code": "effe55c7-572c-4a99-8fb4-2a9dda2f6572",
+            "display": "FFB støttebehovsvurdering"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "resourceType": "Condition",
+  "id": "AndreasMaalgruppeUdviklingshamning",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCrossSectorCondition"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.208.176.2.22",
+        "code": "97c355cc-84e3-46d0-ac1b-00bc627d089f",
+        "display": "Udviklingshæmning"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Andreas"
+  }
+}

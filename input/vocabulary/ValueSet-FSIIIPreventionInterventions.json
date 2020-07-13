@@ -5,7 +5,7 @@
   "id": "FSIIIPreventionInterventions",
   "title": "Prevention interventions",
   "description": "Prevention and health promotion interventions as defined by FSIII",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIPreventionInterventions",
   "compose": {
     "include": [

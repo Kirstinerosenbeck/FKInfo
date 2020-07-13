@@ -1,0 +1,25 @@
+{
+  "resourceType": "CareTeam",
+  "id": "MidlertidigtOpholdBotilbuddetHvidbjerghus",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonServicePerformer"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "25de7444-3919-4dab-b844-8cec6c15f30e",
+          "system": "urn:oid:1.2.208.176.2.22",
+          "display": "Midlertidigt botilbud til voksne"
+        }
+      ]
+    }
+  ],
+  "managingOrganization": [
+    {
+      "reference": "Organization/BotilbudetHvidbjerghus"
+    }
+  ]
+}

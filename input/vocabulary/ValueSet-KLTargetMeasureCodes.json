@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLTargetMeasureCodes",
+  "id": "KLTargetMeasureCodes",
+  "title": "KLTargetMeasureCodes",
+  "description": "Target measure code, that determines whether the target is expressed as a severity or a change value",
+  "version": "0.1.4",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLTargetMeasureCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "concept": [
+          {
+            "code": "66959f77-6e2a-4574-8423-3ff097f8b9fa",
+            "display": "funktionsevneniveau"
+          },
+          {
+            "code": "90c48f03-f194-4b2f-ad7d-6cba1069ae48",
+            "display": "måltype"
+          }
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/ObservationSCTcodes"
+        ]
+      }
+    ]
+  }
+}

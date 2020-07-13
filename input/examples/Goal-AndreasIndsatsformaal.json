@@ -1,0 +1,27 @@
+{
+  "resourceType": "Goal",
+  "id": "AndreasIndsatsformaal",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPurpose"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "424827b1-23aa-4848-962b-56ee47def560",
+          "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+          "display": "Indsatsformål"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "text": "Andreas ønsker en hverdag med venner og aktiviteter, så han har noget at stå op til og søde mennesker at være sammen med. Det er vigtigt for ham at være ren og pæn, og selv stå for det i videst mulig omfang."
+  },
+  "subject": {
+    "reference": "Patient/Andreas"
+  },
+  "lifecycleStatus": "active"
+}

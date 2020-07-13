@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "KLCommonPractitioner",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonPractitioner",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "name": "KLCommonPractitioner",
   "title": "CommonPractioner",
   "status": "active",

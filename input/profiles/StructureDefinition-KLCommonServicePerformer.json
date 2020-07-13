@@ -1,0 +1,61 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "KLCommonServicePerformer",
+  "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonServicePerformer",
+  "version": "0.1.4",
+  "name": "KLCommonServicePerformer",
+  "title": "CommonServicePerformer",
+  "status": "active",
+  "description": "Service performing CareTeam as expressed by Danish municipalities.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "CareTeam",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CareTeam",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CareTeam",
+        "path": "CareTeam"
+      },
+      {
+        "id": "CareTeam.category",
+        "path": "CareTeam.category",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/FFBServiceCodes"
+        }
+      },
+      {
+        "id": "CareTeam.managingOrganization",
+        "path": "CareTeam.managingOrganization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

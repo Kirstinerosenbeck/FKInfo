@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FSIIICitizenObservationResultCodes",
+  "id": "FSIIICitizenObservationResultCodes",
+  "title": "FSIIICitizenObservationResultCodes",
+  "description": "Performance and Importance level codes, as evaluated by the citizen",
+  "version": "0.1.4",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIICitizenObservationResultCodes",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIPerformanceLevelCodes"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIImportanceLevelCodes"
+        ]
+      }
+    ]
+  }
+}

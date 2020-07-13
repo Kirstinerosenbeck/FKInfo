@@ -5,7 +5,7 @@
   "id": "KLCommonCareSocialEncounterTypes",
   "title": "Encounter Types",
   "description": "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonCareSocialEncounterTypes",
   "compose": {
     "include": [

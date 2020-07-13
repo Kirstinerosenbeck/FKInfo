@@ -1,0 +1,27 @@
+{
+  "resourceType": "Goal",
+  "id": "AndreasLivsmaal",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialGoal"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "416fe27d-3ccf-4390-8742-8b52a9d8dc78",
+          "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+          "display": "FFB livsmål"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "text": "Andreas ønsker en hverdag med venner og aktiviteter, så han har noget at stå op til og søde mennesker at være sammen med. Det er vigtigt for ham at være ren og pæn, og selv stå for det i videst mulig omfang."
+  },
+  "subject": {
+    "reference": "Patient/Andreas"
+  },
+  "lifecycleStatus": "active"
+}

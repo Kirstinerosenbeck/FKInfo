@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FSIIICitizenObservationCodes",
+  "id": "FSIIICitizenObservationCodes",
+  "title": "FSIIICitizenObservationCodes",
+  "description": "Observation codes for citizens own observations as defined by FSIII",
+  "version": "0.1.4",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIICitizenObservationCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.21",
+        "concept": [
+          {
+            "code": "C",
+            "display": "Udførelse"
+          },
+          {
+            "code": "D",
+            "display": "Betydning"
+          }
+        ]
+      }
+    ]
+  }
+}

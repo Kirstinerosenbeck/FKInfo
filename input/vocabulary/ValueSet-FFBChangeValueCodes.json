@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FFBChangeValueCodes",
+  "id": "FFBChangeValueCodes",
+  "title": "FFBChangeValueCodes",
+  "description": "Change values for goals in FFB (FFB måltype). Express the target value for change of an activity or participation condition",
+  "version": "0.1.4",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FFBChangeValueCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.22",
+        "concept": [
+          {
+            "code": "d41c8072-52f8-42b5-9375-ddbea454d27f",
+            "display": "Udvikle funktionsevne"
+          },
+          {
+            "code": "10752a63-00b4-4958-b7f4-9f3a18f74266",
+            "display": "Fastholde funktionsevne"
+          },
+          {
+            "code": "e47c22bd-d88d-48ab-882b-419923e1f44e",
+            "display": "Begrænse tab af funktionsevne"
+          }
+        ]
+      }
+    ]
+  }
+}

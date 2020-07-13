@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLChangeValueCodes",
+  "id": "KLChangeValueCodes",
+  "title": "KLChangeValueCodes",
+  "description": "Change values for goals (måltype). Express the target value for change of a condition",
+  "version": "0.1.4",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLChangeValueCodes",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIChangeValueCodes"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/FFBChangeValueCodes"
+        ]
+      }
+    ]
+  }
+}

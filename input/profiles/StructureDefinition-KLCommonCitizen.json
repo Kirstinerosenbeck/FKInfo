@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "KLCommonCitizen",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "name": "KLCommonCitizen",
   "title": "CommonCitizen",
   "status": "active",

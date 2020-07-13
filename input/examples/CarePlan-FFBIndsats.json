@@ -1,0 +1,49 @@
+{
+  "resourceType": "CarePlan",
+  "id": "FFBIndsats",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCarePlan"
+    ]
+  },
+  "addresses": [
+    {
+      "extension": [
+        {
+          "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/ConditionRank",
+          "valuePositiveInt": 1
+        }
+      ],
+      "reference": "Condition/AndreasMaalgruppeUdviklingshamning"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/ConditionRank",
+          "valuePositiveInt": 2
+        }
+      ],
+      "reference": "Condition/AndreasDiabetes"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "subject": {
+    "reference": "Patient/Andreas"
+  },
+  "created": "2020-07-06",
+  "goal": [
+    {
+      "reference": "Goal/AndreasIndsatsformaal"
+    }
+  ],
+  "description": "Andreas plan for midlertidigt ophold omfatter socialpædagogiske tiltag, med fokus på at klare sig selv i hverdagsaktiviteter, og opbygge relationer til personale og de andre beboere. Ved indsatsens afslutning skal Andreas genvurderes mhp. at finde en permanent løsning, der tilsvarer Andreas funktionsniveau.",
+  "author": {
+    "reference": "Organization/SocialOgSundhedMorsoe"
+  },
+  "careTeam": [
+    {
+      "reference": "CareTeam/MidlertidigtOpholdBotilbuddetHvidbjerghus"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "resourceType": "Observation",
+  "id": "MarksPuls",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialObservation"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "8499008",
+        "system": "http://snomed.info/sct",
+        "display": "Puls"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Mark"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/AbrahamFraAkutSygeplejen"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/HenvisningFraLageVedrAkutSygepleje"
+    }
+  ],
+  "valueQuantity": {
+    "value": 78,
+    "unit": "Slag pr. minut",
+    "system": "http://unitsofmeasure.org",
+    "code": "{beats}/min"
+  },
+  "status": "final"
+}

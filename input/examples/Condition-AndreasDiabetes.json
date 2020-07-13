@@ -1,0 +1,21 @@
+{
+  "resourceType": "Condition",
+  "id": "AndreasDiabetes",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCrossSectorCondition"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.208.176.2.4.12",
+        "code": "DE11",
+        "display": "Type 2-diabetes"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Andreas"
+  }
+}

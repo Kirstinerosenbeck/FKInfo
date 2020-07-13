@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RequesterType",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/RequesterType",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "name": "RequesterType",
   "title": "RequesterType",
   "status": "active",

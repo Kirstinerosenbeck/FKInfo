@@ -5,7 +5,7 @@
   "id": "KLCommonGoalTypeCodes",
   "title": "KLCommonGoalTypeCodes",
   "description": "Codes used to distinguish different kinds of goals",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonGoalTypeCodes",
   "compose": {
     "include": [

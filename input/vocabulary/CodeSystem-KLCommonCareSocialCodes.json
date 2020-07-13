@@ -6,7 +6,7 @@
   "id": "KLCommonCareSocialCodes",
   "title": "Codes associated with KLCommonCareSocial",
   "description": "Administrative/technical codes, not defined elsewhere, associated with KLCommonCareSocial",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
   "concept": [
     {
@@ -122,7 +122,7 @@
     {
       "code": "424827b1-23aa-4848-962b-56ee47def560",
       "display": "Indsatsformål",
-      "definition": "Er det overordnede formål med hele indsatsen (Defineret af FFB men bruges også for FSIII)"
+      "definition": "Det overordnede formål med hele indsatsen (Defineret af FFB men bruges også for FSIII)"
     },
     {
       "code": "0bb3daef-538d-45dc-b444-abdbcb63f6bc",
@@ -133,6 +133,76 @@
       "code": "6746d4af-145a-4bfd-a672-05c0cf11b53b",
       "display": "FFB delmål",
       "definition": "Delmål i FFB, ligger under indsatsmål, og er som udtrykt af udfører"
+    },
+    {
+      "code": "54c4ffea-7caf-4edc-8aa9-ef6e0be26c4c",
+      "display": "FSIII helhedsvurdering",
+      "definition": "Sagsvurdering, der sammenholder resultaterne af en myndighedsudredning og den øvrige sagsoplysning med henblik på at træffe en afgørelse"
+    },
+    {
+      "code": "053a301d-1bb8-4cc4-b781-87825ecf0ef8",
+      "display": "FFB samlet situation",
+      "definition": "Vurdering der sammenholder oplysninger fra udredning mhp en samlet faglig analyse og konklusion."
+    },
+    {
+      "code": "effe55c7-572c-4a99-8fb4-2a9dda2f6572",
+      "display": "FFB støttebehovsvurdering",
+      "definition": "Angiver, hvor stort et behov borgeren har for hjælp og støtte."
+    },
+    {
+      "code": "81c827de-ef31-4410-aa57-0d1d1bc6c264",
+      "display": "forsvinder",
+      "definition": " helbredstilstand eller funktionsevnetilstand forventes at forsvinde ifm. indsatsen"
+    },
+    {
+      "code": "8addc23a-f7c6-47c4-97fb-a73fcdfc9f65",
+      "display": "mindskes",
+      "definition": "helbredstilstand eller funktinsevnetilstand forventes at mindskes ifm. indsatsen"
+    },
+    {
+      "code": "15846728-58b4-4413-a9d1-be0f1404b10f",
+      "display": "forblive uædret",
+      "definition": "helbredstilstand eller funktionsevnetilstand forventes at forblive uændret ifm. indsatsen"
+    },
+    {
+      "code": "66959f77-6e2a-4574-8423-3ff097f8b9fa",
+      "display": "funktionsevneniveau",
+      "definition": "målet udtrykkes i form af et FFB funktionsevneniveau eller FSIII forventet tilstandsniveau"
+    },
+    {
+      "code": "90c48f03-f194-4b2f-ad7d-6cba1069ae48",
+      "display": "måltype",
+      "definition": "målet udtrykkes i form af en måltype, måltypen er den forventede ændring i tilstanden givet indsatsen"
+    },
+    {
+      "code": "e70c66c0-a939-493b-8ea8-5b7e7b48ba1a",
+      "display": "generelle oplysninger, FSIII",
+      "definition": "indhentning af generelle oplysninger jævnfør FSIII"
+    },
+    {
+      "code": "e5a73b0e-a5d2-430e-931f-6156306ab00f",
+      "display": "funktionsevnevurdering hjemmepleje, FSIII",
+      "definition": "udførelse af funktionsevnevurdering i hjemmeplejen jævnfør FSIII"
+    },
+    {
+      "code": "47fd1468-89da-4803-9d7a-ecc039a30d92",
+      "display": "sygeplejefaglig udredning, FSIII",
+      "definition": "udførelse af sygeplejefaglig udredning jævnfør FSIII"
+    },
+    {
+      "code": "0f0f223c-abe3-4720-aab8-c257679a0a4e",
+      "display": "terapeutfaglig udredning, FSIII",
+      "definition": "udførelse af terapeutfaglig udredning jævnfør FSIII"
+    },
+    {
+      "code": "95e787e0-5490-437d-ae4c-f3736644242f",
+      "display": "afklarende samtale §119, FSIII",
+      "definition": "udførelse af afklarende samtale vedr. sundhedsfremme og forebyggelse jævnfør FSIII"
+    },
+    {
+      "code": "f8ebd11a-04f3-4aa0-9786-406e8896c84d",
+      "display": "socialfaglig udredning, VUM/FFB",
+      "definition": "udførelse af socialfaglig udredning som specificeret af VUM og FFB"
     }
   ]
 }

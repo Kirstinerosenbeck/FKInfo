@@ -1,6 +1,6 @@
 {
   "name": "caresocial",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "canonical": "http://kl.dk/fhir/common/caresocial",
   "url": "http://kl.dk/fhir/common/caresocial",
   "title": "FKI Implementation Guide",

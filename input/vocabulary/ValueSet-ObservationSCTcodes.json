@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationSCTcodes",
+  "id": "ObservationSCTcodes",
+  "title": "ObservationSCTcodes",
+  "description": "SNOMED CT observation codes used in Dansih municipalities",
+  "version": "0.1.4",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/ObservationSCTcodes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "271649006",
+            "display": "Systolisk blodtryk"
+          },
+          {
+            "code": "271650006",
+            "display": "Diastolisk blodtryk"
+          },
+          {
+            "code": "8499008",
+            "display": "Puls"
+          },
+          {
+            "code": "450738001",
+            "display": "Thirty second chair stand test score"
+          },
+          {
+            "code": "373801008",
+            "display": "WHO-funktionsstatusskala"
+          },
+          {
+            "code": "36048009",
+            "display": "Glucosemåling"
+          },
+          {
+            "code": "103228002",
+            "display": "Hæmoglobinmætning med oxygen"
+          }
+        ]
+      }
+    ]
+  }
+}

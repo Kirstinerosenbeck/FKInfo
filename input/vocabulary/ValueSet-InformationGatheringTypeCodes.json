@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "InformationGatheringTypeCodes",
+  "id": "InformationGatheringTypeCodes",
+  "title": "InformationGatheringTypeCodes",
+  "description": "Codes used to specify which kind of information gathering is conducted",
+  "version": "0.1.4",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/InformationGatheringTypeCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "concept": [
+          {
+            "code": "e70c66c0-a939-493b-8ea8-5b7e7b48ba1a",
+            "display": "generelle oplysninger, FSIII"
+          },
+          {
+            "code": "e5a73b0e-a5d2-430e-931f-6156306ab00f",
+            "display": "funktionsevnevurdering hjemmepleje, FSIII"
+          },
+          {
+            "code": "47fd1468-89da-4803-9d7a-ecc039a30d92",
+            "display": "sygeplejefaglig udredning, FSIII"
+          },
+          {
+            "code": "0f0f223c-abe3-4720-aab8-c257679a0a4e",
+            "display": "terapeutfaglig udredning, FSIII"
+          },
+          {
+            "code": "95e787e0-5490-437d-ae4c-f3736644242f",
+            "display": "afklarende samtale §119, FSIII"
+          },
+          {
+            "code": "f8ebd11a-04f3-4aa0-9786-406e8896c84d",
+            "display": "socialfaglig udredning, VUM/FFB"
+          }
+        ]
+      }
+    ]
+  }
+}
