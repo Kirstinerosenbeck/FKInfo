@@ -5,7 +5,7 @@
   "id": "InformationGatheringTypeCodes",
   "title": "InformationGatheringTypeCodes",
   "description": "Codes used to specify which kind of information gathering is conducted",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/InformationGatheringTypeCodes",
   "compose": {
     "include": [

@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "KLCommonOrganization",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Entities"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonOrganization",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "KLCommonOrganization",
   "title": "CommonOrganization",
   "status": "active",

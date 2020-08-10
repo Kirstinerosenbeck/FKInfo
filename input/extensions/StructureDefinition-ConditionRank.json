@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ConditionRank",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/ConditionRank",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "ConditionRank",
   "title": "ConditionRank",
   "status": "active",
@@ -28,10 +28,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Extension",
-        "path": "Extension"
-      },
       {
         "id": "Extension.extension",
         "path": "Extension.extension",

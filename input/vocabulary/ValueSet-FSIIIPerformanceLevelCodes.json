@@ -5,7 +5,7 @@
   "id": "FSIIIPerformanceLevelCodes",
   "title": "FSIIIPerformanceLevelCodes",
   "description": "Performance level codes (Udførelse), as evaluated by the citizen",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIPerformanceLevelCodes",
   "compose": {
     "include": [

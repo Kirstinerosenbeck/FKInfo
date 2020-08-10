@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialEncounter",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Management"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEncounter",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "KLCommonCareSocialEncounter",
   "title": "CommonCareSocalEncounter",
   "status": "active",
@@ -38,10 +48,6 @@
   "differential": {
     "element": [
       {
-        "id": "Encounter",
-        "path": "Encounter"
-      },
-      {
         "id": "Encounter.type",
         "path": "Encounter.type",
         "binding": {
@@ -60,10 +66,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Encounter.participant",
-        "path": "Encounter.participant"
       },
       {
         "id": "Encounter.participant.individual",

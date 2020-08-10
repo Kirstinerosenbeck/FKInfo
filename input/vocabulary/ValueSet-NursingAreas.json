@@ -5,7 +5,7 @@
   "id": "NursingAreas",
   "title": "Nursing areas",
   "description": "Observation codes for the 12 nursing areas as defined by FSIII",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/NursingAreas",
   "compose": {
     "include": [

@@ -5,7 +5,7 @@
   "id": "FSIIIFollowUpCodes",
   "title": "FSIIIFollowUpCodes",
   "description": "Follow-up codes used in FSIII",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIFollowUpCodes",
   "compose": {
     "include": [

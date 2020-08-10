@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialInformationGarthering",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Summary"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialInformationGarthering",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "KLCommonCareSocialInformationGarthering",
   "title": "KLCommonCareSocialInformationGarthering",
   "status": "active",
@@ -37,10 +47,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "ClinicalImpression",
-        "path": "ClinicalImpression"
-      },
       {
         "id": "ClinicalImpression.extension",
         "path": "ClinicalImpression.extension",
@@ -138,10 +144,6 @@
         ]
       },
       {
-        "id": "ClinicalImpression.investigation",
-        "path": "ClinicalImpression.investigation"
-      },
-      {
         "id": "ClinicalImpression.investigation.code",
         "path": "ClinicalImpression.investigation.code",
         "binding": {
@@ -161,10 +163,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "ClinicalImpression.finding",
-        "path": "ClinicalImpression.finding"
       },
       {
         "id": "ClinicalImpression.finding.itemReference",

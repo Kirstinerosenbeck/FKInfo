@@ -4,7 +4,7 @@
   "name": "ComplicationsSCTcodes",
   "id": "ComplicationsSCTcodes",
   "title": "Codes that indicate whether an intervention had complications or not",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/ComplicationsSCTcodes",
   "compose": {
     "include": [

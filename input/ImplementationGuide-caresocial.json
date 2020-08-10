@@ -2,11 +2,10 @@
   "resourceType": "ImplementationGuide",
   "id": "caresocial",
   "url": "http://kl.dk/fhir/common/caresocial/ImplementationGuide/caresocial",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "FKIImplementationGuide",
   "title": "FKI Implementation Guide",
   "status": "active",
-  "publisher": "Kommunernes Landsforening",
   "contact": [
     {
       "name": "Kommunernes landsforening",
@@ -26,22 +25,14 @@
   ],
   "dependsOn": [
     {
-      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
-      "id": "hl7_fhir_us_core",
-      "version": "3.1.0"
+      "version": "3.1.0",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "id": "hl7_fhir_us_core"
     }
   ],
   "definition": {
     "resource": [
-      {
-        "reference": {
-          "reference": "StructureDefinition/CitizensOwnObservation"
-        },
-        "name": "CitizensOwnObservation",
-        "description": "Citizens own observation of performance level (udførelse) or importance level (betydning) as defined by FSIII",
-        "exampleBoolean": false
-      },
       {
         "reference": {
           "reference": "StructureDefinition/KLCommonCareSocialCarePlan"
@@ -52,10 +43,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/KLCommonCareSocialClassifiedFollowUp"
+          "reference": "StructureDefinition/KLCommonCareSocialCitizensOwnObservation"
         },
-        "name": "CommonCareSocialClassifiedFollowUp",
-        "description": "Classified follow-up result used in Danish municipalities",
+        "name": "CommonCareSocialCitizensOwnObservation",
+        "description": "Citizens own observation of performance level (udførelse) or importance level (betydning) as defined by FSIII",
         "exampleBoolean": false
       },
       {
@@ -172,10 +163,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialSeverity"
+        },
+        "name": "CommonCareSocialSeverity",
+        "description": "Observation of functional level severities in Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/KLCommonCareSocialStructuredEvaluation"
         },
         "name": "CommonCareSocialStructuredEvaluation",
         "description": "Structured assesment of needs as performed in Danish Municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KLCommonCareSocialStructuredFollowUp"
+        },
+        "name": "CommonCareSocialStructuresFollowUp",
+        "description": "Structured follow-up result used in Danish municipalities",
         "exampleBoolean": false
       },
       {
@@ -566,6 +573,13 @@
         },
         "name": "KLCommonNeedsAssessmentCodes",
         "description": "Needs assesment codes as defined in FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLConditionCodes"
+        },
+        "name": "KLConditionCodes",
         "exampleBoolean": false
       },
       {

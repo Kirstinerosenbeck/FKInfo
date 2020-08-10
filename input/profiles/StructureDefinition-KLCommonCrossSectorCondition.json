@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "KLCommonCrossSectorCondition",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Summary"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCrossSectorCondition",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "KLCommonCrossSectorCondition",
   "title": "CommonCrossSectorCondition",
   "status": "active",
@@ -47,14 +57,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Condition",
-        "path": "Condition"
-      },
-      {
-        "id": "Condition.code",
-        "path": "Condition.code"
-      },
       {
         "id": "Condition.code.coding",
         "path": "Condition.code.coding",
@@ -178,10 +180,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Condition.note",
-        "path": "Condition.note"
       },
       {
         "id": "Condition.note.author[x]",

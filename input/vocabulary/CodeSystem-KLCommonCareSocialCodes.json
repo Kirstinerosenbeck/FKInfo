@@ -6,7 +6,7 @@
   "id": "KLCommonCareSocialCodes",
   "title": "Codes associated with KLCommonCareSocial",
   "description": "Administrative/technical codes, not defined elsewhere, associated with KLCommonCareSocial",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
   "concept": [
     {
@@ -167,7 +167,7 @@
     {
       "code": "66959f77-6e2a-4574-8423-3ff097f8b9fa",
       "display": "funktionsevneniveau",
-      "definition": "målet udtrykkes i form af et FFB funktionsevneniveau eller FSIII forventet tilstandsniveau"
+      "definition": "funktionsevneniveau, som kan være et FFB funktionsevneniveau eller FSIII tilstandsniveau"
     },
     {
       "code": "90c48f03-f194-4b2f-ad7d-6cba1069ae48",
@@ -204,5 +204,6 @@
       "display": "socialfaglig udredning, VUM/FFB",
       "definition": "udførelse af socialfaglig udredning som specificeret af VUM og FFB"
     }
-  ]
+  ],
+  "count": 39
 }

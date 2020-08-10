@@ -5,7 +5,7 @@
   "id": "GenerelInformation",
   "title": "FSIII general information",
   "description": "Generel information codes (observations) as defined by FSIII",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/GenerelInformation",
   "compose": {
     "include": [

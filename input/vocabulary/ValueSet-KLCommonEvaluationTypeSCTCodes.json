@@ -5,7 +5,7 @@
   "id": "KLCommonEvaluationTypeSCTCodes",
   "title": "KLCommonEvaluationTypeSCTCodes",
   "description": "SNOMED CT codes used to distinguish different kinds of evaluations",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonEvaluationTypeSCTCodes",
   "compose": {
     "include": [

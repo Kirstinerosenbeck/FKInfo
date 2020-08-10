@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialServiceRequest",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Care Provision"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialServiceRequest",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "KLCommonCareSocialServiceRequest",
   "title": "CommonCareSocialServiceRequest",
   "status": "active",
@@ -42,10 +52,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "ServiceRequest",
-        "path": "ServiceRequest"
-      },
       {
         "id": "ServiceRequest.extension",
         "path": "ServiceRequest.extension",
@@ -137,10 +143,6 @@
         ]
       },
       {
-        "id": "ServiceRequest.reasonCode",
-        "path": "ServiceRequest.reasonCode"
-      },
-      {
         "id": "ServiceRequest.reasonCode.text",
         "path": "ServiceRequest.reasonCode.text",
         "mustSupport": true
@@ -153,7 +155,7 @@
             "code": "Reference",
             "targetProfile": [
               "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCrossSectorCondition",
-              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialClassifiedFollowUp"
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialStructuredFollowUp"
             ]
           }
         ]

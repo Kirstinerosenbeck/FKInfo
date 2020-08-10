@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialFFBGoal",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Care Provision"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialFFBGoal",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "KLCommonCareSocialFFBGoal",
   "title": "KLCommonCareSocialFFBGoal",
   "status": "active",
@@ -32,10 +42,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Goal",
-        "path": "Goal"
-      },
       {
         "id": "Goal.category",
         "path": "Goal.category",

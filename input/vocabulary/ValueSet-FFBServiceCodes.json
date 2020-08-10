@@ -5,7 +5,7 @@
   "id": "FFBServiceCodes",
   "title": "FFB tilbud",
   "description": "Social service (tilbud) as defined by FFB",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FFBServiceCodes",
   "compose": {
     "include": [

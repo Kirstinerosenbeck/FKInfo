@@ -5,7 +5,7 @@
   "id": "KLConditionCodesPrevention",
   "title": "Prevention Condition codes",
   "description": "Danish municipality Prevention condition codes",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesPrevention",
   "compose": {
     "include": [

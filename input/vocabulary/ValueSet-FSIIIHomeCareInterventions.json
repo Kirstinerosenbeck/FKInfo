@@ -5,7 +5,7 @@
   "id": "FSIIIHomeCareInterventions",
   "title": "Home Care Interventions",
   "description": "Home Care Interventions as described by FSIII",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIHomeCareInterventions",
   "compose": {
     "include": [

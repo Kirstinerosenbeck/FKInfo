@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialCarePlan",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Care Provision"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCarePlan",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "KLCommonCareSocialCarePlan",
   "title": "CommonCareSocialCarePlan",
   "status": "active",
@@ -37,10 +47,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "CarePlan",
-        "path": "CarePlan"
-      },
       {
         "id": "CarePlan.extension",
         "path": "CarePlan.extension",

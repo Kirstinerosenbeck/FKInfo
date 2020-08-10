@@ -5,7 +5,7 @@
   "id": "KLCommonNeedsAssessmentCodes",
   "title": "KLCommonNeedsAssessmentCodes",
   "description": "Needs assesment codes as defined in FFB",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonNeedsAssessmentCodes",
   "compose": {
     "include": [

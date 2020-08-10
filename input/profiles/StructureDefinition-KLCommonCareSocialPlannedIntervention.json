@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialPlannedIntervention",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Care Provision"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "KLCommonCareSocialPlannedIntervention",
   "title": "CommonCareSocialPlannedIntervention",
   "status": "active",
@@ -37,10 +47,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "CarePlan",
-        "path": "CarePlan"
-      },
       {
         "id": "CarePlan.extension",
         "path": "CarePlan.extension",
@@ -149,10 +155,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "CarePlan.activity.detail",
-        "path": "CarePlan.activity.detail"
       },
       {
         "id": "CarePlan.activity.detail.code",

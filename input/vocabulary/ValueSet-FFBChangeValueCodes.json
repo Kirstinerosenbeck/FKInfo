@@ -5,7 +5,7 @@
   "id": "FFBChangeValueCodes",
   "title": "FFBChangeValueCodes",
   "description": "Change values for goals in FFB (FFB måltype). Express the target value for change of an activity or participation condition",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FFBChangeValueCodes",
   "compose": {
     "include": [

@@ -8,7 +8,7 @@
 * ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialInformationSeverity-intro.md *
 ************************************************************************************************
 {% endcomment %} -->
-# Scope and usage
+### Scope and usage
 The CommonCareSocialInformationSeverity may be instatiated for FSIII areas where, in special cases, a severity may be recorded together with or instead of the a text.
 
 

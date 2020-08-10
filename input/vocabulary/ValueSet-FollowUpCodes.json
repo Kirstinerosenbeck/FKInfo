@@ -5,7 +5,7 @@
   "id": "FollowUpCodes",
   "title": "FollowUpCodes",
   "description": "Follow-up codes used in Danish municipalities",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/FollowUpCodes",
   "compose": {
     "include": [

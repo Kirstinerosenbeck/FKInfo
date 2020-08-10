@@ -5,7 +5,7 @@
   "id": "KLTargetMeasureCodes",
   "title": "KLTargetMeasureCodes",
   "description": "Target measure code, that determines whether the target is expressed as a severity or a change value",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLTargetMeasureCodes",
   "compose": {
     "include": [

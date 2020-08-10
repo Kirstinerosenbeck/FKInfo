@@ -5,7 +5,7 @@
   "id": "ObservationSCTcodes",
   "title": "ObservationSCTcodes",
   "description": "SNOMED CT observation codes used in Dansih municipalities",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/ObservationSCTcodes",
   "compose": {
     "include": [

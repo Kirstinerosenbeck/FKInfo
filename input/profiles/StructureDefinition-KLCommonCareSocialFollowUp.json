@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "KLCommonCareSocialFollowUp",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialFollowUp",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "KLCommonCareSocialFollowUp",
   "title": "CommonCareSocialFollowUp",
   "status": "active",
@@ -47,10 +57,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Observation",
-        "path": "Observation"
-      },
       {
         "id": "Observation.code",
         "path": "Observation.code",
@@ -125,7 +131,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialClassifiedFollowUp"
+              "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialStructuredFollowUp"
             ]
           }
         ]

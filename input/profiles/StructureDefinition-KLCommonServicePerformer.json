@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "KLCommonServicePerformer",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Care Provision"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonServicePerformer",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "KLCommonServicePerformer",
   "title": "CommonServicePerformer",
   "status": "active",
@@ -32,10 +42,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "CareTeam",
-        "path": "CareTeam"
-      },
       {
         "id": "CareTeam.category",
         "path": "CareTeam.category",
