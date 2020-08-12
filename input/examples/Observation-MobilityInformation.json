@@ -1,0 +1,24 @@
+{
+  "resourceType": "Observation",
+  "id": "MobilityInformation",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialInformation"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Judith"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "J3",
+        "system": "urn:oid:1.2.208.176.2.21",
+        "display": "Mobilitet"
+      }
+    ]
+  },
+  "effectiveDateTime": "2020-08-11T15:28:17-01:00",
+  "valueString": "Judith har faldtendens, men er meget dedikeret ift. at lære at bruge sin rollator indendørs og udendørs, og desuden går hun en tur på 30min hver dag",
+  "status": "final"
+}

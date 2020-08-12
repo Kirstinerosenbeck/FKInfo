@@ -1,0 +1,40 @@
+{
+  "resourceType": "Condition",
+  "id": "ConditionWalking",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition"
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "J3.8",
+        "system": "urn:oid:1.2.208.176.2.21",
+        "display": "Gå"
+      }
+    ],
+    "text": "Hun har en meget dårlig gangfunktion, selv om hun bruger rollator"
+  },
+  "severity": {
+    "coding": [
+      {
+        "code": "B4",
+        "system": "urn:oid:1.2.208.176.2.21",
+        "display": "Svære begrænsninger"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Judith"
+  },
+  "recordedDate": "2020-08-11"
+}

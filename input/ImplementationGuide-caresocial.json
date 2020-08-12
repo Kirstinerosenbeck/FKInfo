@@ -115,9 +115,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/KLCommonCareSocialInformationGarthering"
+          "reference": "StructureDefinition/KLCommonCareSocialInformationGathering"
         },
-        "name": "KLCommonCareSocialInformationGarthering",
+        "name": "KLCommonCareSocialInformationGathering",
         "description": "Information gathering resource used to group all the information collected in a clinical process such af a nursing status, a functional ability evaluation or a social paedagogical review",
         "exampleBoolean": false
       },
@@ -750,6 +750,14 @@
       },
       {
         "reference": {
+          "reference": "Condition/ConditionWalking"
+        },
+        "name": "ConditionWalking",
+        "description": "Example of the citizen, Judith, who has troubles walking",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCondition"
+      },
+      {
+        "reference": {
           "reference": "CarePlan/FFBIndsats"
         },
         "name": "FFBIndsats",
@@ -821,6 +829,14 @@
       },
       {
         "reference": {
+          "reference": "Patient/Judith"
+        },
+        "name": "Judith",
+        "description": "KL-Citizen Judith",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen"
+      },
+      {
+        "reference": {
           "reference": "Organization/LaegerneHasserisBymidte"
         },
         "name": "LaegerneHasserisBymidte",
@@ -866,6 +882,14 @@
         "name": "MidlertidigtOpholdBotilbuddetHvidbjerghus",
         "description": "Midlertidigt ophold efter servicelovens §107 på Hvidhjerghus",
         "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonServicePerformer"
+      },
+      {
+        "reference": {
+          "reference": "Observation/MobilityInformation"
+        },
+        "name": "MobilityInformation",
+        "description": "Judith's mobility information",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialInformation"
       },
       {
         "reference": {
