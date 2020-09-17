@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLRequestFromFSIII",
+  "id": "KLRequestFromFSIII",
+  "title": "KLRequestFromFSIII",
+  "description": "Type of service requesters as defined by FSIII",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLRequestFromFSIII",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "A15"
+          },
+          {
+            "code": "A3"
+          },
+          {
+            "code": "A1"
+          },
+          {
+            "code": "A13"
+          },
+          {
+            "code": "A12"
+          },
+          {
+            "code": "A10"
+          },
+          {
+            "code": "A9"
+          },
+          {
+            "code": "A8"
+          },
+          {
+            "code": "A4"
+          },
+          {
+            "code": "A11"
+          },
+          {
+            "code": "A6"
+          },
+          {
+            "code": "A5"
+          },
+          {
+            "code": "A7"
+          },
+          {
+            "code": "A14"
+          },
+          {
+            "code": "A2"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "WHO-5AnswerMark",
+  "questionnaire": "http://kl.dk/fhir/common/caresocial/Questionnaire/WHO-5",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/Mark"
+  },
+  "author": {
+    "reference": "Practitioner/AbrahamFraAkutSygeplejen"
+  },
+  "source": {
+    "reference": "Patient/Mark"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "0e5aa952-d470-4219-b275-5e8204d96987",
+            "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLToolsCodes",
+            "display": "WHO-5 Hele tiden (5)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "a3779fc5-d7b3-4d03-bdaf-5ae5a40b0899",
+            "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLToolsCodes",
+            "display": "WHO-5 Lidt mere end halvdelen af tiden (3)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "0e5aa952-d470-4219-b275-5e8204d96987",
+            "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLToolsCodes",
+            "display": "WHO-5 Hele tiden (5)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "0e5aa952-d470-4219-b275-5e8204d96987",
+            "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLToolsCodes",
+            "display": "WHO-5 Hele tiden (5)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "0e5aa952-d470-4219-b275-5e8204d96987",
+            "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLToolsCodes",
+            "display": "WHO-5 Hele tiden (5)"
+          }
+        }
+      ]
+    }
+  ]
+}

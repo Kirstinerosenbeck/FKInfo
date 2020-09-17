@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLCarePlanCategoryCodes",
+  "id": "KLCarePlanCategoryCodes",
+  "title": "KLCarePlanCategoryCodes",
+  "description": "Codes for constraining the CarePlan category",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCarePlanCategoryCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "concept": [
+          {
+            "code": "ddd2f670-5ec7-4f9c-9a2c-aee25cb133bf"
+          },
+          {
+            "code": "4fd6c23a-6ff3-4251-ac37-3ca095027b5b"
+          },
+          {
+            "code": "e459386d-1474-4c31-89c5-c8bc7a25e3d4"
+          }
+        ]
+      }
+    ]
+  }
+}

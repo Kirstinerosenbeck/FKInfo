@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLThemesFFB",
+  "id": "KLThemesFFB",
+  "title": "KLThemesFFB",
+  "description": "FFB Themes (and subthemes associated with information - which are not conditions in the strict sense)",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLThemesFFB",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+        "concept": [
+          {
+            "code": "4fb78b88-d3af-4cfb-84d7-f06daf423317"
+          },
+          {
+            "code": "25c5c614-305f-46cd-9891-55d564fc30cf"
+          },
+          {
+            "code": "e1836145-0c20-4e20-971e-d62dfe4ea1a0"
+          },
+          {
+            "code": "a134c31d-d316-46d4-935e-e500874dbbe1"
+          },
+          {
+            "code": "da3f488f-1742-4d00-b247-a7d47500b36b"
+          },
+          {
+            "code": "3856b434-f72e-42a5-b9d1-0cc93f48434b"
+          },
+          {
+            "code": "c2b186f9-9c10-478e-8345-2d2c37ab4c46"
+          },
+          {
+            "code": "dfbe6ff6-223b-436a-b864-8ba29bda41e2"
+          },
+          {
+            "code": "d1495b2c-1452-4e49-8dbe-8193af5d8823"
+          },
+          {
+            "code": "eef71492-65f5-4297-aa95-3c3a6866ddef"
+          },
+          {
+            "code": "df194a84-6e4b-4f14-a194-d8d9d9a1fcad"
+          },
+          {
+            "code": "22eef871-6650-426f-8b79-8d40a6c62808"
+          },
+          {
+            "code": "83342ff3-5f2e-4914-b045-e98357685866"
+          },
+          {
+            "code": "69dbfad7-859a-4596-8737-8054f6b4948f"
+          },
+          {
+            "code": "081ab1be-7dc1-41fa-803c-12a146eb0b74"
+          }
+        ]
+      }
+    ]
+  }
+}

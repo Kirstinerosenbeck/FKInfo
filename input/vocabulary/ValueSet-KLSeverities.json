@@ -3,20 +3,20 @@
   "status": "active",
   "name": "KLSeverities",
   "id": "KLSeverities",
-  "title": "KL Severities",
+  "title": "KLSeverities",
   "description": "Severities related to conditions",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLSeverities",
   "compose": {
     "include": [
       {
         "valueSet": [
-          "http://kl.dk/fhir/common/caresocial/ValueSet/FFBSeverities"
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLSeveritiesFFB"
         ]
       },
       {
         "valueSet": [
-          "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIISeverites"
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLSeveritiesFSIII"
         ]
       }
     ]

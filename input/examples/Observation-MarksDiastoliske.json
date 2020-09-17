@@ -1,0 +1,38 @@
+{
+  "resourceType": "Observation",
+  "id": "MarksDiastoliske",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialObservation"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "271650006",
+        "system": "http://snomed.info/sct",
+        "display": "Diastolisk blodtryk"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Mark"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/AbrahamFraAkutSygeplejen"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/HenvisningFraLageVedrAkutSygepleje"
+    }
+  ],
+  "valueQuantity": {
+    "value": 120,
+    "unit": "Millimeter kviksølv",
+    "system": "http://unitsofmeasure.org",
+    "code": "mm[Hg]"
+  },
+  "status": "final"
+}

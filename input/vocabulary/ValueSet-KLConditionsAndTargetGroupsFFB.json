@@ -1,0 +1,159 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLConditionsAndTargetGroupsFFB",
+  "id": "KLConditionsAndTargetGroupsFFB",
+  "title": "KLConditionsAndTargetGroupsFFB",
+  "description": "Conditions and target groups as defined by FFB",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionsAndTargetGroupsFFB",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+        "concept": [
+          {
+            "code": "1f23325e-c9c9-455b-bfe7-b4dcd1bb63e5"
+          },
+          {
+            "code": "f1c7ee41-21b4-4dba-9424-c874bf72b5e7"
+          },
+          {
+            "code": "ab7b7d7b-b7bb-4b8c-99d9-5c98a302b771"
+          },
+          {
+            "code": "0d66b364-958e-48cf-a18b-744fab284194"
+          },
+          {
+            "code": "7ef8be83-90d1-4375-b1cb-24710bea21c7"
+          },
+          {
+            "code": "5cb8997c-eb10-477f-b653-b2a5ff11ce7d"
+          },
+          {
+            "code": "6e155207-db12-419a-8d9c-d67756533056"
+          },
+          {
+            "code": "615310e8-f702-4455-910b-9d6d8aa684fb"
+          },
+          {
+            "code": "da298aec-cd7d-436c-9927-d88d00066881"
+          },
+          {
+            "code": "7b48f1a0-579b-4976-ae7c-4074b5981449"
+          },
+          {
+            "code": "d26f97e8-99ed-46a9-94db-93340f77a950"
+          },
+          {
+            "code": "1097d07f-1dba-4cc2-ae3a-399a501c2eb6"
+          },
+          {
+            "code": "9b3fd322-a75a-4ed8-9b74-425fa1e01c95"
+          },
+          {
+            "code": "cc6a58cf-d3d2-4e5f-b7fe-98b009647eac"
+          },
+          {
+            "code": "e6a269f5-944a-4ff8-b4d8-6dc2134d9167"
+          },
+          {
+            "code": "93d52b11-faa7-4ff7-b552-11a84cce8bf1"
+          },
+          {
+            "code": "71dfe6d1-ebc1-4414-8527-edf8e605c356"
+          },
+          {
+            "code": "5cfc9530-a193-4f66-9981-3b980ee9ea7b"
+          },
+          {
+            "code": "97c355cc-84e3-46d0-ac1b-00bc627d089f"
+          },
+          {
+            "code": "17ce646b-4469-4a73-82a9-9628436f6c70"
+          },
+          {
+            "code": "303deb9b-84f0-49d2-ab7a-f8b98eed40a2"
+          },
+          {
+            "code": "ee5b52bd-b839-4e69-ad04-c8b33eabfbde"
+          },
+          {
+            "code": "f2ccc0c0-2a0a-49c9-9d6a-741a7cd220a3"
+          },
+          {
+            "code": "6aac5ae6-ef06-4866-9c66-16d51ebbc83b"
+          },
+          {
+            "code": "192b7d79-415c-4f4f-9223-607938ecbe97"
+          },
+          {
+            "code": "afaa7e31-2b5d-4a49-9008-56aa8df8dc13"
+          },
+          {
+            "code": "d42d8f41-2d07-4391-a687-bad51172d0c9"
+          },
+          {
+            "code": "851b2a9d-cde2-4d5d-8f33-d03789022cbb"
+          },
+          {
+            "code": "293bf940-c075-4e3d-b5ef-6e331202e556"
+          },
+          {
+            "code": "3e3f5ebf-82c1-401b-ab5e-e6138a31da3a"
+          },
+          {
+            "code": "16075f99-3694-4878-a48d-b2f4b515cb76"
+          },
+          {
+            "code": "e1b59a4a-9cc2-4113-a5f1-84af588b02a2"
+          },
+          {
+            "code": "66fac925-3488-43b3-8e50-4510d3821b37"
+          },
+          {
+            "code": "3b166cb0-df17-4002-a4c4-69e9a943645c"
+          },
+          {
+            "code": "df42d472-06f6-4c5f-9dcf-64aa6cc20925"
+          },
+          {
+            "code": "6a038911-d866-4910-90ae-72ca55c641ea"
+          },
+          {
+            "code": "f1f4d709-19d2-48cc-8942-231bf912323d"
+          },
+          {
+            "code": "ab4413f0-fa81-41c0-ad8c-21782c12a0fa"
+          },
+          {
+            "code": "0e25a2ec-4f04-4d14-a5ad-a6519a7d1d5f"
+          },
+          {
+            "code": "122f3f8e-84a0-476f-b9c5-0e40b1dcf113"
+          },
+          {
+            "code": "6fd0f315-2297-4d66-b638-3f867a0900e0"
+          },
+          {
+            "code": "5e95db73-4d16-4084-93a3-595c0650b160"
+          },
+          {
+            "code": "c47fd846-f1e0-4786-89a4-88d00e7a86c0"
+          },
+          {
+            "code": "3412d671-22bf-456c-b963-c4e05c2725a0"
+          },
+          {
+            "code": "905caa77-2b98-48ce-b0e1-35dc4c1cc4bd"
+          }
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesFFB"
+        ]
+      }
+    ]
+  }
+}

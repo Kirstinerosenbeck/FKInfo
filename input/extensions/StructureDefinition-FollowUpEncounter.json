@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "FollowUpEncounter",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/FollowUpEncounter",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "name": "FollowUpEncounter",
   "title": "FollowupEncounter",
   "status": "active",

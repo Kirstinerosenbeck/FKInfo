@@ -1,0 +1,55 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLNursingAreasFSIII",
+  "id": "KLNursingAreasFSIII",
+  "title": "KLNursingAreasFSIII",
+  "description": "Observation codes for the 12 nursing areas as defined by FSIII",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLNursingAreasFSIII",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "I9"
+          },
+          {
+            "code": "I2"
+          },
+          {
+            "code": "I11"
+          },
+          {
+            "code": "I1"
+          },
+          {
+            "code": "I5"
+          },
+          {
+            "code": "I7"
+          },
+          {
+            "code": "I4"
+          },
+          {
+            "code": "I8"
+          },
+          {
+            "code": "I3"
+          },
+          {
+            "code": "I12"
+          },
+          {
+            "code": "I10"
+          },
+          {
+            "code": "I6"
+          }
+        ]
+      }
+    ]
+  }
+}

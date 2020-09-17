@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLEncounterTypes",
+  "id": "KLEncounterTypes",
+  "title": "KLEncounterTypes",
+  "description": "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLEncounterTypes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "concept": [
+          {
+            "code": "829ac647-c7fc-4964-836b-f708d886e0e3"
+          },
+          {
+            "code": "9269c9a2-8220-447b-a127-811275b41062"
+          },
+          {
+            "code": "9f03dfbb-7a97-45a5-94db-d4c3501714a9"
+          },
+          {
+            "code": "784275f1-6822-4a88-b361-d958007d5253"
+          },
+          {
+            "code": "15775b0a-7ec6-469e-9d3c-a81fbc9a1b45"
+          },
+          {
+            "code": "c03b426a-4348-407f-b343-f4baa9759c72"
+          },
+          {
+            "code": "bb6fc544-7f4f-4b50-8868-1431e0df2381"
+          }
+        ]
+      }
+    ]
+  }
+}

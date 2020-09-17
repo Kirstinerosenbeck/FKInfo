@@ -1,0 +1,112 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLHomeCareInterventionsFSIII",
+  "id": "KLHomeCareInterventionsFSIII",
+  "title": "KLHomeCareInterventionsFSIII",
+  "description": "Home Care Interventions as described by FSIII",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLHomeCareInterventionsFSIII",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "H1.4"
+          },
+          {
+            "code": "H1.12"
+          },
+          {
+            "code": "H1.2"
+          },
+          {
+            "code": "H1.11"
+          },
+          {
+            "code": "H1.1"
+          },
+          {
+            "code": "H1.7"
+          },
+          {
+            "code": "H1.3"
+          },
+          {
+            "code": "H1.9"
+          },
+          {
+            "code": "H1.8"
+          },
+          {
+            "code": "H1.5"
+          },
+          {
+            "code": "H1.6"
+          },
+          {
+            "code": "H1.10"
+          },
+          {
+            "code": "H2.11"
+          },
+          {
+            "code": "H2.9"
+          },
+          {
+            "code": "H2.10"
+          },
+          {
+            "code": "H2.6"
+          },
+          {
+            "code": "H2.2"
+          },
+          {
+            "code": "H2.8"
+          },
+          {
+            "code": "H2.5"
+          },
+          {
+            "code": "H2.3"
+          },
+          {
+            "code": "H2.7"
+          },
+          {
+            "code": "H2.1"
+          },
+          {
+            "code": "H2.4"
+          },
+          {
+            "code": "H3.3"
+          },
+          {
+            "code": "H3.1"
+          },
+          {
+            "code": "H3.2"
+          },
+          {
+            "code": "H4.1"
+          },
+          {
+            "code": "H5.1"
+          },
+          {
+            "code": "H6.1"
+          },
+          {
+            "code": "H7.2"
+          },
+          {
+            "code": "H7.1"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLICD10SKS",
+  "id": "KLICD10SKS",
+  "title": "KLICD10SKS",
+  "description": "ICD10 codes as defined by SKS in Denmark excluding the main hierachy code D",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLICD10SKS",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.4.12"
+      }
+    ]
+  }
+}

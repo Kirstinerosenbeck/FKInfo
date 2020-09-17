@@ -1,0 +1,148 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLNursingInterventionsFSIII",
+  "id": "KLNursingInterventionsFSIII",
+  "title": "KLNursingInterventionsFSIII",
+  "description": "Nursing interventions as described by FSIII",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLNursingInterventionsFSIII",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "G1.34"
+          },
+          {
+            "code": "G1.20"
+          },
+          {
+            "code": "G1.11"
+          },
+          {
+            "code": "G1.31"
+          },
+          {
+            "code": "G1.15"
+          },
+          {
+            "code": "G1.32"
+          },
+          {
+            "code": "G1.7"
+          },
+          {
+            "code": "G1.38"
+          },
+          {
+            "code": "G1.22"
+          },
+          {
+            "code": "G1.44"
+          },
+          {
+            "code": "G1.29"
+          },
+          {
+            "code": "G1.8"
+          },
+          {
+            "code": "G1.47"
+          },
+          {
+            "code": "G1.37"
+          },
+          {
+            "code": "G1.16"
+          },
+          {
+            "code": "G1.25"
+          },
+          {
+            "code": "G1.5"
+          },
+          {
+            "code": "G1.26"
+          },
+          {
+            "code": "G1.39"
+          },
+          {
+            "code": "G1.14"
+          },
+          {
+            "code": "G1.19"
+          },
+          {
+            "code": "G1.30"
+          },
+          {
+            "code": "G1.12"
+          },
+          {
+            "code": "G1.17"
+          },
+          {
+            "code": "G1.36"
+          },
+          {
+            "code": "G1.21"
+          },
+          {
+            "code": "G1.42"
+          },
+          {
+            "code": "G1.46"
+          },
+          {
+            "code": "G1.35"
+          },
+          {
+            "code": "G1.10"
+          },
+          {
+            "code": "G1.40"
+          },
+          {
+            "code": "G1.18"
+          },
+          {
+            "code": "G1.28"
+          },
+          {
+            "code": "G1.27"
+          },
+          {
+            "code": "G1.6"
+          },
+          {
+            "code": "G1.9"
+          },
+          {
+            "code": "G1.41"
+          },
+          {
+            "code": "G1.24"
+          },
+          {
+            "code": "G1.23"
+          },
+          {
+            "code": "G2.4"
+          },
+          {
+            "code": "G2.3"
+          },
+          {
+            "code": "G2.1"
+          },
+          {
+            "code": "G2.2"
+          }
+        ]
+      }
+    ]
+  }
+}

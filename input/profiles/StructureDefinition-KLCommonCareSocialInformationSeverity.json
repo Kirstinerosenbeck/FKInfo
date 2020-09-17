@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialInformationSeverity",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "name": "KLCommonCareSocialInformationSeverity",
   "title": "CommonCareSocialInformationSeverity",
   "status": "active",
@@ -62,7 +62,7 @@
         "path": "Observation.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/HomeCareAreas"
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLHomeCareAreasFSIII"
         }
       },
       {
@@ -137,7 +137,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIISeverites"
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLSeveritiesFSIII"
         }
       }
     ]

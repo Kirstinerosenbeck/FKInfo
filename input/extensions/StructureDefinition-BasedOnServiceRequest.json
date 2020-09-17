@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "BasedOnServiceRequest",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/BasedOnServiceRequest",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "name": "BasedOnServiceRequest",
   "title": "BasedOnServiceRequest",
   "status": "active",

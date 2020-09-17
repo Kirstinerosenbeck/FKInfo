@@ -1,0 +1,31 @@
+{
+  "resourceType": "Composition",
+  "id": "VitaleParametre",
+  "status": "final",
+  "type": {
+    "text": "Municipality vital signs panel"
+  },
+  "author": [
+    {
+      "reference": "Practitioner/AbrahamFraAkutSygeplejen"
+    }
+  ],
+  "title": "Vital signs panel",
+  "date": "2020-01-20T13:50:02.175171+00:00",
+  "section": [
+    {
+      "entry": [
+        {
+          "reference": "Observation/MarksPuls"
+        }
+      ]
+    },
+    {
+      "entry": [
+        {
+          "reference": "Observation/MarksDiastoliske"
+        }
+      ]
+    }
+  ]
+}

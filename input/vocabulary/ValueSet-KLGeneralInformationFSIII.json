@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLGeneralInformationFSIII",
+  "id": "KLGeneralInformationFSIII",
+  "title": "KLGeneralInformationFSIII",
+  "description": "Generel information codes (observations) as defined by FSIII",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLGeneralInformationFSIII",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "F12"
+          },
+          {
+            "code": "F2"
+          },
+          {
+            "code": "F6"
+          },
+          {
+            "code": "F8"
+          },
+          {
+            "code": "F7"
+          },
+          {
+            "code": "F5"
+          },
+          {
+            "code": "F4"
+          },
+          {
+            "code": "F3"
+          },
+          {
+            "code": "F9"
+          },
+          {
+            "code": "F1"
+          },
+          {
+            "code": "F10"
+          }
+        ]
+      }
+    ]
+  }
+}

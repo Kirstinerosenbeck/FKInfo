@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCitizensOwnObservation",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "name": "KLCommonCareSocialCitizensOwnObservation",
   "title": "CommonCareSocialCitizensOwnObservation",
   "status": "active",
@@ -62,7 +62,7 @@
         "path": "Observation.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIICitizenObservationCodes"
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCitizenObservationCodesFSIII"
         }
       },
       {
@@ -151,7 +151,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIICitizenObservationResultCodes"
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCitizenObservationResultCodesFSIII"
         }
       }
     ]

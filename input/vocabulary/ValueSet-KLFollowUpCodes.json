@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLFollowUpCodes",
+  "id": "KLFollowUpCodes",
+  "title": "KLFollowUpCodes",
+  "description": "Follow-up codes used in Danish municipalities",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLFollowUpCodes",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLFollowUpCodesFFB"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLFollowUpCodesFSIII"
+        ]
+      }
+    ]
+  }
+}

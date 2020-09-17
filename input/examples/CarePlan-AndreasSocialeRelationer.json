@@ -1,0 +1,36 @@
+{
+  "resourceType": "CarePlan",
+  "id": "AndreasSocialeRelationer",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention"
+    ]
+  },
+  "basedOn": [
+    {
+      "reference": "CarePlan/NySocialIndsats"
+    }
+  ],
+  "activity": [
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "code": "05cd5e81-1a3a-4bdd-901b-7ec96c12d990",
+              "display": "Støtte til sociale relationer",
+              "system": "urn:oid:1.2.208.176.2.22"
+            }
+          ]
+        },
+        "status": "in-progress"
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Andreas"
+  },
+  "intent": "order",
+  "status": "active",
+  "created": "2020-08-12"
+}

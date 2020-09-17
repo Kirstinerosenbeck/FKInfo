@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLSeveritiesFFB",
+  "id": "KLSeveritiesFFB",
+  "title": "KLSeveritiesFFB",
+  "description": "Severities related to conditions in FFB (funktionsevneniveau)",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLSeveritiesFFB",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+        "concept": [
+          {
+            "code": "2254dac8-8aa3-4334-8502-9720194f49ad"
+          },
+          {
+            "code": "b508ff66-6326-4862-a6d7-7bbf184c9823"
+          },
+          {
+            "code": "8328ce4a-6238-4f73-bf1a-74aadb68eff8"
+          },
+          {
+            "code": "5bdde847-2837-416b-ab63-bbff8b7aa531"
+          },
+          {
+            "code": "cae545f5-2813-4d79-98fc-0a7d770af3c"
+          },
+          {
+            "code": "832ae90b-23b5-4063-80aa-0b81bdce680e"
+          }
+        ]
+      }
+    ]
+  }
+}

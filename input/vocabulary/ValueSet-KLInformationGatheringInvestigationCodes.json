@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLInformationGatheringInvestigationCodes",
+  "id": "KLInformationGatheringInvestigationCodes",
+  "title": "KLInformationGatheringInvestigationCodes",
+  "description": "Codes that identify valid items in an investigation in Danish municipalities",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLInformationGatheringInvestigationCodes",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLEvaluationTypeCodes"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLInformationCodes"
+        ]
+      }
+    ]
+  }
+}

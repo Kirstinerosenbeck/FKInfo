@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLSeveritiesFSIII",
+  "id": "KLSeveritiesFSIII",
+  "title": "KLSeveritiesFSIII",
+  "description": "Severities related to conditions in FSIII home care (funktionsniveau)",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLSeveritiesFSIII",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "B1"
+          },
+          {
+            "code": "B2"
+          },
+          {
+            "code": "B3"
+          },
+          {
+            "code": "B4"
+          },
+          {
+            "code": "B5"
+          },
+          {
+            "code": "B6"
+          }
+        ]
+      }
+    ]
+  }
+}

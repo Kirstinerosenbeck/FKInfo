@@ -11,7 +11,7 @@
       "coding": [
         {
           "code": "25de7444-3919-4dab-b844-8cec6c15f30e",
-          "system": "urn:oid:1.2.208.176.2.22",
+          "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
           "display": "Midlertidigt botilbud til voksne"
         }
       ]

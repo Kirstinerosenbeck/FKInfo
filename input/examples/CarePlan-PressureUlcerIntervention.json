@@ -13,7 +13,7 @@
           "coding": [
             {
               "code": "G1.39",
-              "system": "urn:oid:1.2.208.176.2.21",
+              "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
               "display": "Sårbehandling"
             }
           ]

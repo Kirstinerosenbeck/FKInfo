@@ -3,138 +3,107 @@
   "status": "active",
   "name": "KLConditionCodesHomeCare",
   "id": "KLConditionCodesHomeCare",
-  "title": "Home Care Condition codes",
+  "title": "KLConditionCodesHomeCare",
   "description": "Danish municipality home care condition codes (funktionsevnetilstande)",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesHomeCare",
   "compose": {
     "include": [
       {
-        "system": "urn:oid:1.2.208.176.2.21",
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
         "concept": [
           {
-            "code": "J3.4",
-            "display": "Færden i forskellige omgivelser"
+            "code": "J3.4"
           },
           {
-            "code": "J3.8",
-            "display": "Gå"
+            "code": "J3.8"
           },
           {
-            "code": "J4.6",
-            "display": "Energi og handlekraft"
+            "code": "J4.6"
           },
           {
-            "code": "J3.2",
-            "display": "Bevæge sig omkring"
+            "code": "J3.2"
           },
           {
-            "code": "J3.5",
-            "display": "Forflytte sig"
+            "code": "J3.5"
           },
           {
-            "code": "J4.3",
-            "display": "Orienteringsevne"
+            "code": "J4.3"
           },
           {
-            "code": "J1.8",
-            "display": "Gå på toilet"
+            "code": "J1.8"
           },
           {
-            "code": "J4.4",
-            "display": "Overordnede kognitive funktioner"
+            "code": "J4.4"
           },
           {
-            "code": "J1.7",
-            "display": "Varetage egen sundhed"
+            "code": "J1.7"
           },
           {
-            "code": "J4.1",
-            "display": "Anvende kommunikationsudstyr og -teknikker"
+            "code": "J4.1"
           },
           {
-            "code": "J3.9",
-            "display": "Udholdenhed"
+            "code": "J3.9"
           },
           {
-            "code": "J1.3",
-            "display": "Af- og påklædning"
+            "code": "J1.3"
           },
           {
-            "code": "J3.1",
-            "display": "Løfte og bære"
+            "code": "J3.1"
           },
           {
-            "code": "J1.1",
-            "display": "Vaske sig"
+            "code": "J1.1"
           },
           {
-            "code": "J4.2",
-            "display": "Hukommelse"
+            "code": "J4.2"
           },
           {
-            "code": "J2.3",
-            "display": "Udføre daglige rutiner"
+            "code": "J2.3"
           },
           {
-            "code": "J1.2",
-            "display": "Kropspleje"
+            "code": "J1.2"
           },
           {
-            "code": "J3.7",
-            "display": "Muskelstyrke"
+            "code": "J3.7"
           },
           {
-            "code": "J2.4",
-            "display": "Skaffe sig varer og tjenesteydelser"
+            "code": "J2.4"
           },
           {
-            "code": "J2.2",
-            "display": "Lave mad"
+            "code": "J2.2"
           },
           {
-            "code": "J4.8",
-            "display": "Problemløsning"
+            "code": "J4.8"
           },
           {
-            "code": "J4.7",
-            "display": "Tilegne sig færdigheder"
+            "code": "J4.7"
           },
           {
-            "code": "J3.3",
-            "display": "Bruge transportmidler"
+            "code": "J3.3"
           },
           {
-            "code": "J3.6",
-            "display": "Ændre kropsstilling"
+            "code": "J3.6"
           },
           {
-            "code": "J1.6",
-            "display": "Spise"
+            "code": "J1.6"
           },
           {
-            "code": "J1.5",
-            "display": "Fødeindtagelse"
+            "code": "J1.5"
           },
           {
-            "code": "J5.1",
-            "display": "Have lønnet beskæftigelse"
+            "code": "J5.1"
           },
           {
-            "code": "J2.3",
-            "display": "Udføre daglige rutiner"
+            "code": "J2.3"
           },
           {
-            "code": "J1.4",
-            "display": "Drikke"
+            "code": "J1.4"
           },
           {
-            "code": "J2.1",
-            "display": "Lave husligt arbejde"
+            "code": "J2.1"
           },
           {
-            "code": "J4.5",
-            "display": "Følelsesfunktioner"
+            "code": "J4.5"
           }
         ]
       }

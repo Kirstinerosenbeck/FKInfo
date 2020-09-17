@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLInformationGatheringTypeCodes",
+  "id": "KLInformationGatheringTypeCodes",
+  "title": "KLInformationGatheringTypeCodes",
+  "description": "Codes used to specify which kind of information gathering is conducted",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLInformationGatheringTypeCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "concept": [
+          {
+            "code": "e70c66c0-a939-493b-8ea8-5b7e7b48ba1a"
+          },
+          {
+            "code": "e5a73b0e-a5d2-430e-931f-6156306ab00f"
+          },
+          {
+            "code": "47fd1468-89da-4803-9d7a-ecc039a30d92"
+          },
+          {
+            "code": "0f0f223c-abe3-4720-aab8-c257679a0a4e"
+          },
+          {
+            "code": "95e787e0-5490-437d-ae4c-f3736644242f"
+          },
+          {
+            "code": "f8ebd11a-04f3-4aa0-9786-406e8896c84d"
+          }
+        ]
+      }
+    ]
+  }
+}

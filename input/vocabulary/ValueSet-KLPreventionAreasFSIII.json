@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLPreventionAreasFSIII",
+  "id": "KLPreventionAreasFSIII",
+  "title": "KLPreventionAreasFSIII",
+  "description": "Prevention areas (observation codes), used for documentation within prevention and health promotion",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLPreventionAreasFSIII",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "d03da587-94dc-46e6-ba71-eb1e43ec7df6"
+          },
+          {
+            "code": "7b3b3587-4ddd-4b93-a81b-455bfc601492"
+          },
+          {
+            "code": "b349c7ec-86c5-4c52-aaf2-9034d98b0e3b"
+          },
+          {
+            "code": "3547a306-8623-4713-a8ce-db1e82839c50"
+          }
+        ]
+      }
+    ]
+  }
+}

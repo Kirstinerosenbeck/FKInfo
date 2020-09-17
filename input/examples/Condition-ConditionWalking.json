@@ -17,9 +17,9 @@
   "code": {
     "coding": [
       {
-        "code": "J3.8",
-        "system": "urn:oid:1.2.208.176.2.21",
-        "display": "Gå"
+        "code": "8f32c948-41c4-49d7-8913-cdeede2e7fe1",
+        "system": "urn:oid:1.2.208.176.2.22",
+        "display": "Gøre rent"
       }
     ],
     "text": "Hun har en meget dårlig gangfunktion, selv om hun bruger rollator"
@@ -27,14 +27,14 @@
   "severity": {
     "coding": [
       {
-        "code": "B4",
-        "system": "urn:oid:1.2.208.176.2.21",
-        "display": "Svære begrænsninger"
+        "code": "cae545f5-2813-4d79-98fc-0a7d770af3c",
+        "system": "urn:oid:1.2.208.176.2.22",
+        "display": "Svært nedsat funktionsevne"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/Judith"
+    "reference": "Patient/Andreas"
   },
-  "recordedDate": "2020-08-11"
+  "recordedDate": "2020-08-12"
 }

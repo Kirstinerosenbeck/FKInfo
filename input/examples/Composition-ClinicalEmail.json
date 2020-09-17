@@ -1,0 +1,54 @@
+{
+  "resourceType": "Composition",
+  "id": "ClinicalEmail",
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "clinical-email",
+        "system": "http://medcom.dk/fhir/messagetype"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://medcom.dk/fhir/CodeSystem/medcom-clinicalEmailCategoryCode",
+          "code": "LP173421-1"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Mark"
+  },
+  "date": "2020-01-20T13:50:02.175171+00:00",
+  "author": [
+    {
+      "reference": "Practitioner/AbrahamFraAkutSygeplejen"
+    }
+  ],
+  "title": "Clinical Email",
+  "section": [
+    {
+      "title": "Vitale parametre fra akutsygeplejen",
+      "section": [
+        {
+          "text": {
+            "status": "additional",
+            "div": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>Title of document</title></head><body>Hermed vitale parametre som aftalt. Blodtrykket er meget højt</body></html>"
+          }
+        }
+      ]
+    }
+  ],
+  "relatesTo": [
+    {
+      "code": "append",
+      "targetReference": {
+        "reference": "Composition/VitaleParametre"
+      }
+    }
+  ]
+}

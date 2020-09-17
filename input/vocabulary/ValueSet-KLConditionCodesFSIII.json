@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLConditionCodesFSIII",
+  "id": "KLConditionCodesFSIII",
+  "title": "KLConditionCodesFSIII",
+  "description": "Danish municipality FSIII condition codes",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesFSIII",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesHomeCare"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesNursing"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesTheraphy"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesPrevention"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLImportanceLevelCodesFSIII",
+  "id": "KLImportanceLevelCodesFSIII",
+  "title": "KLImportanceLevelCodesFSIII",
+  "description": "Importance level codes (Betydning), as evaluated by the citizen",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLImportanceLevelCodesFSIII",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "D1"
+          },
+          {
+            "code": "D2"
+          }
+        ]
+      }
+    ]
+  }
+}

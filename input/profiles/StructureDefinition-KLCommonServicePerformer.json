@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonServicePerformer",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "name": "KLCommonServicePerformer",
   "title": "CommonServicePerformer",
   "status": "active",
@@ -47,7 +47,7 @@
         "path": "CareTeam.category",
         "binding": {
           "strength": "required",
-          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/FFBServiceCodes"
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLServiceCodesFFB"
         }
       },
       {

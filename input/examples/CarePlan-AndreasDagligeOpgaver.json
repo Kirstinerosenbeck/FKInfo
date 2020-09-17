@@ -1,0 +1,36 @@
+{
+  "resourceType": "CarePlan",
+  "id": "AndreasDagligeOpgaver",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention"
+    ]
+  },
+  "basedOn": [
+    {
+      "reference": "CarePlan/NySocialIndsats"
+    }
+  ],
+  "activity": [
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "code": "638f44df-6bf2-47f8-9935-b8fdc83e5bf5",
+              "display": "Støtte til daglige opgaver i hjemmet",
+              "system": "urn:oid:1.2.208.176.2.22"
+            }
+          ]
+        },
+        "status": "in-progress"
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Andreas"
+  },
+  "intent": "order",
+  "status": "active",
+  "created": "2020-08-12"
+}

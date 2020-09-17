@@ -13,7 +13,7 @@
         "coding": [
           {
             "code": "A4",
-            "system": "urn:oid:1.2.208.176.2.21",
+            "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
             "display": "Hjemmeplejen"
           }
         ]
@@ -42,7 +42,7 @@
       "coding": [
         {
           "code": "H1.4",
-          "system": "urn:oid:1.2.208.176.2.21",
+          "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
           "display": "Mobilitet"
         }
       ]
@@ -51,7 +51,7 @@
       "coding": [
         {
           "code": "H2.2",
-          "system": "urn:oid:1.2.208.176.2.21",
+          "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
           "display": "RH Hverdagens aktiviteter"
         }
       ]

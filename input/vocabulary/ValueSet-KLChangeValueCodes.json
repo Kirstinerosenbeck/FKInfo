@@ -5,18 +5,18 @@
   "id": "KLChangeValueCodes",
   "title": "KLChangeValueCodes",
   "description": "Change values for goals (måltype). Express the target value for change of a condition",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLChangeValueCodes",
   "compose": {
     "include": [
       {
         "valueSet": [
-          "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIChangeValueCodes"
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLChangeValueCodesFSIII"
         ]
       },
       {
         "valueSet": [
-          "http://kl.dk/fhir/common/caresocial/ValueSet/FFBChangeValueCodes"
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLChangeValueCodesFFB"
         ]
       }
     ]

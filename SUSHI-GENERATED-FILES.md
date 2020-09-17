@@ -18,7 +18,7 @@ lists those files generated from project configs or the contents in the ig-data 
 | _updatePublisher.bat                                                                    | generated |                                                                                                    |
 | _updatePublisher.sh                                                                     | generated |                                                                                                    |
 | ig.ini                                                                                  | generated | ..\config.yaml                                                                                     |
-| input\ImplementationGuide-caresocial.json                                               | generated | ..\config.yaml, {all input resources and pages}                                                    |
+| input\ImplementationGuide-dk.fhir.ig.kl.common.caresocial.json                          | generated | ..\config.yaml, {all input resources and pages}                                                    |
 | input\ignoreWarnings.txt                                                                | generated |                                                                                                    |
 | package-list.json                                                                       | generated | ..\config.yaml                                                                                     |
 | input\images\Shorty.png                                                                 | copied    | ..\ig-data\input\images\Shorty.png                                                                 |
@@ -43,3 +43,6 @@ lists those files generated from project configs or the contents in the ig-data 
 | input\pagecontent\StructureDefinition-KLCommonCareSocialStructuredFollowUp-intro.md     | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCareSocialStructuredFollowUp-intro.md     |
 | input\pagecontent\StructureDefinition-KLCommonCrossSectorCondition-intro.md             | copied    | ..\ig-data\input\pagecontent\StructureDefinition-KLCommonCrossSectorCondition-intro.md             |
 | input\pagecontent\index.md                                                              | copied    | ..\ig-data\input\pagecontent\index.md                                                              |
+| input\vocabulary\CodeSystem-FFB.json                                                    | copied    | ..\ig-data\input\vocabulary\CodeSystem-FFB.json                                                    |
+| input\vocabulary\CodeSystem-FSIII.json                                                  | copied    | ..\ig-data\input\vocabulary\CodeSystem-FSIII.json                                                  |
+| input\vocabulary\CodeSystem-KLCommomCareSocialCodes.json                                | copied    | ..\ig-data\input\vocabulary\CodeSystem-KLCommonCareSocialCodes.json                                |

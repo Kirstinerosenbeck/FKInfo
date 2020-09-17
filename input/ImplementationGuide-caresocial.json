@@ -267,240 +267,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ComplicationsSCTcodes"
+          "reference": "ValueSet/KLCarePlanCategoryCodes"
         },
-        "name": "Codes that indicate whether an intervention had complications or not",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FFBChangeValueCodes"
-        },
-        "name": "FFBChangeValueCodes",
-        "description": "Change values for goals in FFB (FFB måltype). Express the target value for change of an activity or participation condition",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FFBConditionsAndTargetGroup"
-        },
-        "name": "FFB Conditions and target groups",
-        "description": "Conditions and target groups as defined by FFB",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FFBFollowUpCodes"
-        },
-        "name": "FFBFollowUpCodes",
-        "description": "Follow-up codes used in FFB",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FFBInterventions"
-        },
-        "name": "FFB interventions",
-        "description": "social interventions (ydelser) as defined by FFB",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FFBServiceCodes"
-        },
-        "name": "FFB tilbud",
-        "description": "Social service (tilbud) as defined by FFB",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FFBSeverities"
-        },
-        "name": "FFB Severities",
-        "description": "Severities related to conditions in FFB (funktionsevneniveau)",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FFBThemes"
-        },
-        "name": "FFB Themes",
-        "description": "FFB Themes (and subthemes associated with information - which are not conditions in the strict sense)",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIIChangeValueCodes"
-        },
-        "name": "FSIIIChangeValueCodes",
-        "description": "Change values for goals in FSIII (FSIII måltype). Express the target value for change of a health condition or funtional condition",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIICitizenObservationCodes"
-        },
-        "name": "FSIIICitizenObservationCodes",
-        "description": "Observation codes for citizens own observations as defined by FSIII",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIICitizenObservationResultCodes"
-        },
-        "name": "FSIIICitizenObservationResultCodes",
-        "description": "Performance and Importance level codes, as evaluated by the citizen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIIConditionCodes"
-        },
-        "name": "FSIII Condition codes",
-        "description": "Danish municipality FSIII condition codes",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIIFFBCareSocialInterventions"
-        },
-        "name": "FSIII and FFB Interventions",
-        "description": "Interventions as described by FSIII and FFB",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIIFollowUpCodes"
-        },
-        "name": "FSIIIFollowUpCodes",
-        "description": "Follow-up codes used in FSIII",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIIHomeCareInterventions"
-        },
-        "name": "Home Care Interventions",
-        "description": "Home Care Interventions as described by FSIII",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIIImportanceLevelCodes"
-        },
-        "name": "FSIIIImportanceLevelCodes",
-        "description": "Importance level codes (Betydning), as evaluated by the citizen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIINursingInterventions"
-        },
-        "name": "NursingInterventions",
-        "description": "Nursing interventions as described by FSIII",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIIPerformanceLevelCodes"
-        },
-        "name": "FSIIIPerformanceLevelCodes",
-        "description": "Performance level codes (Udførelse), as evaluated by the citizen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIIPreventionInterventions"
-        },
-        "name": "Prevention interventions",
-        "description": "Prevention and health promotion interventions as defined by FSIII",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIIRequestFrom"
-        },
-        "name": "FSIIIRequestFrom",
-        "description": "Type of service requesters as defined by FSIII",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIISeverites"
-        },
-        "name": "FSIII Severities",
-        "description": "Severities related to conditions in FSIII home care (funktionsniveau)",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FSIIITrainingInterventions"
-        },
-        "name": "Training interventions",
-        "description": "Training interventions as defined by FSIII",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/FollowUpCodes"
-        },
-        "name": "FollowUpCodes",
-        "description": "Follow-up codes used in Danish municipalities",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/GenerelInformation"
-        },
-        "name": "FSIII general information",
-        "description": "Generel information codes (observations) as defined by FSIII",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/HomeCareAreas"
-        },
-        "name": "Home care areas",
-        "description": "Observation codes for the five home care areas as defined by FSIII",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ICD10SKS"
-        },
-        "name": "ICD10 codes from SKS",
-        "description": "ICD10 codes as defined by SKS in Denmark excluding the main hierachy code D",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/ICPC2ValueSet"
-        },
-        "name": "ICPC-2-DK codes",
-        "description": "the Danish edition of ICPC2 codes as defined by KiAP",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/InformationCodes"
-        },
-        "name": "FSIII/FFB Information codes",
-        "description": "Information codes from FSIII and FFB (Område, Tema, Generelle oplysninger)",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/InformationGatheringInvestigationCodes"
-        },
-        "name": "Codes that identify valid items in an investigation in Danish municipalities",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/InformationGatheringTypeCodes"
-        },
-        "name": "InformationGatheringTypeCodes",
-        "description": "Codes used to specify which kind of information gathering is conducted",
+        "name": "KLCarePlanCategoryCodes",
+        "description": "Codes for constraining the CarePlan category",
         "exampleBoolean": false
       },
       {
@@ -513,66 +283,42 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/KLCommonCarePlanCategoryCodes"
+          "reference": "ValueSet/KLChangeValueCodesFFB"
         },
-        "name": "KLCommonCarePlanCategoryCodes",
-        "description": "Codes for constraining the CarePlan category",
+        "name": "KLChangeValueCodesFFB",
+        "description": "Change values for goals in FFB (FFB måltype). Express the target value for change of an activity or participation condition",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/KLCommonCareSocialEncounterTypes"
+          "reference": "ValueSet/KLChangeValueCodesFSIII"
         },
-        "name": "Encounter Types",
-        "description": "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)",
+        "name": "KLChangeValueCodesFSIII",
+        "description": "Change values for goals in FSIII (FSIII måltype). Express the target value for change of a health condition or funtional condition",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/KLCommonCareSocialServicesTypes"
+          "reference": "ValueSet/KLCitizenObservationCodesFSIII"
         },
-        "name": "Service Types",
-        "description": "Types of services that the Danish municipalities provide which is covered by FSIII and FFB",
+        "name": "KLCitizenObservationCodesFSIII",
+        "description": "Observation codes for citizens own observations as defined by FSIII",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/KLCommonConsentToLiasing"
+          "reference": "ValueSet/KLCitizenObservationResultCodesFSIII"
         },
-        "name": "KLCommonConsentToLiasing",
-        "description": "Codes for citizens knowledge of referal/request as defined by FFB",
+        "name": "KLCitizenObservationResultCodesFSIII",
+        "description": "Performance and Importance level codes, as evaluated by the citizen",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/KLCommonEvaluationTypeCodes"
+          "reference": "ValueSet/KLComplicationCodesSCT"
         },
-        "name": "KLCommonEvaluationTypeCodes",
-        "description": "Codes used to distinguish different kinds of evaluations",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/KLCommonEvaluationTypeSCTCodes"
-        },
-        "name": "KLCommonEvaluationTypeSCTCodes",
-        "description": "SNOMED CT codes used to distinguish different kinds of evaluations",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/KLCommonGoalTypeCodes"
-        },
-        "name": "KLCommonGoalTypeCodes",
-        "description": "Codes used to distinguish different kinds of goals",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/KLCommonNeedsAssessmentCodes"
-        },
-        "name": "KLCommonNeedsAssessmentCodes",
-        "description": "Needs assesment codes as defined in FFB",
+        "name": "KLComplicationCodesSCT",
+        "description": "Codes that indicate whether an intervention had complications or not",
         "exampleBoolean": false
       },
       {
@@ -580,21 +326,30 @@
           "reference": "ValueSet/KLConditionCodes"
         },
         "name": "KLConditionCodes",
+        "description": "Danish municipality condition codes",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ValueSet/KLConditionCodesFFB"
         },
-        "name": "FFB Condition codes",
+        "name": "KLConditionCodesFFB",
         "description": "Danish municipality FFB condition codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLConditionCodesFSIII"
+        },
+        "name": "KLConditionCodesFSIII",
+        "description": "Danish municipality FSIII condition codes",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ValueSet/KLConditionCodesHomeCare"
         },
-        "name": "Home Care Condition codes",
+        "name": "KLConditionCodesHomeCare",
         "description": "Danish municipality home care condition codes (funktionsevnetilstande)",
         "exampleBoolean": false
       },
@@ -602,7 +357,7 @@
         "reference": {
           "reference": "ValueSet/KLConditionCodesNursing"
         },
-        "name": "Nursing Condition codes",
+        "name": "KLConditionCodesNursing",
         "description": "Danish municipality nursing condition codes",
         "exampleBoolean": false
       },
@@ -610,7 +365,7 @@
         "reference": {
           "reference": "ValueSet/KLConditionCodesPrevention"
         },
-        "name": "Prevention Condition codes",
+        "name": "KLConditionCodesPrevention",
         "description": "Danish municipality Prevention condition codes",
         "exampleBoolean": false
       },
@@ -618,16 +373,272 @@
         "reference": {
           "reference": "ValueSet/KLConditionCodesTheraphy"
         },
-        "name": "Theraphy Condition codes",
+        "name": "KLConditionCodesTheraphy",
         "description": "Danish municipality theraphy condition codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLConditionsAndTargetGroupsFFB"
+        },
+        "name": "KLConditionsAndTargetGroupsFFB",
+        "description": "Conditions and target groups as defined by FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLConsentToLiasing"
+        },
+        "name": "KLConsentToLiasing",
+        "description": "Codes for citizens knowledge of referal/request as defined by FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLEncounterTypes"
+        },
+        "name": "KLEncounterTypes",
+        "description": "Encounter types in Danish municipality health, social and elderly care (note that these are specific to this model, they are not replicas of a municipality terminology service)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLEvaluationTypeCodes"
+        },
+        "name": "KLEvaluationTypeCodes",
+        "description": "Codes used to distinguish different kinds of evaluations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLEvaluationTypeCodesSCT"
+        },
+        "name": "KLEvaluationTypeCodesSCT",
+        "description": "SNOMED CT codes used to distinguish different kinds of evaluations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLFollowUpCodes"
+        },
+        "name": "KLFollowUpCodes",
+        "description": "Follow-up codes used in Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLFollowUpCodesFFB"
+        },
+        "name": "KLFollowUpCodesFFB",
+        "description": "Follow-up codes used in FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLFollowUpCodesFSIII"
+        },
+        "name": "KLFollowUpCodesFSIII",
+        "description": "Follow-up codes used in FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLGeneralInformationFSIII"
+        },
+        "name": "KLGeneralInformationFSIII",
+        "description": "Generel information codes (observations) as defined by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLGoalTypeCodes"
+        },
+        "name": "KLGoalTypeCodes",
+        "description": "Codes used to distinguish different kinds of goals",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLHomeCareAreasFSIII"
+        },
+        "name": "KLHomeCareAreasFSIII",
+        "description": "Observation codes for the five home care areas as defined by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLHomeCareInterventionsFSIII"
+        },
+        "name": "KLHomeCareInterventionsFSIII",
+        "description": "Home Care Interventions as described by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLICD10SKS"
+        },
+        "name": "KLICD10SKS",
+        "description": "ICD10 codes as defined by SKS in Denmark excluding the main hierachy code D",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLICPC2"
+        },
+        "name": "KLICPC2",
+        "description": "the Danish edition of ICPC2 codes as defined by KiAP",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLImportanceLevelCodesFSIII"
+        },
+        "name": "KLImportanceLevelCodesFSIII",
+        "description": "Importance level codes (Betydning), as evaluated by the citizen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLInformationCodes"
+        },
+        "name": "KLInformation codes",
+        "description": "Information codes from FSIII and FFB (Område, Tema, Generelle oplysninger)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLInformationGatheringInvestigationCodes"
+        },
+        "name": "KLInformationGatheringInvestigationCodes",
+        "description": "Codes that identify valid items in an investigation in Danish municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLInformationGatheringTypeCodes"
+        },
+        "name": "KLInformationGatheringTypeCodes",
+        "description": "Codes used to specify which kind of information gathering is conducted",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLInterventions"
+        },
+        "name": "KLInterventions",
+        "description": "Interventions as described by FSIII and FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLInterventionsFFB"
+        },
+        "name": "KLInterventionsFFB",
+        "description": "social interventions (ydelser) as defined by FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLNeedsAssessmentCodesFFB"
+        },
+        "name": "KLNeedsAssessmentCodesFFB",
+        "description": "Needs assesment codes as defined in FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLNursingAreasFSIII"
+        },
+        "name": "KLNursingAreasFSIII",
+        "description": "Observation codes for the 12 nursing areas as defined by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLNursingInterventionsFSIII"
+        },
+        "name": "KLNursingInterventionsFSIII",
+        "description": "Nursing interventions as described by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLObservationCodes"
+        },
+        "name": "KLObservationCodes",
+        "description": "SNOMED CT observation codes used in Dansih municipalities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLPerformanceLevelCodesFSIII"
+        },
+        "name": "KLPerformanceLevelCodesFSIII",
+        "description": "Performance level codes (Udførelse), as evaluated by the citizen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLPreventionAreasFSIII"
+        },
+        "name": "KLPreventionAreasFSIII",
+        "description": "Prevention areas (observation codes), used for documentation within prevention and health promotion",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLPreventionInterventionsFSIII"
+        },
+        "name": "KLPreventionInterventionsFSIII",
+        "description": "Prevention and health promotion interventions as defined by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLRequestFromFSIII"
+        },
+        "name": "KLRequestFromFSIII",
+        "description": "Type of service requesters as defined by FSIII",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLServiceCodesFFB"
+        },
+        "name": "KLServiceCodesFFB",
+        "description": "Social service (tilbud) as defined by FFB",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLServicesTypes"
+        },
+        "name": "KLEncounterTypes",
+        "description": "Types of services that the Danish municipalities provide which is covered by FSIII and FFB",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ValueSet/KLSeverities"
         },
-        "name": "KL Severities",
+        "name": "KLSeverities",
         "description": "Severities related to conditions",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLSeveritiesFFB"
+        },
+        "name": "KLSeveritiesFFB",
+        "description": "Severities related to conditions in FFB (funktionsevneniveau)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/KLSeveritiesFSIII"
+        },
+        "name": "KLSeveritiesFSIII",
+        "description": "Severities related to conditions in FSIII home care (funktionsniveau)",
         "exampleBoolean": false
       },
       {
@@ -640,42 +651,26 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/NursingAreas"
+          "reference": "ValueSet/KLThemesFFB"
         },
-        "name": "Nursing areas",
-        "description": "Observation codes for the 12 nursing areas as defined by FSIII",
+        "name": "KLThemesFFB",
+        "description": "FFB Themes (and subthemes associated with information - which are not conditions in the strict sense)",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/ObservationSCTcodes"
+          "reference": "ValueSet/KLTheraphyAreasFSIII"
         },
-        "name": "ObservationSCTcodes",
-        "description": "SNOMED CT observation codes used in Dansih municipalities",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/PreventionAreas"
-        },
-        "name": "Prevention areas",
-        "description": "Prevention areas (observation codes), used for documentation within prevention and health promotion",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/TheraphyAreas"
-        },
-        "name": "Theraphy areas",
+        "name": "KLTheraphyAreasFSIII",
         "description": "Theraphy areas (observation codes), used for documentation within physical training, physiotheraphy and occupational theraphy in Danish Municipalities as defined by FSIII",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CodeSystem/KLCommonCareSocialCodes"
+          "reference": "ValueSet/KLTrainingInterventionsFSIII"
         },
-        "name": "Codes associated with KLCommonCareSocial",
-        "description": "Administrative/technical codes, not defined elsewhere, associated with KLCommonCareSocial",
+        "name": "KLTrainingInterventionsFSIII",
+        "description": "Training interventions as defined by FSIII",
         "exampleBoolean": false
       },
       {
@@ -688,11 +683,25 @@
       },
       {
         "reference": {
+          "reference": "CareTeam/AlmBotilbud"
+        },
+        "name": "AlmBotilbud",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonServicePerformer"
+      },
+      {
+        "reference": {
           "reference": "Patient/Andreas"
         },
         "name": "Andreas",
         "description": "KL-Citizen Andreas",
         "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCitizen"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/AndreasDagligeOpgaver"
+        },
+        "name": "AndreasDagligeOpgaver",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention"
       },
       {
         "reference": {
@@ -706,7 +715,15 @@
           "reference": "Goal/AndreasIndsatsformaal"
         },
         "name": "AndreasIndsatsformål",
-        "description": "Indsatsmål for Andreas",
+        "description": "Indsatsformål for Andreas",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPurpose"
+      },
+      {
+        "reference": {
+          "reference": "Goal/AndreasIndsatsformaal2"
+        },
+        "name": "AndreasIndsatsformål2",
+        "description": "Indsatsformål for Andreas",
         "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPurpose"
       },
       {
@@ -723,6 +740,21 @@
         },
         "name": "AndreasMålgruppeUdviklingshæmning",
         "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCrossSectorCondition"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/AndreasSocialeRelationer"
+        },
+        "name": "AndreasSocialeRelationer",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPlannedIntervention"
+      },
+      {
+        "reference": {
+          "reference": "Goal/Andreasindsatsmaal"
+        },
+        "name": "AndreasIndsatsmål",
+        "description": "Indsatsmål for Andreas",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialGoal"
       },
       {
         "reference": {
@@ -869,6 +901,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/MarksDiastoliske"
+        },
+        "name": "MarksDiastoliske",
+        "description": "Observation af Marks diastoliske blodtryk",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialObservation"
+      },
+      {
+        "reference": {
           "reference": "Observation/MarksPuls"
         },
         "name": "MarksPuls",
@@ -890,6 +930,13 @@
         "name": "MobilityInformation",
         "description": "Judith's mobility information",
         "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialInformation"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/NySocialIndsats"
+        },
+        "name": "NySocialIndsats",
+        "exampleCanonical": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCarePlan"
       },
       {
         "reference": {

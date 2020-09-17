@@ -1,0 +1,30 @@
+{
+  "resourceType": "CarePlan",
+  "id": "NySocialIndsats",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCarePlan"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Andreas"
+  },
+  "careTeam": [
+    {
+      "reference": "CareTeam/AlmBotilbud"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/AndreasMaalgruppeUdviklingshamning"
+    }
+  ],
+  "created": "2020-08-12",
+  "goal": [
+    {
+      "reference": "Goal/AndreasIndsatsformaal2"
+    }
+  ],
+  "status": "active",
+  "intent": "order"
+}

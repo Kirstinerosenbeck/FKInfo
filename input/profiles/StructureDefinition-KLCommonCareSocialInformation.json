@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialInformation",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "name": "KLCommonCareSocialInformation",
   "title": "CommonCareSocialInformation",
   "status": "active",
@@ -75,7 +75,7 @@
         "path": "Observation.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/InformationCodes"
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLInformationCodes"
         }
       },
       {

@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLHomeCareAreasFSIII",
+  "id": "KLHomeCareAreasFSIII",
+  "title": "KLHomeCareAreasFSIII",
+  "description": "Observation codes for the five home care areas as defined by FSIII",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLHomeCareAreasFSIII",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "J1"
+          },
+          {
+            "code": "J5"
+          },
+          {
+            "code": "J2"
+          },
+          {
+            "code": "J3"
+          },
+          {
+            "code": "J4"
+          }
+        ]
+      }
+    ]
+  }
+}

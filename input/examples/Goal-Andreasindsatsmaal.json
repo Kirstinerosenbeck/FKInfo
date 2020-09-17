@@ -1,0 +1,67 @@
+{
+  "resourceType": "Goal",
+  "id": "Andreasindsatsmaal",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialGoal"
+    ]
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "code": "66959f77-6e2a-4574-8423-3ff097f8b9fa",
+            "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"
+          }
+        ]
+      },
+      "detailCodeableConcept": {
+        "coding": [
+          {
+            "code": "8328ce4a-6238-4f73-bf1a-74aadb68eff8",
+            "display": "Let nedsat funktionsevne",
+            "system": "urn:oid:1.2.208.176.2.22"
+          }
+        ]
+      }
+    },
+    {
+      "measure": {
+        "coding": [
+          {
+            "code": "90c48f03-f194-4b2f-ad7d-6cba1069ae48",
+            "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"
+          }
+        ]
+      },
+      "detailCodeableConcept": {
+        "coding": [
+          {
+            "code": "d41c8072-52f8-42b5-9375-ddbea454d27f",
+            "display": "Udvikle funktionsevne",
+            "system": "urn:oid:1.2.208.176.2.22"
+          }
+        ]
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "0bb3daef-538d-45dc-b444-abdbcb63f6bc",
+          "display": "FFB indsatsmål",
+          "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Andreas"
+  },
+  "lifecycleStatus": "active",
+  "description": {
+    "text": "holder orden på sit eget værelse"
+  }
+}

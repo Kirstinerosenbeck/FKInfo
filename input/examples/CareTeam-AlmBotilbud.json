@@ -1,0 +1,25 @@
+{
+  "resourceType": "CareTeam",
+  "id": "AlmBotilbud",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonServicePerformer"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "498fe92c-d7f7-41cd-9404-5b38fe113be0",
+          "display": "Almindeligt længerevarende botilbud til voksne",
+          "system": "urn:oid:1.2.208.176.2.22"
+        }
+      ]
+    }
+  ],
+  "managingOrganization": [
+    {
+      "reference": "Sommergården"
+    }
+  ]
+}

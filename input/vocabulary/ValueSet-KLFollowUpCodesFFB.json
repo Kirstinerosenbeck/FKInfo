@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLFollowUpCodesFFB",
+  "id": "KLFollowUpCodesFFB",
+  "title": "KLFollowUpCodesFFB",
+  "description": "Follow-up codes used in FFB",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLFollowUpCodesFFB",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+        "concept": [
+          {
+            "code": "1e971d84-10a4-4ef8-a8b3-0daa4c7d088a"
+          },
+          {
+            "code": "b4c01aa8-82fd-44e4-83ff-ca19ec02c779"
+          },
+          {
+            "code": "d7d03656-4c87-4e67-9146-aa5990460f16"
+          }
+        ]
+      }
+    ]
+  }
+}

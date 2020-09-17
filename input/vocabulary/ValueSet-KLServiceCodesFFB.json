@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLServiceCodesFFB",
+  "id": "KLServiceCodesFFB",
+  "title": "KLServiceCodesFFB",
+  "description": "Social service (tilbud) as defined by FFB",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLServiceCodesFFB",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+        "concept": [
+          {
+            "code": "9401777d-bdc5-4f52-9804-63c8cae9a792"
+          },
+          {
+            "code": "a0fb02a2-367c-48bc-bacd-92e49a861a4c"
+          },
+          {
+            "code": "25de7444-3919-4dab-b844-8cec6c15f30e"
+          },
+          {
+            "code": "498fe92c-d7f7-41cd-9404-5b38fe113be0"
+          },
+          {
+            "code": "070016aa-e164-4813-aca5-b75acab89d63"
+          },
+          {
+            "code": "d90f4da6-f87a-43b5-833f-646b4baf16d6"
+          },
+          {
+            "code": "a7cbf55b-6906-4b2a-872e-c48b4d728837"
+          }
+        ]
+      }
+    ]
+  }
+}

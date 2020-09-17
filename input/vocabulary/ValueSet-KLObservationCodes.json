@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLObservationCodes",
+  "id": "KLObservationCodes",
+  "title": "KLObservationCodes",
+  "description": "SNOMED CT observation codes used in Dansih municipalities",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLObservationCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "271649006"
+          },
+          {
+            "code": "271650006"
+          },
+          {
+            "code": "8499008"
+          },
+          {
+            "code": "450738001"
+          },
+          {
+            "code": "373801008"
+          },
+          {
+            "code": "36048009"
+          },
+          {
+            "code": "103228002"
+          },
+          {
+            "code": "85256008"
+          },
+          {
+            "code": "404949004"
+          },
+          {
+            "code": "406202006"
+          },
+          {
+            "code": "247752005"
+          }
+        ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "concept": [
+          {
+            "code": "e30a95fd-7abd-478b-9a9d-e02dfdd73fd5"
+          }
+        ]
+      }
+    ]
+  }
+}

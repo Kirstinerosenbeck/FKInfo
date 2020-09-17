@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLTheraphyAreasFSIII",
+  "id": "KLTheraphyAreasFSIII",
+  "title": "KLTheraphyAreasFSIII",
+  "description": "Theraphy areas (observation codes), used for documentation within physical training, physiotheraphy and occupational theraphy in Danish Municipalities as defined by FSIII",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLTheraphyAreasFSIII",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "7e608d37-3f3c-4374-bbc8-e317505d8bc2"
+          },
+          {
+            "code": "ebd91b5e-114a-48a5-90b8-d3c1fd50b72b"
+          },
+          {
+            "code": "ecb5e72d-40a2-4af3-9135-25974026bf02"
+          },
+          {
+            "code": "b9c4561d-20bc-48c9-a727-fea719424a86"
+          },
+          {
+            "code": "ddbd7477-9579-4a83-a3e7-74ed716a0451"
+          },
+          {
+            "code": "e3242303-2506-4a09-ac65-59dfd06cb489"
+          },
+          {
+            "code": "df62498e-7ad1-4f01-93ce-a0441f879a2c"
+          },
+          {
+            "code": "99b18761-88d7-44b2-915d-c64aa0b3b562"
+          },
+          {
+            "code": "2b11e7a0-1faf-4b45-a653-4c347f019266"
+          },
+          {
+            "code": "1dae1e1e-306e-48f2-b9e1-2a180301d8dd"
+          },
+          {
+            "code": "0337193a-b5cc-43e1-a324-fa28944bfc3b"
+          }
+        ]
+      }
+    ]
+  }
+}

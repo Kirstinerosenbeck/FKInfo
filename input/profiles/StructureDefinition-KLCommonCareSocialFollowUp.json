@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialFollowUp",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "name": "KLCommonCareSocialFollowUp",
   "title": "CommonCareSocialFollowUp",
   "status": "active",

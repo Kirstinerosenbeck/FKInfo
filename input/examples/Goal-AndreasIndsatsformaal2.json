@@ -1,0 +1,27 @@
+{
+  "resourceType": "Goal",
+  "id": "AndreasIndsatsformaal2",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialPurpose"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "424827b1-23aa-4848-962b-56ee47def560",
+          "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+          "display": "Indsatsformål"
+        }
+      ]
+    }
+  ],
+  "description": {
+    "text": "understøtte Andreas i selv at tilegne sig færdigheder, der gør at han kan have kontakt med andre både ift. at samarbejdende om praktiske ting og ift klare almindelige sociale situationer som fx at se film eller spise med en gruppe af jævnaldrende. Desuden at holde orden på sit eget værelse, så han undgår frustration over ikke at kunne finde sine ting."
+  },
+  "subject": {
+    "reference": "Patient/Andreas"
+  },
+  "lifecycleStatus": "active"
+}

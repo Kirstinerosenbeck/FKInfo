@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLICPC2",
+  "id": "KLICPC2",
+  "title": "KLICPC2",
+  "description": "the Danish edition of ICPC2 codes as defined by KiAP",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLICPC2",
+  "compose": {
+    "include": [
+      {
+        "system": "https://kiap.dk/kiap/koder/icpckoder"
+      }
+    ]
+  }
+}

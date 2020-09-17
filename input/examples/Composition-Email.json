@@ -1,0 +1,33 @@
+{
+  "resourceType": "Composition",
+  "id": "Email",
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "clinical-email",
+        "system": "http://medcom.dk/fhir/messagetype"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://medcom.dk/fhir/CodeSystem/medcom-clinicalEmailCategoryCode",
+          "code": "LP173421-1"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/Andreas"
+  },
+  "date": "2020-01-20T13:50:02.175171+00:00",
+  "author": [
+    {
+      "reference": "Practitioner/AbrahamFraAkutSygeplejen"
+    }
+  ],
+  "title": "Clinical Email"
+}

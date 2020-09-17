@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "SubjectConsentToLiaising",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/SubjectConsentToLiaising",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "name": "SubjectConsentToLiaising",
   "title": "SubjectConsentToLiaising",
   "status": "active",
@@ -49,7 +49,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonConsentToLiasing"
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLConsentToLiasing"
         }
       }
     ]

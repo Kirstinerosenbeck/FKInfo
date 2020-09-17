@@ -13,7 +13,7 @@
         "coding": [
           {
             "code": "A2",
-            "system": "urn:oid:1.2.208.176.2.21",
+            "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
             "display": "Pårørende"
           }
         ]
@@ -54,7 +54,7 @@
       "coding": [
         {
           "code": "80aa8ea7-4ad8-405f-876a-4c0f89fde06a",
-          "system": "urn:oid:1.2.208.176.2.22",
+          "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
           "display": "Midlertidigt ophold"
         }
       ]
@@ -63,7 +63,7 @@
       "coding": [
         {
           "code": "638f44df-6bf2-47f8-9935-b8fdc83e5bf5",
-          "system": "urn:oid:1.2.208.176.2.22",
+          "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
           "display": "Støtte til daglige opgaver i hjemmet"
         }
       ]

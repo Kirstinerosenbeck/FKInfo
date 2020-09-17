@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLNeedsAssessmentCodesFFB",
+  "id": "KLNeedsAssessmentCodesFFB",
+  "title": "KLNeedsAssessmentCodesFFB",
+  "description": "Needs assesment codes as defined in FFB",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLNeedsAssessmentCodesFFB",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FFB",
+        "concept": [
+          {
+            "code": "dd628e73-d6c9-4837-a2b8-aa62d73bd6ae"
+          },
+          {
+            "code": "401a397b-b3aa-4ca3-8b23-bd8f99dd3f76"
+          },
+          {
+            "code": "ae9f388a-91c3-46cf-af55-f81952f2977c"
+          },
+          {
+            "code": "b99a0790-4d70-4152-b149-3fe58b745583"
+          },
+          {
+            "code": "e99763d6-6c43-4969-ad52-2b1a7055f9dc"
+          },
+          {
+            "code": "2254dac8-8aa3-4334-8502-9720194f49ad"
+          }
+        ]
+      }
+    ]
+  }
+}

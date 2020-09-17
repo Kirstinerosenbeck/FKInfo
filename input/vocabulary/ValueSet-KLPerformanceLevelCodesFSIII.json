@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLPerformanceLevelCodesFSIII",
+  "id": "KLPerformanceLevelCodesFSIII",
+  "title": "KLPerformanceLevelCodesFSIII",
+  "description": "Performance level codes (Udførelse), as evaluated by the citizen",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLPerformanceLevelCodesFSIII",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "C4"
+          },
+          {
+            "code": "C3"
+          },
+          {
+            "code": "C2"
+          },
+          {
+            "code": "C1"
+          }
+        ]
+      }
+    ]
+  }
+}

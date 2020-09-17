@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLGoalTypeCodes",
+  "id": "KLGoalTypeCodes",
+  "title": "KLGoalTypeCodes",
+  "description": "Codes used to distinguish different kinds of goals",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLGoalTypeCodes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLCommonCareSocialCodes",
+        "concept": [
+          {
+            "code": "ca552020-6ed1-4cdc-b0d4-32697f1f27ad"
+          },
+          {
+            "code": "e6f35a88-6665-4471-9dce-9a98854532b4"
+          },
+          {
+            "code": "416fe27d-3ccf-4390-8742-8b52a9d8dc78"
+          },
+          {
+            "code": "424827b1-23aa-4848-962b-56ee47def560"
+          },
+          {
+            "code": "0bb3daef-538d-45dc-b444-abdbcb63f6bc"
+          },
+          {
+            "code": "6746d4af-145a-4bfd-a672-05c0cf11b53b"
+          }
+        ]
+      }
+    ]
+  }
+}

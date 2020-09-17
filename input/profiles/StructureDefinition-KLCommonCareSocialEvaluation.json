@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialEvaluation",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "name": "KLCommonCareSocialEvaluation",
   "title": "CommonCareSocialEvaluation",
   "status": "active",
@@ -80,7 +80,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonEvaluationTypeCodes"
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLEvaluationTypeCodes"
         }
       },
       {
@@ -97,7 +97,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonEvaluationTypeSCTCodes"
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLEvaluationTypeCodesSCT"
         }
       },
       {

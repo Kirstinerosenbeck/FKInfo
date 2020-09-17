@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLCommonCareSocialCarePlan",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "name": "KLCommonCareSocialCarePlan",
   "title": "CommonCareSocialCarePlan",
   "status": "active",
@@ -81,7 +81,7 @@
         "path": "CarePlan.category",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCommonCarePlanCategoryCodes"
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLCarePlanCategoryCodes"
         }
       },
       {

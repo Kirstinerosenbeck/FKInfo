@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "KLChangeValueCodesFSIII",
+  "id": "KLChangeValueCodesFSIII",
+  "title": "KLChangeValueCodesFSIII",
+  "description": "Change values for goals in FSIII (FSIII måltype). Express the target value for change of a health condition or funtional condition",
+  "version": "0.1.6",
+  "url": "http://kl.dk/fhir/common/caresocial/ValueSet/KLChangeValueCodesFSIII",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "81c827de-ef31-4410-aa57-0d1d1bc6c264"
+          },
+          {
+            "code": "8addc23a-f7c6-47c4-97fb-a73fcdfc9f65"
+          },
+          {
+            "code": "15846728-58b4-4413-a9d1-be0f1404b10f"
+          }
+        ]
+      }
+    ]
+  }
+}

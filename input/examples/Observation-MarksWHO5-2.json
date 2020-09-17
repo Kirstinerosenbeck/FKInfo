@@ -1,0 +1,69 @@
+{
+  "resourceType": "Observation",
+  "id": "MarksWHO5-2",
+  "meta": {
+    "profile": [
+      "http://kl.dk/fhir/common/caresocial/StructureDefinition/KLToolsWHO5observations"
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "49971008",
+        "display": "ængstelse"
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/KLToolsCodes",
+        "code": "a3779fc5-d7b3-4d03-bdaf-5ae5a40b0899",
+        "display": "WHO-5 Lidt mere end halvdelen af tiden (3)"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/AssociatedConditions",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "106131003",
+            "system": "http://snomed.info/sct",
+            "display": "fund vedr. sindsstemning"
+          }
+        ]
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "85256008",
+        "system": "http://snomed.info/sct",
+        "display": "Sindsstemning"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Mark"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/AbrahamFraAkutSygeplejen"
+    }
+  ],
+  "status": "final",
+  "method": {
+    "coding": [
+      {
+        "code": "4a069078-c3c3-4c67-899d-4e8876026f48Ja",
+        "system": "http://80.197.59.44/hapi-fhir-jpaserver/fhir/CodeSystem/43",
+        "display": "Proceduren fulgt"
+      }
+    ]
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/WHO-5AnswerMark"
+    }
+  ]
+}

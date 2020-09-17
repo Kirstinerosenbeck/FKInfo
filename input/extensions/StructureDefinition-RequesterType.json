@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RequesterType",
   "url": "http://kl.dk/fhir/common/caresocial/StructureDefinition/RequesterType",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "name": "RequesterType",
   "title": "RequesterType",
   "status": "active",
@@ -49,7 +49,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/FSIIIRequestFrom"
+          "valueSet": "http://kl.dk/fhir/common/caresocial/ValueSet/KLRequestFromFSIII"
         }
       }
     ]
